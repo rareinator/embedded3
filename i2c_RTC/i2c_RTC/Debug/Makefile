@@ -39,43 +39,33 @@ SUBDIRS :=  \
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
-../i2cLib/test_i2cmaster.c \
 ../i2cLib/twimaster.c \
 ../main.c \
 ../setup/stdio_setup.c
 
 
-PREPROCESSING_SRCS +=  \
-../i2cLib/i2cmaster.S
+PREPROCESSING_SRCS += 
 
 
 ASM_SRCS += 
 
 
 OBJS +=  \
-i2cLib/i2cmaster.o \
-i2cLib/test_i2cmaster.o \
 i2cLib/twimaster.o \
 main.o \
 setup/stdio_setup.o
 
 OBJS_AS_ARGS +=  \
-i2cLib/i2cmaster.o \
-i2cLib/test_i2cmaster.o \
 i2cLib/twimaster.o \
 main.o \
 setup/stdio_setup.o
 
 C_DEPS +=  \
-i2cLib/i2cmaster.d \
-i2cLib/test_i2cmaster.d \
 i2cLib/twimaster.d \
 main.d \
 setup/stdio_setup.d
 
 C_DEPS_AS_ARGS +=  \
-i2cLib/i2cmaster.d \
-i2cLib/test_i2cmaster.d \
 i2cLib/twimaster.d \
 main.d \
 setup/stdio_setup.d
@@ -94,13 +84,6 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
-i2cLib/test_i2cmaster.o: ../i2cLib/test_i2cmaster.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.90\include" -I"../setup" -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\include"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
-	@echo Finished building: $<
-	
-
 i2cLib/twimaster.o: ../i2cLib/twimaster.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
@@ -130,13 +113,6 @@ setup/stdio_setup.o: ../setup/stdio_setup.c
 
 
 # AVR32/GNU Assembler
-i2cLib/i2cmaster.o: ../i2cLib/i2cmaster.S
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU Assembler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE) -Wa,-gdwarf2 -x assembler-with-cpp -c -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega2560" -I "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\include"  -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -mrelax -Wa,-g   -o "$@" "$<" 
-	@echo Finished building: $<
-	
-
 
 
 

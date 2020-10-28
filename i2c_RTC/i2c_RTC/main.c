@@ -5,12 +5,12 @@
 #include <avr/io.h>
 #include <util/setbaud.h>
 #include <ctype.h>
-#include <i2cLib/i2cmaster.h>
+#include "i2cLib/i2cmaster.h"
 #include <util/delay.h>
 
-#define SLAVE_ADDRESS 0x68
+#define SLAVE_ADDRESS 0xD0
 
-struct  DateTime {
+typedef struct  {
 	char Year;
 	char Month;
 	char Day;
@@ -18,7 +18,7 @@ struct  DateTime {
 	char Hour;
 	char Minute;
 	char Second;
-};
+} DateTime;
 
 unsigned char USART_Receive(void)
 {
@@ -51,20 +51,20 @@ void DS3231_init()
 
 void DS3231_setDateTime(DateTime time)
 {
-	i2c_start(SLAVE_ADDRESS); //Addess 00H
-	i2c_write(0x00) // seconds to 0
-	i2c_write(0x00)// minutes
-	i2c_write(0x12)// hours 00 01 0010
-	i2c_write(0x05)// day 0000 0101 fredag
-	i2c_write(0x30)// date 0011 0000 den 30
-	i2c_write(0x10)// month 0001 0000 den 10
-	i2c_write(0x20)// year 0010 0000
+	i2c_start(SLAVE_ADDRESS+I2C_WRITE); //Address 00H
+	i2c_write(0x00); // seconds to 0
+	i2c_write(0x00); // minutes
+	i2c_write(0x12); // hours 00 01 0010
+	i2c_write(0x05); // day 0000 0101 fredag
+	i2c_write(0x30); // date 0011 0000 den 30
+	i2c_write(0x10); // month 0001 0000 den 10
+	i2c_write(0x20); // year 0010 0000
 	i2c_stop();				
 }
 
 DateTime DS3231_getDateTime()
 {
-	i2c_start(SLAVE_ADDRESS);
+	i2c_start(SLAVE_ADDRESS+I2C_READ);
 	DateTime result;
 	result.Second = i2c_read(1);
 	result.Minute = i2c_read(1);
@@ -84,14 +84,14 @@ int main(void)
 	USART_Init();
 	i2c_init(); // init I2C library
 	DS3231_init();
-	struct DateTime start;
+	DateTime start;
 	start.Year = 2020;
 	start.Month = 10;
 	start.Day = 28;
 	start.Hour = 11;
 	start.Minute = 30;
 	start.Second = 00;
-	DS3231_setDateTime(start)
+	DS3231_setDateTime(start);
 	
 	while(1) {
 		_delay_ms(1000);
