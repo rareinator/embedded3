@@ -39,13 +39,13 @@
         </dependencies>
       </framework-data>
     </AsfFrameworkConfig>
-    <avrtool>com.atmel.avrdbg.tool.avrdragon</avrtool>
-    <avrtoolserialnumber>00A200018895</avrtoolserialnumber>
+    <avrtool>com.atmel.avrdbg.tool.atmelice</avrtool>
+    <avrtoolserialnumber>J41800117869</avrtoolserialnumber>
     <avrdeviceexpectedsignature>0x1E9801</avrdeviceexpectedsignature>
     <com_atmel_avrdbg_tool_avrdragon>
       <ToolOptions>
         <InterfaceProperties>
-          <IspClock>125000</IspClock>
+          <IspClock>0</IspClock>
         </InterfaceProperties>
         <InterfaceName>ISP</InterfaceName>
       </ToolOptions>
@@ -57,6 +57,17 @@
     <avrtoolinterfaceclock>125000</avrtoolinterfaceclock>
     <ResetRule>0</ResetRule>
     <EraseKey />
+    <com_atmel_avrdbg_tool_atmelice>
+      <ToolOptions>
+        <InterfaceProperties>
+          <IspClock>125000</IspClock>
+        </InterfaceProperties>
+        <InterfaceName>ISP</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.atmelice</ToolType>
+      <ToolNumber>J41800117869</ToolNumber>
+      <ToolName>Atmel-ICE</ToolName>
+    </com_atmel_avrdbg_tool_atmelice>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
@@ -147,12 +158,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="i2cLib\i2cmaster.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="i2cLib\i2cmaster.S">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="i2cLib\test_i2cmaster.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="i2cLib\twimaster.c">
