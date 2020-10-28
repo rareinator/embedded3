@@ -146,6 +146,18 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="i2cLib\i2cmaster.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="i2cLib\i2cmaster.S">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="i2cLib\test_i2cmaster.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="i2cLib\twimaster.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
@@ -157,6 +169,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="i2cLib" />
     <Folder Include="setup" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
