@@ -10,11 +10,9 @@ int main(void)
 {
 	UartInit();
 	DHT11_init();
-	DHT11_ReadRaw();
-
+	_delay_ms(1000);
+	
 	while(1) {
-		_delay_ms(500);
-		
-		
+		DHT11_ReadRaw();
 	}
 }

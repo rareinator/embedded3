@@ -9,14 +9,13 @@
 #include <util/delay.h>
 
 void DHT11_init() {
-	SET_OUTPUT(DHT11_PORT, DHT11_PIN);
-	SET_BIT(DHT11_PORT, DHT11_PIN);
+	SET_BIT(DHT11_DDR, DHT11_BIT);
+	SET_BIT(DHT11_PORT, DHT11_BIT);
 }
 
 void DHT11_ReadRaw()
 {
-	CLR_BIT(DHT11_PORT, DHT11_PIN);	
+	CLR_BIT(DHT11_PORT, DHT11_BIT);	// Set to logic 0
 	_delay_ms(19);
-	SET_INPUT(DHT11_PORT, DHT11_PIN);
-	SET_BIT(DHT11_PORT, DHT11_PIN); //Activate internal pull up resistor 
+	CLR_BIT(DHT11_DDR, DHT11_BIT);
 }
