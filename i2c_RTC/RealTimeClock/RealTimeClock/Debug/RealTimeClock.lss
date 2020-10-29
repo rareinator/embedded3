@@ -233,19 +233,12 @@ Disassembly of section .text:
      274:	c5 ce       	rjmp	.-630    	; 0x0 <__vectors>
 
 00000276 <Delay>:
- */ 
-
-#include "Delay.h"
-
-void Delay(void)
-{
      276:	cf 93       	push	r28
      278:	df 93       	push	r29
      27a:	00 d0       	rcall	.+0      	; 0x27c <Delay+0x6>
      27c:	1f 92       	push	r1
      27e:	cd b7       	in	r28, 0x3d	; 61
      280:	de b7       	in	r29, 0x3e	; 62
-	volatile unsigned long count = 600000;
      282:	80 ec       	ldi	r24, 0xC0	; 192
      284:	97 e2       	ldi	r25, 0x27	; 39
      286:	a9 e0       	ldi	r26, 0x09	; 9
@@ -254,8 +247,6 @@ void Delay(void)
      28c:	9a 83       	std	Y+2, r25	; 0x02
      28e:	ab 83       	std	Y+3, r26	; 0x03
      290:	bc 83       	std	Y+4, r27	; 0x04
-
-	while (count--);
      292:	89 81       	ldd	r24, Y+1	; 0x01
      294:	9a 81       	ldd	r25, Y+2	; 0x02
      296:	ab 81       	ldd	r26, Y+3	; 0x03
@@ -283,319 +274,134 @@ void Delay(void)
      2c2:	08 95       	ret
 
 000002c4 <DS3231_Init>:
-#include  "../I2C/i2c_master.h"
-
-void DS3231_Init(void)
-{
-	// Initialize the I2c module.
-	i2c_init();
      2c4:	c1 c0       	rjmp	.+386    	; 0x448 <i2c_init>
      2c6:	08 95       	ret
 
 000002c8 <DS3231_SetDateTime>:
-}
-
-
-ErrorCode DS3231_SetDateTime(rtc *rtc)
-{
      2c8:	cf 93       	push	r28
      2ca:	df 93       	push	r29
      2cc:	ec 01       	movw	r28, r24
-	// Start and set RAM address to 00H
-	if(i2c_start(DS3231_WriteMode))
      2ce:	80 ed       	ldi	r24, 0xD0	; 208
      2d0:	bf d0       	rcall	.+382    	; 0x450 <i2c_start>
      2d2:	81 11       	cpse	r24, r1
      2d4:	22 c0       	rjmp	.+68     	; 0x31a <DS3231_SetDateTime+0x52>
-	{
-		return StartError;
-	}
-	if(i2c_write(DS3231_START_REGISTER))
      2d6:	e1 d0       	rcall	.+450    	; 0x49a <i2c_write>
      2d8:	81 11       	cpse	r24, r1
      2da:	21 c0       	rjmp	.+66     	; 0x31e <DS3231_SetDateTime+0x56>
-		return WriteError;
-	}
-
-	// Set date time.
-	// The DS3231 has auto increment, so we just start reading from 00H and stops at 06H.
-	if (i2c_write(rtc->sec))
      2dc:	88 81       	ld	r24, Y
      2de:	dd d0       	rcall	.+442    	; 0x49a <i2c_write>
      2e0:	81 11       	cpse	r24, r1
      2e2:	1f c0       	rjmp	.+62     	; 0x322 <DS3231_SetDateTime+0x5a>
-	{
-		return WriteError;
-	}
-	
-	if (i2c_write(rtc->min))
      2e4:	89 81       	ldd	r24, Y+1	; 0x01
      2e6:	d9 d0       	rcall	.+434    	; 0x49a <i2c_write>
      2e8:	81 11       	cpse	r24, r1
      2ea:	1d c0       	rjmp	.+58     	; 0x326 <DS3231_SetDateTime+0x5e>
-	{
-		return WriteError;
-	}
-	
-	if (i2c_write(rtc->hour))
      2ec:	8a 81       	ldd	r24, Y+2	; 0x02
      2ee:	d5 d0       	rcall	.+426    	; 0x49a <i2c_write>
      2f0:	81 11       	cpse	r24, r1
      2f2:	1b c0       	rjmp	.+54     	; 0x32a <DS3231_SetDateTime+0x62>
-	{
-		return WriteError;
-	}
-	
-	if (i2c_write(rtc->weekDay))
      2f4:	8b 81       	ldd	r24, Y+3	; 0x03
      2f6:	d1 d0       	rcall	.+418    	; 0x49a <i2c_write>
      2f8:	81 11       	cpse	r24, r1
      2fa:	19 c0       	rjmp	.+50     	; 0x32e <DS3231_SetDateTime+0x66>
-	{
-		return WriteError;
-	}
-	
-	if (i2c_write(rtc->date))
      2fc:	8c 81       	ldd	r24, Y+4	; 0x04
      2fe:	cd d0       	rcall	.+410    	; 0x49a <i2c_write>
      300:	81 11       	cpse	r24, r1
      302:	17 c0       	rjmp	.+46     	; 0x332 <DS3231_SetDateTime+0x6a>
-	{
-		return WriteError;
-	}
-	
-	if (i2c_write(rtc->month))
      304:	8d 81       	ldd	r24, Y+5	; 0x05
      306:	c9 d0       	rcall	.+402    	; 0x49a <i2c_write>
      308:	81 11       	cpse	r24, r1
      30a:	15 c0       	rjmp	.+42     	; 0x336 <DS3231_SetDateTime+0x6e>
-	{
-		return WriteError;
-	}
-	
-	if (i2c_write(rtc->year))
      30c:	8e 81       	ldd	r24, Y+6	; 0x06
      30e:	c5 d0       	rcall	.+394    	; 0x49a <i2c_write>
      310:	81 11       	cpse	r24, r1
      312:	13 c0       	rjmp	.+38     	; 0x33a <DS3231_SetDateTime+0x72>
      314:	df d0       	rcall	.+446    	; 0x4d4 <i2c_stop>
-	{
-		return WriteError;
-	}
-	
-	i2c_stop();
      316:	80 e0       	ldi	r24, 0x00	; 0
      318:	11 c0       	rjmp	.+34     	; 0x33c <DS3231_SetDateTime+0x74>
-	
-	return Success;
      31a:	82 e0       	ldi	r24, 0x02	; 2
      31c:	0f c0       	rjmp	.+30     	; 0x33c <DS3231_SetDateTime+0x74>
-ErrorCode DS3231_SetDateTime(rtc *rtc)
-{
-	// Start and set RAM address to 00H
-	if(i2c_start(DS3231_WriteMode))
-	{
-		return StartError;
      31e:	83 e0       	ldi	r24, 0x03	; 3
      320:	0d c0       	rjmp	.+26     	; 0x33c <DS3231_SetDateTime+0x74>
-	}
-	if(i2c_write(DS3231_START_REGISTER))
-	{
-		return WriteError;
      322:	83 e0       	ldi	r24, 0x03	; 3
      324:	0b c0       	rjmp	.+22     	; 0x33c <DS3231_SetDateTime+0x74>
-
-	// Set date time.
-	// The DS3231 has auto increment, so we just start reading from 00H and stops at 06H.
-	if (i2c_write(rtc->sec))
-	{
-		return WriteError;
      326:	83 e0       	ldi	r24, 0x03	; 3
      328:	09 c0       	rjmp	.+18     	; 0x33c <DS3231_SetDateTime+0x74>
-	}
-	
-	if (i2c_write(rtc->min))
-	{
-		return WriteError;
      32a:	83 e0       	ldi	r24, 0x03	; 3
      32c:	07 c0       	rjmp	.+14     	; 0x33c <DS3231_SetDateTime+0x74>
-	}
-	
-	if (i2c_write(rtc->hour))
-	{
-		return WriteError;
      32e:	83 e0       	ldi	r24, 0x03	; 3
      330:	05 c0       	rjmp	.+10     	; 0x33c <DS3231_SetDateTime+0x74>
-	}
-	
-	if (i2c_write(rtc->weekDay))
-	{
-		return WriteError;
      332:	83 e0       	ldi	r24, 0x03	; 3
      334:	03 c0       	rjmp	.+6      	; 0x33c <DS3231_SetDateTime+0x74>
-	}
-	
-	if (i2c_write(rtc->date))
-	{
-		return WriteError;
      336:	83 e0       	ldi	r24, 0x03	; 3
      338:	01 c0       	rjmp	.+2      	; 0x33c <DS3231_SetDateTime+0x74>
-	}
-	
-	if (i2c_write(rtc->month))
-	{
-		return WriteError;
      33a:	83 e0       	ldi	r24, 0x03	; 3
      33c:	df 91       	pop	r29
-	}
-	
-	if (i2c_write(rtc->year))
-	{
-		return WriteError;
      33e:	cf 91       	pop	r28
-	}
-	
-	i2c_stop();
-	
-	return Success;
-}
      340:	08 95       	ret
 
 00000342 <DS3231_GetDateTime>:
      342:	cf 93       	push	r28
      344:	df 93       	push	r29
-
-
-ErrorCode DS3231_GetDateTime(rtc *rtc)
-{
      346:	ec 01       	movw	r28, r24
-	// Start and set RAM address to 00H
-	if(i2c_start(DS3231_WriteMode))
      348:	80 ed       	ldi	r24, 0xD0	; 208
      34a:	82 d0       	rcall	.+260    	; 0x450 <i2c_start>
      34c:	81 11       	cpse	r24, r1
      34e:	19 c0       	rjmp	.+50     	; 0x382 <DS3231_GetDateTime+0x40>
-	{
-		return StartError;
-	}
-	
-	if(i2c_write(DS3231_START_REGISTER))
      350:	a4 d0       	rcall	.+328    	; 0x49a <i2c_write>
      352:	81 11       	cpse	r24, r1
      354:	18 c0       	rjmp	.+48     	; 0x386 <DS3231_GetDateTime+0x44>
-	{
-		return WriteError;
-	}
-	
-	i2c_stop();
      356:	be d0       	rcall	.+380    	; 0x4d4 <i2c_stop>
-
-	// Catch data from DS3231.
-	if(i2c_start(DS3231_ReadMode))
      358:	81 ed       	ldi	r24, 0xD1	; 209
      35a:	7a d0       	rcall	.+244    	; 0x450 <i2c_start>
      35c:	81 11       	cpse	r24, r1
-	{
-		return StartError;
-	}
-	
-	rtc->sec = i2c_read_ack();
      35e:	15 c0       	rjmp	.+42     	; 0x38a <DS3231_GetDateTime+0x48>
      360:	ae d0       	rcall	.+348    	; 0x4be <i2c_read_ack>
-	rtc->min = i2c_read_ack();
      362:	88 83       	st	Y, r24
      364:	ac d0       	rcall	.+344    	; 0x4be <i2c_read_ack>
-	rtc->hour= i2c_read_ack();
      366:	89 83       	std	Y+1, r24	; 0x01
      368:	aa d0       	rcall	.+340    	; 0x4be <i2c_read_ack>
-	rtc->weekDay = i2c_read_ack();
      36a:	8a 83       	std	Y+2, r24	; 0x02
      36c:	a8 d0       	rcall	.+336    	; 0x4be <i2c_read_ack>
-	rtc->date= i2c_read_ack();
      36e:	8b 83       	std	Y+3, r24	; 0x03
      370:	a6 d0       	rcall	.+332    	; 0x4be <i2c_read_ack>
      372:	8c 83       	std	Y+4, r24	; 0x04
-	rtc->month=i2c_read_ack();
      374:	a4 d0       	rcall	.+328    	; 0x4be <i2c_read_ack>
      376:	8d 83       	std	Y+5, r24	; 0x05
      378:	a2 d0       	rcall	.+324    	; 0x4be <i2c_read_ack>
-	rtc->year =i2c_read_ack();
      37a:	8e 83       	std	Y+6, r24	; 0x06
      37c:	ab d0       	rcall	.+342    	; 0x4d4 <i2c_stop>
      37e:	80 e0       	ldi	r24, 0x00	; 0
-	
-	i2c_stop();
      380:	05 c0       	rjmp	.+10     	; 0x38c <DS3231_GetDateTime+0x4a>
      382:	82 e0       	ldi	r24, 0x02	; 2
-	
-	return Success;
      384:	03 c0       	rjmp	.+6      	; 0x38c <DS3231_GetDateTime+0x4a>
      386:	83 e0       	ldi	r24, 0x03	; 3
-ErrorCode DS3231_GetDateTime(rtc *rtc)
-{
-	// Start and set RAM address to 00H
-	if(i2c_start(DS3231_WriteMode))
-	{
-		return StartError;
      388:	01 c0       	rjmp	.+2      	; 0x38c <DS3231_GetDateTime+0x4a>
      38a:	82 e0       	ldi	r24, 0x02	; 2
-	}
-	
-	if(i2c_write(DS3231_START_REGISTER))
-	{
-		return WriteError;
      38c:	df 91       	pop	r29
      38e:	cf 91       	pop	r28
-	i2c_stop();
-
-	// Catch data from DS3231.
-	if(i2c_start(DS3231_ReadMode))
-	{
-		return StartError;
      390:	08 95       	ret
 
 00000392 <DS3231_GetDefaultConfig>:
-	rtc->year =i2c_read_ack();
-	
-	i2c_stop();
-	
-	return Success;
-}
      392:	fc 01       	movw	r30, r24
      394:	10 82       	st	Z, r1
      396:	80 e2       	ldi	r24, 0x20	; 32
-
-void DS3231_GetDefaultConfig(rtc *rtc)
-{
-	// Default config.
-	rtc->sec = 0x00; // 0
-	rtc->min = 0x20; // 32
      398:	81 83       	std	Z+1, r24	; 0x01
-	rtc->hour = 0x14; // 20
      39a:	84 e1       	ldi	r24, 0x14	; 20
      39c:	82 83       	std	Z+2, r24	; 0x02
-	rtc->weekDay = 0x02; //
      39e:	92 e0       	ldi	r25, 0x02	; 2
      3a0:	93 83       	std	Z+3, r25	; 0x03
-	rtc->date = 0x05; // 5
      3a2:	95 e0       	ldi	r25, 0x05	; 5
      3a4:	94 83       	std	Z+4, r25	; 0x04
-	rtc->month = 0x06; // 6
      3a6:	96 e0       	ldi	r25, 0x06	; 6
      3a8:	95 83       	std	Z+5, r25	; 0x05
-	rtc->year = 0x14; //20
      3aa:	86 83       	std	Z+6, r24	; 0x06
      3ac:	08 95       	ret
 
 000003ae <DS3231_PrintDateTime>:
-}
-
-void DS3231_PrintDateTime(rtc *rtc)
-{
      3ae:	cf 93       	push	r28
      3b0:	df 93       	push	r29
      3b2:	ec 01       	movw	r28, r24
-			printf("Sec: %d\r\n", rtc->sec);
      3b4:	88 81       	ld	r24, Y
      3b6:	1f 92       	push	r1
      3b8:	8f 93       	push	r24
@@ -604,7 +410,6 @@ void DS3231_PrintDateTime(rtc *rtc)
      3be:	9f 93       	push	r25
      3c0:	8f 93       	push	r24
      3c2:	0e 94 20 0d 	call	0x1a40	; 0x1a40 <printf>
-			printf("Min: %d\r\n", rtc->min);
      3c6:	89 81       	ldd	r24, Y+1	; 0x01
      3c8:	1f 92       	push	r1
      3ca:	8f 93       	push	r24
@@ -613,7 +418,6 @@ void DS3231_PrintDateTime(rtc *rtc)
      3d0:	9f 93       	push	r25
      3d2:	8f 93       	push	r24
      3d4:	0e 94 20 0d 	call	0x1a40	; 0x1a40 <printf>
-			printf("Hour: %d\r\n", rtc->hour);
      3d8:	8a 81       	ldd	r24, Y+2	; 0x02
      3da:	1f 92       	push	r1
      3dc:	8f 93       	push	r24
@@ -622,7 +426,6 @@ void DS3231_PrintDateTime(rtc *rtc)
      3e2:	9f 93       	push	r25
      3e4:	8f 93       	push	r24
      3e6:	0e 94 20 0d 	call	0x1a40	; 0x1a40 <printf>
-			printf("Weekday: %d\r\n", rtc->weekDay);
      3ea:	8b 81       	ldd	r24, Y+3	; 0x03
      3ec:	1f 92       	push	r1
      3ee:	8f 93       	push	r24
@@ -631,7 +434,6 @@ void DS3231_PrintDateTime(rtc *rtc)
      3f4:	9f 93       	push	r25
      3f6:	8f 93       	push	r24
      3f8:	0e 94 20 0d 	call	0x1a40	; 0x1a40 <printf>
-			printf("Date: %d\r\n", rtc->date);
      3fc:	8c 81       	ldd	r24, Y+4	; 0x04
      3fe:	1f 92       	push	r1
      400:	8f 93       	push	r24
@@ -640,7 +442,6 @@ void DS3231_PrintDateTime(rtc *rtc)
      406:	9f 93       	push	r25
      408:	8f 93       	push	r24
      40a:	0e 94 20 0d 	call	0x1a40	; 0x1a40 <printf>
-			printf("Month: %d\r\n", rtc->month);
      40e:	8d 81       	ldd	r24, Y+5	; 0x05
      410:	1f 92       	push	r1
      412:	8f 93       	push	r24
@@ -649,7 +450,6 @@ void DS3231_PrintDateTime(rtc *rtc)
      418:	9f 93       	push	r25
      41a:	8f 93       	push	r24
      41c:	0e 94 20 0d 	call	0x1a40	; 0x1a40 <printf>
-			printf("Year: %d\r\n", rtc->year);	
      420:	8e 81       	ldd	r24, Y+6	; 0x06
      422:	1f 92       	push	r1
      424:	8f 93       	push	r24
@@ -671,12 +471,6 @@ void DS3231_PrintDateTime(rtc *rtc)
      446:	08 95       	ret
 
 00000448 <i2c_init>:
-	data[(length-1)] = i2c_read_nack();
-
-	i2c_stop();
-
-	return 0;
-}
      448:	88 e4       	ldi	r24, 0x48	; 72
      44a:	80 93 b8 00 	sts	0x00B8, r24	; 0x8000b8 <__TEXT_REGION_LENGTH__+0x7c00b8>
      44e:	08 95       	ret
@@ -745,22 +539,11 @@ void DS3231_PrintDateTime(rtc *rtc)
      4d2:	08 95       	ret
 
 000004d4 <i2c_stop>:
-
-void i2c_stop(void)
-{
-	// transmit STOP condition
-	TWCR = (1<<TWINT) | (1<<TWEN) | (1<<TWSTO);
      4d4:	84 e9       	ldi	r24, 0x94	; 148
      4d6:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7c00bc>
      4da:	08 95       	ret
 
 000004dc <main>:
-#define  ON_BOARD_LED 0x80
-
-
-
-int main(void)
-{
      4dc:	1f 93       	push	r17
      4de:	cf 93       	push	r28
      4e0:	df 93       	push	r29
@@ -772,39 +555,23 @@ int main(void)
      4ec:	de bf       	out	0x3e, r29	; 62
      4ee:	0f be       	out	0x3f, r0	; 63
      4f0:	cd bf       	out	0x3d, r28	; 61
-	rtc rtcWrite;
-	rtc rtcRead;
-	
-	UartInit();
      4f2:	61 d0       	rcall	.+194    	; 0x5b6 <UartInit>
-	
-	DS3231_Init();
      4f4:	e7 de       	rcall	.-562    	; 0x2c4 <DS3231_Init>
      4f6:	ce 01       	movw	r24, r28
-	DS3231_GetDefaultConfig(&rtcWrite);
      4f8:	01 96       	adiw	r24, 0x01	; 1
      4fa:	4b df       	rcall	.-362    	; 0x392 <DS3231_GetDefaultConfig>
      4fc:	8d e5       	ldi	r24, 0x5D	; 93
-	
-	printf("\r\nData TO RTC!\r\n");
      4fe:	92 e0       	ldi	r25, 0x02	; 2
      500:	0e 94 34 0d 	call	0x1a68	; 0x1a68 <puts>
-	DS3231_PrintDateTime(&rtcWrite);
      504:	ce 01       	movw	r24, r28
      506:	01 96       	adiw	r24, 0x01	; 1
      508:	52 df       	rcall	.-348    	; 0x3ae <DS3231_PrintDateTime>
-	
-	
-	ErrorCode rtcResult = DS3231_SetDateTime(&rtcWrite);
      50a:	ce 01       	movw	r24, r28
      50c:	01 96       	adiw	r24, 0x01	; 1
      50e:	dc de       	rcall	.-584    	; 0x2c8 <DS3231_SetDateTime>
      510:	88 23       	and	r24, r24
-	if (rtcResult)
      512:	69 f0       	breq	.+26     	; 0x52e <main+0x52>
      514:	1f 92       	push	r1
-	{
-		printf("\r\nSet date time: Error: %d\r\n", rtcResult);		
      516:	8f 93       	push	r24
      518:	8d e6       	ldi	r24, 0x6D	; 109
      51a:	92 e0       	ldi	r25, 0x02	; 2
@@ -812,33 +579,17 @@ int main(void)
      51e:	8f 93       	push	r24
      520:	0e 94 20 0d 	call	0x1a40	; 0x1a40 <printf>
      524:	0f 90       	pop	r0
-		return 1;
      526:	0f 90       	pop	r0
      528:	0f 90       	pop	r0
      52a:	0f 90       	pop	r0
      52c:	1d c0       	rjmp	.+58     	; 0x568 <main+0x8c>
-		printf("\r\DATA FROM RTC!\r\n");
-		DS3231_PrintDateTime(&rtcRead);
-		
-		
-		// LED_TOGGLE;
-		PINB = ON_BOARD_LED;
      52e:	10 e8       	ldi	r17, 0x80	; 128
-	
-
-	while(1) {
-		
-		// Get time.		
-		rtcResult = DS3231_GetDateTime(&rtcRead);
      530:	ce 01       	movw	r24, r28
      532:	08 96       	adiw	r24, 0x08	; 8
      534:	06 df       	rcall	.-500    	; 0x342 <DS3231_GetDateTime>
      536:	88 23       	and	r24, r24
-		if (rtcResult)
      538:	69 f0       	breq	.+26     	; 0x554 <main+0x78>
      53a:	1f 92       	push	r1
-		{
-			printf("\r\nGet date time: Error: %d\r\n", rtcResult);			
      53c:	8f 93       	push	r24
      53e:	8a e8       	ldi	r24, 0x8A	; 138
      540:	92 e0       	ldi	r25, 0x02	; 2
@@ -846,32 +597,19 @@ int main(void)
      544:	8f 93       	push	r24
      546:	0e 94 20 0d 	call	0x1a40	; 0x1a40 <printf>
      54a:	0f 90       	pop	r0
-			return 1;
      54c:	0f 90       	pop	r0
      54e:	0f 90       	pop	r0
      550:	0f 90       	pop	r0
      552:	0a c0       	rjmp	.+20     	; 0x568 <main+0x8c>
      554:	87 ea       	ldi	r24, 0xA7	; 167
-		}
-		
-		// Print result.
-		printf("\r\DATA FROM RTC!\r\n");
      556:	92 e0       	ldi	r25, 0x02	; 2
      558:	0e 94 34 0d 	call	0x1a68	; 0x1a68 <puts>
-		DS3231_PrintDateTime(&rtcRead);
      55c:	ce 01       	movw	r24, r28
      55e:	08 96       	adiw	r24, 0x08	; 8
      560:	26 df       	rcall	.-436    	; 0x3ae <DS3231_PrintDateTime>
-		
-		
-		// LED_TOGGLE;
-		PINB = ON_BOARD_LED;
      562:	13 b9       	out	0x03, r17	; 3
-		
-		Delay();
      564:	88 de       	rcall	.-752    	; 0x276 <Delay>
      566:	e4 cf       	rjmp	.-56     	; 0x530 <main+0x54>
-	}
      568:	81 e0       	ldi	r24, 0x01	; 1
      56a:	90 e0       	ldi	r25, 0x00	; 0
      56c:	2e 96       	adiw	r28, 0x0e	; 14
@@ -886,100 +624,48 @@ int main(void)
      57e:	08 95       	ret
 
 00000580 <UartPutchar>:
-	(0 << UMSEL00);
-}
-
-void UartPutchar(char data)
-{
-	while(!(UCSR0A & (1 << UDRE0)));
      580:	e0 ec       	ldi	r30, 0xC0	; 192
      582:	f0 e0       	ldi	r31, 0x00	; 0
      584:	90 81       	ld	r25, Z
      586:	95 ff       	sbrs	r25, 5
      588:	fd cf       	rjmp	.-6      	; 0x584 <UartPutchar+0x4>
-	UDR0 = data;
      58a:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7c00c6>
      58e:	08 95       	ret
 
 00000590 <UartGetchar>:
-}
-
-int UartGetchar(void)
-{
      590:	cf 93       	push	r28
-	char data;
-	
-	while (!(UCSR0A & (1 << RXC0)));
      592:	e0 ec       	ldi	r30, 0xC0	; 192
      594:	f0 e0       	ldi	r31, 0x00	; 0
      596:	80 81       	ld	r24, Z
      598:	88 23       	and	r24, r24
      59a:	ec f7       	brge	.-6      	; 0x596 <UartGetchar+0x6>
-	
-	data = UDR0;
      59c:	c0 91 c6 00 	lds	r28, 0x00C6	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7c00c6>
-	
-	if (data == '\n') {
      5a0:	ca 30       	cpi	r28, 0x0A	; 10
      5a2:	29 f0       	breq	.+10     	; 0x5ae <UartGetchar+0x1e>
-		return -1;
-	}
-	UartPutchar(data);
      5a4:	8c 2f       	mov	r24, r28
      5a6:	ec df       	rcall	.-40     	; 0x580 <UartPutchar>
-
-	return data;
      5a8:	8c 2f       	mov	r24, r28
      5aa:	90 e0       	ldi	r25, 0x00	; 0
      5ac:	02 c0       	rjmp	.+4      	; 0x5b2 <UartGetchar+0x22>
-	while (!(UCSR0A & (1 << RXC0)));
-	
-	data = UDR0;
-	
-	if (data == '\n') {
-		return -1;
      5ae:	8f ef       	ldi	r24, 0xFF	; 255
      5b0:	9f ef       	ldi	r25, 0xFF	; 255
-	}
-	UartPutchar(data);
-
-	return data;
      5b2:	cf 91       	pop	r28
      5b4:	08 95       	ret
 
 000005b6 <UartInit>:
-
-static FILE the_stdio = FDEV_SETUP_STREAM(UartPutchar, UartGetchar, _FDEV_SETUP_RW);
-
-void UartInit(void)
-{
-	stdout = &the_stdio;
      5b6:	e8 eb       	ldi	r30, 0xB8	; 184
      5b8:	f2 e0       	ldi	r31, 0x02	; 2
      5ba:	80 e0       	ldi	r24, 0x00	; 0
      5bc:	92 e0       	ldi	r25, 0x02	; 2
      5be:	93 83       	std	Z+3, r25	; 0x03
      5c0:	82 83       	std	Z+2, r24	; 0x02
-	stdin = &the_stdio;
      5c2:	91 83       	std	Z+1, r25	; 0x01
      5c4:	80 83       	st	Z, r24
-	
-	UBRR0H = UBRRH_VALUE;
      5c6:	10 92 c5 00 	sts	0x00C5, r1	; 0x8000c5 <__TEXT_REGION_LENGTH__+0x7c00c5>
-	UBRR0L = UBRRL_VALUE;
      5ca:	87 e6       	ldi	r24, 0x67	; 103
      5cc:	80 93 c4 00 	sts	0x00C4, r24	; 0x8000c4 <__TEXT_REGION_LENGTH__+0x7c00c4>
-
-	#if USE_2X
-	UCSR0A |= (1 << U2X0);
-	#endif
-
-	UCSR0B = (1 << RXEN0) | (1 << TXEN0);
      5d0:	88 e1       	ldi	r24, 0x18	; 24
      5d2:	80 93 c1 00 	sts	0x00C1, r24	; 0x8000c1 <__TEXT_REGION_LENGTH__+0x7c00c1>
-
-	// 8-bit, 1 stop bit, no parity, asynchronous UART
-	UCSR0C = (1 << UCSZ01) | (1 << UCSZ00) | (0 << USBS0) |
      5d6:	86 e0       	ldi	r24, 0x06	; 6
      5d8:	80 93 c2 00 	sts	0x00C2, r24	; 0x8000c2 <__TEXT_REGION_LENGTH__+0x7c00c2>
      5dc:	08 95       	ret
