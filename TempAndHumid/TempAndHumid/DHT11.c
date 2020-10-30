@@ -48,48 +48,48 @@ void DHT11_init()
 	SET_BIT(DHT11_PORT, DHT11_BIT);
 }
 
-void DHT11_PrintDataBytes(char data[5][8])
+void DHT11_PrintDataBytes(char *data[5][8])
 {
-	int i;
+	int j;
 	printf("Humid: \n\r");
-	for (i = 0; i < 8; i++) {
+	for (j = 0; j < 8; j++) {
 		// bit loop
-		printf(data[0][i]);
+		printf("%c",data[0][j]);
 	}
 	printf("Temp: \n\r");
-	for (i = 0; i < 8; i++) {
+	for (j = 0; j < 8; j++) {
 		// bit loop
-		printf(data[2][i]);
+		printf("%c", data[2][j]);
 	}
 	printf("\n\r");
 }
 
-char DHT11_ReadBit()
+int DHT11_ReadBit()
 {
 	if (!DHT11_Wait(80, true))
 	{
-		//Timeout	
+		printf("Timeout");
 	}
-	printf("not timeout");
 	
 	int waitTime = 0;
 	while (bit_is_set(DHT11_PIN, DHT11_BIT))
 	{
 		_delay_us(2);
 		waitTime += 2;	
-		if (waitTime > 80)
-		{
-			printf("timeout over 80");
-		}
+		//if (waitTime > 80)
+		//{
+			//printf("WaitTime over 80 \n \r");
+		//}
 	}
-	printf("waitime is : %d",waitTime);
 	
 	if (waitTime > 40)
 	{
-		return 1;	
+		//printf("return 1");
+		return 1;		
 	} else
 	{
-		return 0;	
+		//printf("return 0");
+		return 0;		
 	}
 			
 }
@@ -115,7 +115,7 @@ void DHT11_ReadRaw()
 		// timeout
 	}
 	
-	char data[5][8];
+	int data[5][8];
 	int i, j;
 	
 	for (i = 0; i < 5; i++) {
@@ -126,5 +126,16 @@ void DHT11_ReadRaw()
 		}
 	}
 	
-	DHT11_PrintDataBytes(data);
+	int k;
+	printf("Humid: \n\r");
+	for (k = 0; k < 8; k++) {
+		// bit loop
+		printf("%d",data[0][k]);
+	}
+	printf("Temp: \n\r");
+	for (k = 0; k < 8; k++) {
+		// bit loop
+		printf("%d", data[2][k]);
+	}
+	printf("\n\r");
 }
