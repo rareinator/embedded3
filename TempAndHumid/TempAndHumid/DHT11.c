@@ -21,8 +21,8 @@ bool DHT11_Wait(int maxWaitTime, bool waitForHigh)
 	{
 		while(bit_is_clear(DHT11_PIN, DHT11_BIT))
 		{
-			_delay_us(2);
-			waitTime += 2;
+			_delay_us(1);
+			waitTime += 1;
 			if (waitTime >= maxWaitTime) {
 				return false;
 			}
@@ -74,8 +74,8 @@ int DHT11_ReadBit()
 	int waitTime = 0;
 	while (bit_is_set(DHT11_PIN, DHT11_BIT))
 	{
-		_delay_us(2);
-		waitTime += 2;	
+		_delay_us(1);
+		waitTime += 1;	
 		//if (waitTime > 80)
 		//{
 			//printf("WaitTime over 80 \n \r");
@@ -96,27 +96,31 @@ int DHT11_ReadBit()
 
 void DHT11_ReadRaw()
 {
+	int data[5][8];
+	int i, j;
+		
 	CLR_BIT(DHT11_PORT, DHT11_BIT);	// Set to logic 0
 	_delay_ms(19);
 	CLR_BIT(DHT11_DDR, DHT11_BIT);
 	if (!DHT11_Wait(60, false)) // Wait for a max of 60 us
 	{
 		//Do timeout stuff
+		printf("timeout 1");
 	}
 	
 	
-	if (!DHT11_Wait(100, true))
+	if (!DHT11_Wait(100, true)) // Wait for high pin
 	{
 		//timeout
+		printf("timeout 2");
 	}
 	
-	if (!DHT11_Wait(100, false))
+	if (!DHT11_Wait(100, false)) // Wait for low pin
 	{
 		// timeout
+		printf("timeout 3");
 	}
-	
-	int data[5][8];
-	int i, j;
+	// beginning of the 50 ms are techinally here
 	
 	for (i = 0; i < 5; i++) {
 		// byte loop
@@ -127,15 +131,28 @@ void DHT11_ReadRaw()
 	}
 	
 	int k;
-	printf("Humid: \n\r");
+	printf("start: \n\r");
 	for (k = 0; k < 8; k++) {
 		// bit loop
 		printf("%d",data[0][k]);
 	}
-	printf("Temp: \n\r");
+	printf("\n\r");
 	for (k = 0; k < 8; k++) {
 		// bit loop
-		printf("%d", data[2][k]);
+		printf("%d", data[1][k]);
+	}
+	for (k = 0; k < 8; k++) {
+		// bit loop
+		printf("%d",data[2][k]);
+	}
+	printf("\n\r");
+	for (k = 0; k < 8; k++) {
+		// bit loop
+		printf("%d", data[3][k]);
+	}
+	for (k = 0; k < 8; k++) {
+		// bit loop
+		printf("%d",data[4][k]);
 	}
 	printf("\n\r");
 }
