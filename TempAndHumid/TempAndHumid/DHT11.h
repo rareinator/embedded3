@@ -20,7 +20,7 @@ typedef struct {
 
 #define DHT11_DDR DDRB
 #define DHT11_PORT PORTB
-#define DHT11_PIN PB3
+#define DHT11_PIN PINB
 #define DHT11_BIT PB3
 
 void DHT11_init();
