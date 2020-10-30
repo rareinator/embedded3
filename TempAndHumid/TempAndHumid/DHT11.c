@@ -84,11 +84,11 @@ void DHT11_ReadRaw()
 				printf("Timeout");
 			}
 				
-			int waitTime = 0;
+			uint8_t waitTime = 0;
 			while (bit_is_set(DHT11_PIN, DHT11_BIT))
 			{
-				_delay_us(1);
-				waitTime++;
+				_delay_us(2);
+				waitTime += 2;
 			}
 				
 			if (waitTime > 40)
@@ -102,4 +102,5 @@ void DHT11_ReadRaw()
 	}
 
 	printf("Temp: %i", data[2]);
+	printf("hum: %i", data[0]);
 }
