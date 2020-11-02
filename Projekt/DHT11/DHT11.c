@@ -10,10 +10,6 @@
 #include <avr/sfr_defs.h>
 #include <stdbool.h>
 
-#include <stdio.h>
-#include "stdio_setup.h"
-
-
 bool DHT11_Wait(int maxWaitTime, bool waitForHigh)
 {
 	int waitTime = 0;
