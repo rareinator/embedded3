@@ -7,6 +7,8 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Projekt", "Projekt\Projekt.
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "DHT11", "DHT11\DHT11.cproj", "{DC0DA969-1C9F-48C0-A60F-EF7CDF83A47F}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "DC_Motor", "DC_Motor\DC_Motor.cproj", "{80F6B1BF-9C56-43E0-AE2A-B266EAA5F0DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -21,6 +23,10 @@ Global
 		{DC0DA969-1C9F-48C0-A60F-EF7CDF83A47F}.Debug|AVR.Build.0 = Debug|AVR
 		{DC0DA969-1C9F-48C0-A60F-EF7CDF83A47F}.Release|AVR.ActiveCfg = Release|AVR
 		{DC0DA969-1C9F-48C0-A60F-EF7CDF83A47F}.Release|AVR.Build.0 = Release|AVR
+		{80F6B1BF-9C56-43E0-AE2A-B266EAA5F0DF}.Debug|AVR.ActiveCfg = Debug|AVR
+		{80F6B1BF-9C56-43E0-AE2A-B266EAA5F0DF}.Debug|AVR.Build.0 = Debug|AVR
+		{80F6B1BF-9C56-43E0-AE2A-B266EAA5F0DF}.Release|AVR.ActiveCfg = Release|AVR
+		{80F6B1BF-9C56-43E0-AE2A-B266EAA5F0DF}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
