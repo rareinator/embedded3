@@ -7,10 +7,10 @@
 
 #include <avr/io.h>
 #include "DHT11library.h"
+#include "I2Clibrary.h"
 
 int main(void)
 {
-	DHT11_ReadTemp();
     /* Replace with your application code */
     while (1) 
     {

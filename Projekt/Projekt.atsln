@@ -11,6 +11,10 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ExeProject", "ExeProject\Ex
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "DHT11lib", "DHT11lib\DHT11lib.cproj", "{E9B13997-E7D9-453E-8300-11A3B8AEC316}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "I2Clib", "I2Clib\I2Clib.cproj", "{38D2A5EB-7C63-43E7-AC49-76391BFAAC58}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "RTClib", "RTClib\RTClib.cproj", "{4D473656-B76C-45F3-BB27-ADB4F36FCFFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -33,6 +37,14 @@ Global
 		{E9B13997-E7D9-453E-8300-11A3B8AEC316}.Debug|AVR.Build.0 = Debug|AVR
 		{E9B13997-E7D9-453E-8300-11A3B8AEC316}.Release|AVR.ActiveCfg = Release|AVR
 		{E9B13997-E7D9-453E-8300-11A3B8AEC316}.Release|AVR.Build.0 = Release|AVR
+		{38D2A5EB-7C63-43E7-AC49-76391BFAAC58}.Debug|AVR.ActiveCfg = Debug|AVR
+		{38D2A5EB-7C63-43E7-AC49-76391BFAAC58}.Debug|AVR.Build.0 = Debug|AVR
+		{38D2A5EB-7C63-43E7-AC49-76391BFAAC58}.Release|AVR.ActiveCfg = Release|AVR
+		{38D2A5EB-7C63-43E7-AC49-76391BFAAC58}.Release|AVR.Build.0 = Release|AVR
+		{4D473656-B76C-45F3-BB27-ADB4F36FCFFD}.Debug|AVR.ActiveCfg = Debug|AVR
+		{4D473656-B76C-45F3-BB27-ADB4F36FCFFD}.Debug|AVR.Build.0 = Debug|AVR
+		{4D473656-B76C-45F3-BB27-ADB4F36FCFFD}.Release|AVR.ActiveCfg = Release|AVR
+		{4D473656-B76C-45F3-BB27-ADB4F36FCFFD}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

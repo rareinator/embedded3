@@ -4,17 +4,19 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
-    <ProjectGuid>{9eba86b9-f7e4-4767-8d06-04d96b21c5b4}</ProjectGuid>
+    <ProjectGuid>{38d2a5eb-7c63-43e7-ac49-76391bfaac58}</ProjectGuid>
     <avrdevice>ATmega2560</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
-    <OutputType>Executable</OutputType>
+    <OutputType>StaticLibrary</OutputType>
     <Language>C</Language>
-    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
-    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputFileName>lib$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>ExeProject</AssemblyName>
-    <Name>ExeProject</Name>
-    <RootNamespace>ExeProject</RootNamespace>
+    <AvrGccProjectExtensions>
+    </AvrGccProjectExtensions>
+    <AssemblyName>I2Clib</AssemblyName>
+    <Name>I2Clib</Name>
+    <RootNamespace>I2Clib</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -100,8 +102,6 @@
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
       <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\1.5.362\include\</Value>
-      <Value>../../DHT11lib</Value>
-      <Value>../../I2Clib</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
@@ -114,11 +114,6 @@
       <Value>libm</Value>
     </ListValues>
   </avrgcc.linker.libraries.Libraries>
-  <avrgcc.linker.libraries.LibrarySearchPaths>
-    <ListValues>
-      <Value>..</Value>
-    </ListValues>
-  </avrgcc.linker.libraries.LibrarySearchPaths>
   <avrgcc.assembler.general.IncludePaths>
     <ListValues>
       <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\1.5.362\include\</Value>
@@ -129,21 +124,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="main.c">
+    <Compile Include="I2Clibrary.c">
       <SubType>compile</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DHT11lib\DHT11lib.cproj">
-      <Name>DHT11lib</Name>
-      <Project>{e9b13997-e7d9-453e-8300-11a3b8aec316}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\I2Clib\I2Clib.cproj">
-      <Name>I2Clib</Name>
-      <Project>{38d2a5eb-7c63-43e7-ac49-76391bfaac58}</Project>
-      <Private>True</Private>
-    </ProjectReference>
+    <Compile Include="I2Clibrary.h">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>
