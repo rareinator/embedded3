@@ -41,7 +41,7 @@
 					<Attribute>template</Attribute>
 					<Category>source</Category>
 					<Condition>C Lib</Condition>
-					<FileContentHash>JWCqcT21Qzx0StCPOsIj0A==</FileContentHash>
+					<FileContentHash>OmEj0gV/juU2FpgVsV3C7Q==</FileContentHash>
 					<FileVersion></FileVersion>
 					<Name>templates/library.c</Name>
 					<SelectString>Main file (.c)</SelectString>

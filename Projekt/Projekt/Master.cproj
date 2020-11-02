@@ -30,15 +30,15 @@
     <EraseKey />
     <AsfFrameworkConfig>
       <framework-data xmlns="">
-  <options />
-  <configurations />
-  <files />
-  <documentation help="" />
-  <offline-documentation help="" />
-  <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.47.0" />
-  </dependencies>
-</framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.47.0" />
+        </dependencies>
+      </framework-data>
     </AsfFrameworkConfig>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -135,7 +135,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DHT11\DHT11.cproj">
       <Name>DHT11</Name>
-      <Project>{3a6d2cac-eea2-4413-aea2-2d6a61435485}</Project>
+      <Project>{dc0da969-1c9f-48c0-a60f-ef7cdf83a47f}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
