@@ -24,7 +24,7 @@ typedef struct {
 #define DHT11_BIT PB3
 
 void DHT11_init();
-void DHT11_ReadRaw(DHT11 *data);
+void DHT11_ReadRaw(DHT11 *result);
 uint8_t DHT11_ReadTemp();
 uint8_t DHT11_ReadHumid();
 
