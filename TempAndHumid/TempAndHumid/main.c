@@ -11,8 +11,11 @@ int main(void)
 	UartInit();
 	DHT11_init();
 	
+	DHT11 temp;
+	
 	while(1) {
-		DHT11_ReadRaw();
+		DHT11_ReadRaw(&temp);
+		printf("Temp %i", temp.Temperatur);
 		_delay_ms(3000);
 	}
 }
