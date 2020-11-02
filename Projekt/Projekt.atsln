@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Projekt", "Projekt\Projekt.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
 EndProject
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "DHT11", "DHT11\DHT11.cproj", "{16BC644D-9275-44E9-BDC7-632942A17A08}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "DHT11", "DHT11\DHT11.cproj", "{DC0DA969-1C9F-48C0-A60F-EF7CDF83A47F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
 		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
-		{16BC644D-9275-44E9-BDC7-632942A17A08}.Debug|AVR.ActiveCfg = Debug|AVR
-		{16BC644D-9275-44E9-BDC7-632942A17A08}.Debug|AVR.Build.0 = Debug|AVR
-		{16BC644D-9275-44E9-BDC7-632942A17A08}.Release|AVR.ActiveCfg = Release|AVR
-		{16BC644D-9275-44E9-BDC7-632942A17A08}.Release|AVR.Build.0 = Release|AVR
+		{DC0DA969-1C9F-48C0-A60F-EF7CDF83A47F}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DC0DA969-1C9F-48C0-A60F-EF7CDF83A47F}.Debug|AVR.Build.0 = Debug|AVR
+		{DC0DA969-1C9F-48C0-A60F-EF7CDF83A47F}.Release|AVR.ActiveCfg = Release|AVR
+		{DC0DA969-1C9F-48C0-A60F-EF7CDF83A47F}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
