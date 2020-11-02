@@ -14,6 +14,5 @@ int main(void)
 	while(1) {
 		DHT11_ReadRaw();
 		_delay_ms(3000);
-		DHT11_init();
 	}
 }

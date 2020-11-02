@@ -48,6 +48,11 @@ void DHT11_init()
 	SET_BIT(DHT11_PORT, DHT11_BIT);
 }
 
+void DHT11_reset()
+{
+	DHT11_init();
+}
+
 void DHT11_ReadRaw()
 {
 	uint8_t data[5] = {0, 0, 0, 0, 0};
@@ -73,9 +78,6 @@ void DHT11_ReadRaw()
 		// timeout
 		printf("timeout 3");
 	}
-	// beginning of the 50 ms are technically here
-	
-	// DHT11_Wait(100, true); // Wait for high to try and cancel out the wrong 1 in the beginning of our data
 	
 	for (i = 0; i < 5; i++) {
 		// byte loop
@@ -97,17 +99,16 @@ void DHT11_ReadRaw()
 				if ((waitTime > 40) && (waitTime < 70))
 				{
 					SET_BIT(data[i], j);
-				} else
+				} else if (waitTime > 70)
 				{
-					// Do nothing
+					j++;
+				} 
+				else {
+					// Do nothing	
 				}
 			}
 		}
 	}
 	
-
-
-	printf("Temp: %i", data[2]);
-	printf("Humid: %i", data[0]);
-	printf("\n\r");
+	DHT11_reset();
 }
