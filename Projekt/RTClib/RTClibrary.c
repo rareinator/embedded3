@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include "I2Clibrary.h"
 
-#define SLAVE_ADDRESS 0xD0
+#define SLAVE_ADDRESS 0xD0 // RTC DS3231 Slave address: Page 16 - Figure 3 
 
 #define SECONDS 0x00
 
@@ -20,24 +20,25 @@ typedef struct  {
 
 void DS3231_setDateTime(DateTime *time)
 {
-	i2c_start(SLAVE_ADDRESS+I2C_WRITE); //Address 00H
-	i2c_write(SECONDS);
-	i2c_write(time->Minute); // minutes
-	i2c_write(time->Hour); // hours 00 01 0010
-	i2c_write(time->Day); // day 0000 0101 fredag
-	i2c_write(time->Date); // date 0011 0000 den 30
-	i2c_write(time->Month); // month 0001 0000 den 10
-	i2c_write(time->Year); // year 0010 0000
+	i2c_start(SLAVE_ADDRESS+I2C_WRITE); // 1101000 0 - Write Mode - Figure 3
+	i2c_write(SECONDS); // Start position address 00H
+	
+	i2c_write(time->Minute);
+	i2c_write(time->Hour);
+	i2c_write(time->Day);
+	i2c_write(time->Date);
+	i2c_write(time->Month); 
+	i2c_write(time->Year);
 	i2c_stop();
 }
 
 void DS3231_getDateTime(DateTime *now)
 {
-	i2c_start(SLAVE_ADDRESS+I2C_WRITE);
-	i2c_write(SECONDS);
+	i2c_start(SLAVE_ADDRESS+I2C_WRITE); // 1101000 0 - Write Mode - Figure 3
+	i2c_write(SECONDS); // Start position address 00H
 	i2c_stop();
 	
-	i2c_start(SLAVE_ADDRESS+I2C_READ);
+	i2c_start(SLAVE_ADDRESS+I2C_READ); // 1101000 1 - Read Mode - Figure 4
 	now->Second = i2c_read(1);
 	now->Minute = i2c_read(1);
 	now->Hour = i2c_read(1);
