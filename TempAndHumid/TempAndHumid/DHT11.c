@@ -57,17 +57,17 @@ uint8_t DHT11_ReadTemp()
 {
 	DHT11 data;	
 	DHT11_ReadRaw(&data);
-	return data->Temperatur;
+	return data.Temperatur;
 }
 
 uint8_t DHT11_ReadHumid()
 {
 	DHT11 data;
 	DHT11_ReadRaw(&data);
-	return data->Humidity;
+	return data.Humidity;
 }
 
-void DHT11_ReadRaw(DHT11 *data)
+void DHT11_ReadRaw(DHT11 *result)
 {
 	uint8_t data[5] = {0, 0, 0, 0, 0};
 	int i, j;
@@ -124,7 +124,7 @@ void DHT11_ReadRaw(DHT11 *data)
 		}
 	}
 	
-	data->Humidity = data[0];
-	data->Temperatur = data[2];
+	result->Humidity = data[0];
+	result->Temperatur = data[2];
 	DHT11_reset();
 }
