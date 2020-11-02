@@ -75,32 +75,42 @@ void DHT11_ReadRaw()
 	}
 	// beginning of the 50 ms are technically here
 	
+	DHT11_Wait(100, true); // Wait for high to try and cancel out the wrong 1 in the beginning of our data
+	
 	for (i = 0; i < 5; i++) {
 		// byte loop
 		for (j = 7; j >= 0; j--) {
 			// bit loop
-			if (!DHT11_Wait(80, true))
-			{
-				printf("Timeout");
-			}
-				
-			uint8_t waitTime = 0;
-			while (bit_is_set(DHT11_PIN, DHT11_BIT))
-			{
-				_delay_us(2);
-				waitTime += 2;
-			}
-				
-			if (waitTime > 40)
-			{
-				SET_BIT(data[i], j);
-			} else
-			{
-				// Do nothing
+			if ((i == 0) && (j==7)) {
+				// fuck you, you sadistic fucking fat retarded cunt!!!!!!!! of a 1
+				printf("huh");
+			} else {
+				if (!DHT11_Wait(70, true))
+				{
+					printf("Timeout");
+				}
+							
+				uint8_t waitTime = 0;
+				while (bit_is_set(DHT11_PIN, DHT11_BIT))
+				{
+					_delay_us(2);
+					waitTime += 2;
+				}
+							
+				if (waitTime > 40)
+				{
+					SET_BIT(data[i], j);
+					//printf("huh");
+				} else
+				{
+					// Do nothing
+				}
 			}
 		}
 	}
+	
 
-	printf("Temp: %i", data[2]);
-	printf("hum: %i", data[0]);
+
+	//printf("Temp: %i", data[2]);
+	printf("hum: 0x%X", data[0]);
 }
