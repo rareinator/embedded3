@@ -8,6 +8,7 @@
 #include <avr/io.h>
 #include "DHT11library.h"
 #include "I2Clibrary.h"
+#include "DClibrary.h"
 
 int main(void)
 {

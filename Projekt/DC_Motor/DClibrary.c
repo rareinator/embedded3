@@ -1,21 +1,17 @@
+
 /*
-* DC_Motor.c
-*
-* Created: 02-11-2020 08:27:50
-* Author : Kevin Pike Darmer
-*/
+ * motor.c
+ *
+ * Created: 03-11-2020 08:59:25
+ *  Author: Kevin Pike Darmer
+ */
+#include "DClibrary.h"
 
-#include <avr/io.h>
 #define F_CPU 16000000UL
-#include <util/delay.h>
-#define Fan_Start OCR0A = 255;
-#define Fan_Stop OCR0A = 0;
-#define Test_Pulse 0
 
 
-int main(void)
-{
-	int cnt = 0;
+void motor_init(){
+	
 	// Compare Output Mode: Fast PWM Mode: Clear OC0A on Compare Match, set OC0A at BOTTOM, non-inverting mode (Table 16-3)
 	TCCR0A |= (1<<COM0A1);					// datasheet 16.9.1
 	
@@ -27,11 +23,12 @@ int main(void)
 	
 	// Set output to OC0A = PB7, see datasheet 16.9.4 and Arduino MEGA pin configuration: (pin 13), same as LED
 	DDRB |= (1<<PB7);
+}
 
-	while(1)
-	{
-		if(Test_Pulse){
-			Fan_Start
-		}
-	}
+void Start_Fan(){
+	Fan_Start
+}
+
+void Stop_Fan(){
+	Fan_Stop
 }
