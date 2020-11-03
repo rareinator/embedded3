@@ -34,17 +34,17 @@
 #define BOTH_STATION_AND_ACCESPOINT		3
 
 /* Select Demo */
-#define RECEIVE_DEMO				/* Define RECEIVE demo */
+//#define RECEIVE_DEMO				/* Define RECEIVE demo */
 //#define SEND_DEMO					/* Define SEND demo */
 
 /* Define Required fields shown below */
 #define DOMAIN				"api.thingspeak.com"
 #define PORT				"80"
-#define API_WRITE_KEY		"GET /update?api_key=9XZN1CY19NFLB7RB&field1=32"
+#define API_WRITE_KEY		"9XZN1CY19NFLB7RB"
 #define CHANNEL_ID			"1217032"
 
-#define SSID				"Morten's iPhone"
-#define PASSWORD			"tzcx2fymj7v79"
+#define SSID				"OP6T"
+#define PASSWORD			"11111111"
 
 enum ESP8266_RESPONSE_STATUS{
 	ESP8266_RESPONSE_WAITING,
@@ -312,7 +312,7 @@ uint16_t Read_Data(char* _buffer)
 	return len;
 }
 
-ISR (USART_RXC_vect)
+ISR (USART1_RX_vect)
 {
 	uint8_t oldsrg = SREG;
 	cli();
@@ -328,9 +328,7 @@ int main(void)
 {
 	char _buffer[150];
 	uint8_t Connect_Status;
-	#ifdef SEND_DEMO
-	uint8_t Sample = 0;
-	#endif
+	uint8_t Sample = 20;
 
 	USART_Init(115200);						/* Initiate USART with 115200 baud rate */
 	sei();									/* Start global interrupt */
@@ -351,23 +349,9 @@ int main(void)
 		ESP8266_Start(0, DOMAIN, PORT);
 		
 		memset(_buffer, 0, 150);
-		sprintf(_buffer, "GET /update?api_key=%s&field1=%d", API_WRITE_KEY, 25);
+		sprintf(_buffer, "GET /update?api_key=%s&field1=%d", API_WRITE_KEY, Sample);
 		ESP8266_Send(_buffer);
 		_delay_ms(15000);
-
-		//#ifdef SEND_DEMO
-		//memset(_buffer, 0, 150);
-		//sprintf(_buffer, "GET /update?api_key=%s&field1=%d", API_WRITE_KEY, Sample++);
-		//ESP8266_Send(_buffer);
-		//_delay_ms(15000);	/* Thingspeak server delay */
-		//#endif
-		//
-		//#ifdef RECEIVE_DEMO
-		//memset(_buffer, 0, 150);
-		//sprintf(_buffer, "GET /channels/%s/feeds/last.txt", CHANNEL_ID);
-		//ESP8266_Send(_buffer);
-		//Read_Data(_buffer);
-		//_delay_ms(600);
-		//#endif
+		Sample++;
 	}
 }
