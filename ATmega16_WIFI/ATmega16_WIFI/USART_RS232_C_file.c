@@ -9,24 +9,24 @@
 void USART_Init(unsigned long BAUDRATE)				/* USART initialize function */
 {
 #ifdef DOUBLE_SPEED_MODE
-	UCSRA |=(1 << U2X);
+	UCSR1A |=(1 << U2X0);
 #endif
-	UCSRB |= (1 << RXEN) | (1 << TXEN) | (1 << RXCIE);	/* Enable USART transmitter and receiver */
-	UCSRC |= (1 << URSEL)| (1 << UCSZ0) | (1 << UCSZ1);	/* Write USCRC for 8 bit data and 1 stop bit */ 
-	UBRRL = BAUD_PRESCALE;							/* Load UBRRL with lower 8 bit of prescale value */
-	UBRRH = (BAUD_PRESCALE >> 8);					/* Load UBRRH with upper 8 bit of prescale value */
+	UCSR1B |= (1 << RXEN1) | (1 << TXEN1) | (1 << RXCIE1);	/* Enable USART transmitter and receiver */
+	UCSR1C |= (1 << UCSZ10) | (1 << UCSZ11);	/* Write USCRC for 8 bit data and 1 stop bit */ 
+	UBRR1L = BAUD_PRESCALE;							/* Load UBRRL with lower 8 bit of prescale value */
+	UBRR1H = (BAUD_PRESCALE >> 8);					/* Load UBRRH with upper 8 bit of prescale value */
 }
 
 char USART_RxChar()									/* Data receiving function */
 {
-	while (!(UCSRA & (1 << RXC)));					/* Wait until new data receive */
-	return(UDR);									/* Get and return received data */ 
+	while (!(UCSR1A & (1 << RXC1)));					/* Wait until new data receive */
+	return(UDR1);									/* Get and return received data */ 
 }
 
 void USART_TxChar(char data)						/* Data transmitting function */
 {
-	UDR = data;										/* Write data to be transmitting in UDR */
-	while (!(UCSRA & (1<<UDRE)));					/* Wait until data transmit and buffer get empty */
+	UDR1 = data;										/* Write data to be transmitting in UDR */
+	while (!(UCSR1A & (1<<UDRE1)));					/* Wait until data transmit and buffer get empty */
 }
 
 void USART_SendString(char *str)					/* Send string of USART data function */ 
