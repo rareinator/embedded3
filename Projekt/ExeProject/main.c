@@ -4,7 +4,7 @@
  * Created: 02/11/2020 10:57:25
  * Author : Looren
  */ 
-#define F_CPU 16000000UL;
+#define F_CPU 16000000UL
 
 
 #include <avr/io.h>
@@ -37,7 +37,7 @@ int main(void)
 		ESP8266_Start(0, DOMAIN, PORT);
 		
 		DHT11 dhtData;
-		DHT11_ReadRaw(*dhtData);
+		DHT11_ReadRaw(&dhtData);
 	
 		memset(_buffer, 0, 150);
 		sprintf(_buffer, "GET /update?api_key=%s&field1=%i&field2=%i", API_WRITE_KEY, dhtData.Temperatur, dhtData.Humidity);
