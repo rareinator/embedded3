@@ -4,14 +4,8 @@
  * Created: 11/3/2020 8:54:52 AM
  * Author : rare
  */ 
+#define F_CPU 16000000UL
 
-#include <avr/io.h>
-
-/*
-* ATmega16_WIFI
-* http://www.electronicwings.com
-*
-*/
 #include <avr/io.h>					/* Include AVR std. library file */
 #include <util/delay.h>				/* Include Delay header file */
 #include <stdbool.h>				/* Include standard boolean library */

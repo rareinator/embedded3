@@ -4,7 +4,14 @@
  * Created: 11/3/2020 8:55:26 AM
  *  Author: rare
  */ 
-
+#define F_CPU 16000000UL
+#include <avr/io.h>					/* Include AVR std. library file */
+#include <util/delay.h>				/* Include Delay header file */
+#include <stdbool.h>				/* Include standard boolean library */
+#include <string.h>					/* Include string library */
+#include <stdio.h>					/* Include standard IO library */
+#include <stdlib.h>					/* Include standard library */
+#include <avr/interrupt.h>
 
 #ifndef ESP8266_H_
 #define ESP8266_H_
@@ -80,7 +87,7 @@ bool ESP8266_ConnectionMode(uint8_t Mode);
 bool ESP8266_Begin();
 bool ESP8266_Close();
 bool ESP8266_WIFIMode(uint8_t _mode);
-uint8_t ESP8266_JoinAccessPoint(char* _SSID, char* _PASSWORD)
+uint8_t ESP8266_JoinAccessPoint(char* _SSID, char* _PASSWORD);
 uint8_t ESP8266_connected();
 uint8_t ESP8266_Start(uint8_t _ConnectionNumber, char* Domain, char* Port);
 uint8_t ESP8266_Send(char* Data);

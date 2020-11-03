@@ -19,10 +19,10 @@ typedef struct {
 #define SET_BIT(port, bit) ((port) |= (1<<bit))
 #define CLR_BIT(port, bit) ((port) &= ~((1<<bit)))
 
-#define DHT11_DDR DDRB
-#define DHT11_PORT PORTB
-#define DHT11_PIN PINB
-#define DHT11_BIT PB3
+#define DHT11_DDR DDRA
+#define DHT11_PORT PORTA
+#define DHT11_PIN PINA
+#define DHT11_BIT PA0
 
 void DHT11_init();
 void DHT11_ReadRaw(DHT11 *result);
