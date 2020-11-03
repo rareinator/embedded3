@@ -20,26 +20,42 @@
     <OverrideVtor>false</OverrideVtor>
     <CacheFlash>true</CacheFlash>
     <ProgFlashFromRam>true</ProgFlashFromRam>
-    <RamSnippetAddress />
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
     <UncachedRange />
     <preserveEEPROM>true</preserveEEPROM>
-    <OverrideVtorValue />
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
     <BootSegment>2</BootSegment>
     <ResetRule>0</ResetRule>
     <eraseonlaunchrule>0</eraseonlaunchrule>
     <EraseKey />
     <AsfFrameworkConfig>
       <framework-data xmlns="">
-  <options />
-  <configurations />
-  <files />
-  <documentation help="" />
-  <offline-documentation help="" />
-  <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.47.0" />
-  </dependencies>
-</framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.47.0" />
+        </dependencies>
+      </framework-data>
     </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.atmelice</avrtool>
+    <avrtoolserialnumber>J41800069126</avrtoolserialnumber>
+    <avrdeviceexpectedsignature>0x1E9801</avrdeviceexpectedsignature>
+    <com_atmel_avrdbg_tool_atmelice>
+      <ToolOptions>
+        <InterfaceProperties>
+          <IspClock>125000</IspClock>
+        </InterfaceProperties>
+        <InterfaceName>ISP</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.atmelice</ToolType>
+      <ToolNumber>J41800069126</ToolNumber>
+      <ToolName>Atmel-ICE</ToolName>
+    </com_atmel_avrdbg_tool_atmelice>
+    <avrtoolinterface>ISP</avrtoolinterface>
+    <avrtoolinterfaceclock>125000</avrtoolinterfaceclock>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
@@ -102,6 +118,8 @@
       <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\1.5.362\include\</Value>
       <Value>../../DHT11lib</Value>
       <Value>../../I2Clib</Value>
+      <Value>../../ESP8266lib</Value>
+      <Value>../../RTClib</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
@@ -132,6 +150,12 @@
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="stdio_setup.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="stdio_setup.h">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DHT11lib\DHT11lib.cproj">
@@ -139,9 +163,19 @@
       <Project>{e9b13997-e7d9-453e-8300-11a3b8aec316}</Project>
       <Private>True</Private>
     </ProjectReference>
+    <ProjectReference Include="..\ESP8266lib\ESP8266lib.cproj">
+      <Name>ESP8266lib</Name>
+      <Project>{dce6c7e3-ee26-4d79-826b-08594b9ad897}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\I2Clib\I2Clib.cproj">
       <Name>I2Clib</Name>
       <Project>{38d2a5eb-7c63-43e7-ac49-76391bfaac58}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\RTClib\RTClib.cproj">
+      <Name>RTClib</Name>
+      <Project>{4d473656-b76c-45f3-bb27-adb4f36fcffd}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
