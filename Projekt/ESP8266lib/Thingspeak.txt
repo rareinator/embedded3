@@ -1,0 +1,3 @@
+AT+CIPSTART="TCP","api.thingspeak.com",80
+AT+CIPSEND=48
+GET /update?api_key=9XZN1CY19NFLB7RB&field1=32
