@@ -4,6 +4,8 @@
  * Created: 02/11/2020 10:57:25
  * Author : Looren
  */ 
+#define F_CPU 16000000UL;
+
 
 #include <avr/io.h>
 #include "DHT11library.h"
@@ -14,10 +16,10 @@ int main(void)
 {
 	char _buffer[150];
 	uint8_t Connect_Status;
-	uint8_t Sample = 20;
 
 	USART_Init(115200);						/* Initiate USART with 115200 baud rate */
 	sei();									/* Start global interrupt */
+	DHT11_init(); // Initialize DHT11
 
 	while(!ESP8266_Begin());
 	ESP8266_WIFIMode(BOTH_STATION_AND_ACCESPOINT);/* 3 = Both (AP and STA) */
@@ -33,12 +35,13 @@ int main(void)
 		ESP8266_JoinAccessPoint(SSID, PASSWORD);
 		if(Connect_Status == ESP8266_TRANSMISSION_DISCONNECTED)
 		ESP8266_Start(0, DOMAIN, PORT);
+		
+		DHT11 dhtData;
+		DHT11_ReadRaw(*dhtData);
 	
 		memset(_buffer, 0, 150);
-		sprintf(_buffer, "GET /update?api_key=%s&field1=%d", API_WRITE_KEY, Sample);
+		sprintf(_buffer, "GET /update?api_key=%s&field1=%i&field2=%i", API_WRITE_KEY, dhtData.Temperatur, dhtData.Humidity);
 		ESP8266_Send(_buffer);
 		_delay_ms(15000);
-		Sample++;
 	}
 }
-

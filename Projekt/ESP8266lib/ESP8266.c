@@ -5,13 +5,6 @@
  * Author : rare
  */ 
 
-#include <avr/io.h>
-
-/*
-* ATmega16_WIFI
-* http://www.electronicwings.com
-*
-*/
 #include <avr/io.h>					/* Include AVR std. library file */
 #include <util/delay.h>				/* Include Delay header file */
 #include <stdbool.h>				/* Include standard boolean library */
