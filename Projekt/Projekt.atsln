@@ -17,6 +17,8 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ESP8266lib", "ESP8266lib\ES
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "SPIlib", "SPIlib\SPIlib.cproj", "{5ED3FDB7-25C1-4F2E-8F4E-1A3F354FFE98}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Master", "Master\Master.cproj", "{65666189-BF54-4203-882B-883CA4A18AD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -51,6 +53,10 @@ Global
 		{5ED3FDB7-25C1-4F2E-8F4E-1A3F354FFE98}.Debug|AVR.Build.0 = Debug|AVR
 		{5ED3FDB7-25C1-4F2E-8F4E-1A3F354FFE98}.Release|AVR.ActiveCfg = Release|AVR
 		{5ED3FDB7-25C1-4F2E-8F4E-1A3F354FFE98}.Release|AVR.Build.0 = Release|AVR
+		{65666189-BF54-4203-882B-883CA4A18AD0}.Debug|AVR.ActiveCfg = Debug|AVR
+		{65666189-BF54-4203-882B-883CA4A18AD0}.Debug|AVR.Build.0 = Debug|AVR
+		{65666189-BF54-4203-882B-883CA4A18AD0}.Release|AVR.ActiveCfg = Release|AVR
+		{65666189-BF54-4203-882B-883CA4A18AD0}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
