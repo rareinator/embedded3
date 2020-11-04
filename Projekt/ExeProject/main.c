@@ -41,10 +41,9 @@ int main(void)
 			hasRead = true;
 			
 			// wait for data to be incoming
-			while (ESP8266_IncomingTransmission) {}; // Waits for a transmission to be starrted
-			LED_ON;
+			while (!ESP8266_IncomingTransmission) {}; // Waits for a transmission to be started
+			//LED_ON;
 			Read_Data(_buffer);
-			LED_ON;
 			if (strcmp(_buffer[1], "I") == 0)
 			{
 				LED_ON;

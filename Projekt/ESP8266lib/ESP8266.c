@@ -67,7 +67,10 @@ void Read_Response(char* _Expected_Response)
 
 bool ESP8266_IncomingTransmission()
 {
-	return false;
+	// Wait for +IPD
+	
+	// then return true
+	
 }
 
 void ESP8266_Clear()
