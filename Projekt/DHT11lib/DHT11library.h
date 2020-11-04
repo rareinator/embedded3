@@ -1,13 +1,5 @@
-/*
- * IncFile1.h
- *
- * Created: 02/11/2020 10:59:03
- *  Author: Looren
- */ 
-
-
-#ifndef INCFILE1_H_
-#define INCFILE1_H_
+#ifndef DHT11library_H_
+#define DHT11library_H_
 
 #include <avr/io.h>
 
@@ -31,4 +23,4 @@ uint8_t DHT11_ReadHumid();
 
 
 
-#endif /* INCFILE1_H_ */
+#endif /* DHT11library_H_ */

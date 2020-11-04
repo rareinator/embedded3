@@ -1,11 +1,3 @@
-/*
- * DHT11lib.c
- *
- * Created: 02/11/2020 10:57:57
- * Author : Looren
- */ 
-
-#define F_CPU 16000000UL
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/sfr_defs.h>

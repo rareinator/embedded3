@@ -120,6 +120,7 @@
       <Value>../../I2Clib</Value>
       <Value>../../ESP8266lib</Value>
       <Value>../../RTClib</Value>
+      <Value>../../SPIlib</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
@@ -176,6 +177,11 @@
     <ProjectReference Include="..\RTClib\RTClib.cproj">
       <Name>RTClib</Name>
       <Project>{4d473656-b76c-45f3-bb27-adb4f36fcffd}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\SPIlib\SPIlib.cproj">
+      <Name>SPIlib</Name>
+      <Project>{5ed3fdb7-25c1-4f2e-8f4e-1a3f354ffe98}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
