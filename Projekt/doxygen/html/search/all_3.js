@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['date_9',['Date',['../struct_date_time.html#a784bb90289154f1c4b6724fed7265645',1,'DateTime']]],
+  ['date_9',['Date',['../group___r_t_clib.html#ga784bb90289154f1c4b6724fed7265645',1,'DateTime']]],
   ['datetime_10',['DateTime',['../struct_date_time.html',1,'']]],
-  ['day_11',['Day',['../struct_date_time.html#a685ae534ac9b397ce1b7e312cd180568',1,'DateTime']]],
+  ['day_11',['Day',['../group___r_t_clib.html#ga685ae534ac9b397ce1b7e312cd180568',1,'DateTime']]],
   ['dclibrary_2ec_12',['DCLibrary.c',['../_d_c_library_8c.html',1,'']]],
   ['dclibrary_2eh_13',['DCLibrary.h',['../_d_c_library_8h.html',1,'']]],
   ['dcmotor_5finit_14',['DCMotor_init',['../_d_c_library_8c.html#a47d839f72570f3d4e880a1d1edaf3d08',1,'DCMotor_init():&#160;DCLibrary.c'],['../_d_c_library_8h.html#a47d839f72570f3d4e880a1d1edaf3d08',1,'DCMotor_init():&#160;DCLibrary.c']]],
@@ -25,6 +25,6 @@ var searchData=
   ['dht11library_2eh_31',['DHT11library.h',['../_d_h_t11library_8h.html',1,'']]],
   ['domain_32',['DOMAIN',['../_e_s_p8266_8h.html#a5467ce86fff063609c6ae5b8dc517471',1,'ESP8266.h']]],
   ['double_5fspeed_5fmode_33',['DOUBLE_SPEED_MODE',['../_u_s_a_r_t___r_s232___h__file_8h.html#a8c130a4bd47f47b188bbcbc3feade288',1,'USART_RS232_H_file.h']]],
-  ['ds3231_5fgetdatetime_34',['DS3231_getDateTime',['../_r_t_clibrary_8c.html#a59e074d702f371cba326ac827f03adf3',1,'DS3231_getDateTime(DateTime *now):&#160;RTClibrary.c'],['../_r_t_clibrary_8h.html#a59e074d702f371cba326ac827f03adf3',1,'DS3231_getDateTime(DateTime *now):&#160;RTClibrary.c']]],
-  ['ds3231_5fsetdatetime_35',['DS3231_setDateTime',['../_r_t_clibrary_8c.html#ae045ccd21a1aca9f9a164b97f6b4cb66',1,'DS3231_setDateTime(DateTime *time):&#160;RTClibrary.c'],['../_r_t_clibrary_8h.html#ae045ccd21a1aca9f9a164b97f6b4cb66',1,'DS3231_setDateTime(DateTime *time):&#160;RTClibrary.c']]]
+  ['ds3231_5fgetdatetime_34',['DS3231_getDateTime',['../group___r_t_clib.html#ga59e074d702f371cba326ac827f03adf3',1,'DS3231_getDateTime(DateTime *now):&#160;RTClibrary.c'],['../group___r_t_clib.html#ga59e074d702f371cba326ac827f03adf3',1,'DS3231_getDateTime(DateTime *now):&#160;RTClibrary.c']]],
+  ['ds3231_5fsetdatetime_35',['DS3231_setDateTime',['../group___r_t_clib.html#gae045ccd21a1aca9f9a164b97f6b4cb66',1,'DS3231_setDateTime(DateTime *time):&#160;RTClibrary.c'],['../group___r_t_clib.html#gae045ccd21a1aca9f9a164b97f6b4cb66',1,'DS3231_setDateTime(DateTime *time):&#160;RTClibrary.c']]]
 ];

@@ -1,0 +1,5 @@
+{
+    "programmer": "Atmel-ICE (AVR)",
+    "board": "arduino:avr:mega",
+    "configuration": "cpu=atmega2560"
+}

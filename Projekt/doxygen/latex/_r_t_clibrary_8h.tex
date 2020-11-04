@@ -4,64 +4,18 @@
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{struct_date_time}{Date\+Time}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Structure used to save and get datetime from the R\+TC device. Day is what day of the week it is, and date is the date of the year. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{_r_t_clibrary_8h_ae2f0ff6faf548539a21b93a034e278e8}{S\+L\+A\+V\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~0x\+D0
-\item 
-\#define \mbox{\hyperlink{_r_t_clibrary_8h_a48fcf4f2eeef6769d588168d4ac2ab0e}{S\+E\+C\+O\+N\+DS}}~0x00
-\end{DoxyCompactItemize}
+\#define \mbox{\hyperlink{group___r_t_clib_gae2f0ff6faf548539a21b93a034e278e8}{S\+L\+A\+V\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~0x\+D0
+\begin{DoxyCompactList}\small\item\em The slave address of the R\+TC device. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___r_t_clib_ga48fcf4f2eeef6769d588168d4ac2ab0e}{S\+E\+C\+O\+N\+DS}}~0x00
+\begin{DoxyCompactList}\small\item\em The address register of the seconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{_r_t_clibrary_8h_ae045ccd21a1aca9f9a164b97f6b4cb66}{D\+S3231\+\_\+set\+Date\+Time}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} $\ast$time)
-\item 
-void \mbox{\hyperlink{_r_t_clibrary_8h_a59e074d702f371cba326ac827f03adf3}{D\+S3231\+\_\+get\+Date\+Time}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} $\ast$now)
-\end{DoxyCompactItemize}
-
-
-\doxysubsection{Macro Definition Documentation}
-\mbox{\Hypertarget{_r_t_clibrary_8h_a48fcf4f2eeef6769d588168d4ac2ab0e}\label{_r_t_clibrary_8h_a48fcf4f2eeef6769d588168d4ac2ab0e}} 
-\index{RTClibrary.h@{RTClibrary.h}!SECONDS@{SECONDS}}
-\index{SECONDS@{SECONDS}!RTClibrary.h@{RTClibrary.h}}
-\doxysubsubsection{\texorpdfstring{SECONDS}{SECONDS}}
-{\footnotesize\ttfamily \#define S\+E\+C\+O\+N\+DS~0x00}
-
-
-
-Definition at line 17 of file R\+T\+Clibrary.\+h.
-
-\mbox{\Hypertarget{_r_t_clibrary_8h_ae2f0ff6faf548539a21b93a034e278e8}\label{_r_t_clibrary_8h_ae2f0ff6faf548539a21b93a034e278e8}} 
-\index{RTClibrary.h@{RTClibrary.h}!SLAVE\_ADDRESS@{SLAVE\_ADDRESS}}
-\index{SLAVE\_ADDRESS@{SLAVE\_ADDRESS}!RTClibrary.h@{RTClibrary.h}}
-\doxysubsubsection{\texorpdfstring{SLAVE\_ADDRESS}{SLAVE\_ADDRESS}}
-{\footnotesize\ttfamily \#define S\+L\+A\+V\+E\+\_\+\+A\+D\+D\+R\+E\+SS~0x\+D0}
-
-
-
-Definition at line 15 of file R\+T\+Clibrary.\+h.
-
-
-
-\doxysubsection{Function Documentation}
-\mbox{\Hypertarget{_r_t_clibrary_8h_a59e074d702f371cba326ac827f03adf3}\label{_r_t_clibrary_8h_a59e074d702f371cba326ac827f03adf3}} 
-\index{RTClibrary.h@{RTClibrary.h}!DS3231\_getDateTime@{DS3231\_getDateTime}}
-\index{DS3231\_getDateTime@{DS3231\_getDateTime}!RTClibrary.h@{RTClibrary.h}}
-\doxysubsubsection{\texorpdfstring{DS3231\_getDateTime()}{DS3231\_getDateTime()}}
-{\footnotesize\ttfamily void D\+S3231\+\_\+get\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}} $\ast$}]{now }\end{DoxyParamCaption})}
-
-
-
-Definition at line 20 of file R\+T\+Clibrary.\+c.
-
-\mbox{\Hypertarget{_r_t_clibrary_8h_ae045ccd21a1aca9f9a164b97f6b4cb66}\label{_r_t_clibrary_8h_ae045ccd21a1aca9f9a164b97f6b4cb66}} 
-\index{RTClibrary.h@{RTClibrary.h}!DS3231\_setDateTime@{DS3231\_setDateTime}}
-\index{DS3231\_setDateTime@{DS3231\_setDateTime}!RTClibrary.h@{RTClibrary.h}}
-\doxysubsubsection{\texorpdfstring{DS3231\_setDateTime()}{DS3231\_setDateTime()}}
-{\footnotesize\ttfamily void D\+S3231\+\_\+set\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}} $\ast$}]{time }\end{DoxyParamCaption})}
-
-
-
-Definition at line 6 of file R\+T\+Clibrary.\+c.
-
+void \mbox{\hyperlink{group___r_t_clib_gae045ccd21a1aca9f9a164b97f6b4cb66}{D\+S3231\+\_\+set\+Date\+Time}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} $\ast$time)
+\begin{DoxyCompactList}\small\item\em Sets the time in the R\+TC device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group___r_t_clib_ga59e074d702f371cba326ac827f03adf3}{D\+S3231\+\_\+get\+Date\+Time}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} $\ast$now)
+\begin{DoxyCompactList}\small\item\em Gets the date from the R\+TC device and saves it in the given struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
