@@ -10,6 +10,7 @@
 #define ESP8266_H_
 
 #define LED_TOOGLE PORTA ^= (1 <<PA1)  // TMP MNI define, to debug via led
+#define LED_ON PORTA |= (1 << PA1) // TMP MMNI define, to debug via led
 
 #define SREG    _SFR_IO8(0x3F)
 

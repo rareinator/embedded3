@@ -8,10 +8,10 @@
 
 
 #include <avr/io.h>
+#include <stdbool.h>
 #include "DHT11library.h"
 #include "I2Clibrary.h"
 #include "ESP8266.h"
-#include "DCLibrary.h"
 
 int main(void)
 {
@@ -21,13 +21,11 @@ int main(void)
 	USART_Init(115200);						/* Initiate USART with 115200 baud rate */
 	sei();									/* Start global interrupt */
 	DHT11_init();                           /* Initialize DHT11 */
-
 	while(!ESP8266_Begin());
 	ESP8266_WIFIMode(BOTH_STATION_AND_ACCESPOINT); /* 3 = Both (AP and STA) */
 	ESP8266_ConnectionMode(MULTIPLE);			   /* 0 = Single; 1 = Multi */
-	ESP8266_ApplicationMode(NORMAL);		       /* 0 = Normal Mode; 1 = Transperant Mode */
 	ESP8266_StartServer(80);                       /* Start server mode with port 80 */
-	if(ESP8266_connected() == ESP8266_NOT_CONNECTED_TO_AP)
+	//if(ESP8266_connected() == ESP8266_NOT_CONNECTED_TO_AP)
 	//ESP8266_JoinAccessPoint(SSID, PASSWORD);
 	//ESP8266_Start(0, DOMAIN, PORT);
 	while(1)

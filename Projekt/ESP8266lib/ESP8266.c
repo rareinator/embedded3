@@ -46,7 +46,7 @@ void Read_Response(char* _Expected_Response)
 			_delay_ms(1);
 			TimeCount++;
 			if (ResponseBufferLength==strlen(RESPONSE_BUFFER))
-			{
+			{	
 				for (uint16_t i=0;i<ResponseBufferLength;i++)
 				{
 					memmove(RECEIVED_CRLF_BUF, RECEIVED_CRLF_BUF + 1, EXPECTED_RESPONSE_LENGTH-1);
@@ -55,13 +55,6 @@ void Read_Response(char* _Expected_Response)
 					{
 						TimeOut = 0;
 						Response_Status = ESP8266_RESPONSE_FINISHED;
-						// Should check if this is a IPD data transmission, sent from the external device to configure the device
-						if (RECEIVED_CRLF_BUF[0] == "I")
-						{
-							LED_TOOGLE;
-						}
-						
-						
 						return;
 					}
 				}
@@ -171,6 +164,8 @@ bool ESP8266_StartServer(uint8_t _port)
 	sprintf(_atCommand, "AT+CIPSERVER=1,%d", _port);
 	_atCommand[19] = 0;
 	return SendATandExpectResponse(_atCommand, "\r\nOK\r\n");
+	
+	
 }
 
 bool ESP8266_StopServer()
@@ -285,7 +280,13 @@ ISR (USART1_RX_vect)
 {
 	uint8_t oldsrg = SREG;
 	cli();
-	RESPONSE_BUFFER[Counter] = UDR1;
+	RESPONSE_BUFFER[Counter] = UDR1;	
+	//LED_TOOGLE;
+	if (strcmp(RESPONSE_BUFFER[Counter], "I") == 1)
+	{
+		LED_ON;
+	}
+	
 	Counter++;
 	if(Counter == DEFAULT_BUFFER_SIZE){
 		Counter = 0; pointer = 0;
