@@ -282,7 +282,7 @@ ISR (USART1_RX_vect)
 	cli();
 	RESPONSE_BUFFER[Counter] = UDR1;	
 	//LED_TOOGLE;
-	if (strcmp(RESPONSE_BUFFER[Counter], "I") == 1)
+	if (strcmp(RESPONSE_BUFFER[Counter], "I") == 0)
 	{
 		LED_ON;
 	}
