@@ -17,6 +17,8 @@ int main(void)
 {
 	char _buffer[150];
 	uint8_t Connect_Status;
+	
+	bool hasRead = false;
 
 	USART_Init(115200);						/* Initiate USART with 115200 baud rate */
 	sei();									/* Start global interrupt */
@@ -28,22 +30,25 @@ int main(void)
 	//if(ESP8266_connected() == ESP8266_NOT_CONNECTED_TO_AP)
 	//ESP8266_JoinAccessPoint(SSID, PASSWORD);
 	//ESP8266_Start(0, DOMAIN, PORT);
+	LED_ON;
 	while(1)
 	{
-		//Connect_Status = ESP8266_connected();
-		//if(Connect_Status == ESP8266_NOT_CONNECTED_TO_AP)
-		//ESP8266_JoinAccessPoint(SSID, PASSWORD);
-		//if(Connect_Status == ESP8266_TRANSMISSION_DISCONNECTED)
-		//ESP8266_Start(0, DOMAIN, PORT);
-		//
-		//DHT11 dhtData;
-		//DHT11_ReadRaw(&dhtData);
-	//
-		//memset(_buffer, 0, 150);
-		//sprintf(_buffer, "GET /update?api_key=%s&field1=%i&field2=%i", API_WRITE_KEY, dhtData.Temperatur, dhtData.Humidity);
-		//ESP8266_Send(_buffer);
-		//_delay_ms(15000);
-		
-		
+		_delay_ms(15000);
+		if (!hasRead)
+		{
+			LED_TOOGLE;
+			_delay_ms(10000);
+			hasRead = true;
+			
+			// wait for data to be incoming
+			while (ESP8266_IncomingTransmission) {}; // Waits for a transmission to be starrted
+			LED_ON;
+			Read_Data(_buffer);
+			LED_ON;
+			if (strcmp(_buffer[1], "I") == 0)
+			{
+				LED_ON;
+			}
+		}
 	}
 }

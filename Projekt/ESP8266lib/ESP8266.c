@@ -65,6 +65,11 @@ void Read_Response(char* _Expected_Response)
 	}
 }
 
+bool ESP8266_IncomingTransmission()
+{
+	return false;
+}
+
 void ESP8266_Clear()
 {
 	memset(RESPONSE_BUFFER,0,DEFAULT_BUFFER_SIZE);
@@ -280,13 +285,7 @@ ISR (USART1_RX_vect)
 {
 	uint8_t oldsrg = SREG;
 	cli();
-	RESPONSE_BUFFER[Counter] = UDR1;	
-	//LED_TOOGLE;
-	if (strcmp(RESPONSE_BUFFER[Counter], "I") == 0)
-	{
-		LED_ON;
-	}
-	
+	RESPONSE_BUFFER[Counter] = UDR1;		
 	Counter++;
 	if(Counter == DEFAULT_BUFFER_SIZE){
 		Counter = 0; pointer = 0;

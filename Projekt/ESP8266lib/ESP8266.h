@@ -80,6 +80,7 @@ bool ESP8266_Close();
 bool ESP8266_WIFIMode(uint8_t _mode);
 bool ESP8266_StartServer(uint8_t _port);
 bool ESP8266_StopServer();
+bool ESP8266_IncomingTransmission();
 uint8_t ESP8266_JoinAccessPoint(char* _SSID, char* _PASSWORD);
 uint8_t ESP8266_connected();
 uint8_t ESP8266_Start(uint8_t _ConnectionNumber, char* Domain, char* Port);
