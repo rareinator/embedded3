@@ -23,7 +23,7 @@
 // Setting the Clock Select Bit
 // Setting the port to output
 //////////////////////////////////////////////////////////////////////////
-extern void motor_init();
+extern void DCMotor_init();
 //Starts the Fan
 extern void Start_Fan();
 //Stops the Fan

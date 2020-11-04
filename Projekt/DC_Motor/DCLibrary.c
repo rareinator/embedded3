@@ -10,7 +10,7 @@
 #define F_CPU 16000000UL
 
 
-void motor_init(){
+void DCMotor_init(){
 	
 	// Compare Output Mode: Fast PWM Mode: Clear OC0A on Compare Match, set OC0A at BOTTOM, non-inverting mode (Table 16-3)
 	TCCR0A |= (1<<COM0A1);					// datasheet 16.9.1

@@ -11,6 +11,7 @@
 #include "DHT11library.h"
 #include "I2Clibrary.h"
 #include "ESP8266.h"
+#include "DCLibrary.h"
 
 int main(void)
 {
