@@ -1,0 +1,311 @@
+\hypertarget{_e_s_p8266_8c}{}\doxysection{E\+S\+P8266lib/\+E\+S\+P8266.c File Reference}
+\label{_e_s_p8266_8c}\index{ESP8266lib/ESP8266.c@{ESP8266lib/ESP8266.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}U\+S\+A\+R\+T/\+U\+S\+A\+R\+T\+\_\+\+R\+S232\+\_\+\+H\+\_\+file.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}E\+S\+P8266.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_e_s_p8266_8c_a2d6e85eb98d8670ad4031914786f2050}{Read\+\_\+\+Response}} (char $\ast$\+\_\+\+Expected\+\_\+\+Response)
+\item 
+void \mbox{\hyperlink{_e_s_p8266_8c_a233da09cb45069e46cecce2a4f3703d9}{E\+S\+P8266\+\_\+\+Clear}} ()
+\item 
+void \mbox{\hyperlink{_e_s_p8266_8c_a4ad4af30f6c487654beb9cd173765479}{Start\+\_\+\+Read\+\_\+\+Response}} (char $\ast$\+\_\+\+Expected\+Response)
+\item 
+void \mbox{\hyperlink{_e_s_p8266_8c_a59c664e4497c24d54a7c5442a0d3e42b}{Get\+Response\+Body}} (char $\ast$Response, uint16\+\_\+t Response\+Length)
+\item 
+bool \mbox{\hyperlink{_e_s_p8266_8c_a6fe24d03669f3faf3a6e1d6010d8e736}{Wait\+For\+Expected\+Response}} (char $\ast$Expected\+Response)
+\item 
+bool \mbox{\hyperlink{_e_s_p8266_8c_a7ca8294d1bfa0705a0551f317b557665}{Send\+A\+Tand\+Expect\+Response}} (char $\ast$A\+T\+Command, char $\ast$Expected\+Response)
+\item 
+bool \mbox{\hyperlink{_e_s_p8266_8c_a633d810fa938833760458a364be50004}{E\+S\+P8266\+\_\+\+Application\+Mode}} (uint8\+\_\+t Mode)
+\item 
+bool \mbox{\hyperlink{_e_s_p8266_8c_af7a85960a72f1a06d8d5d49d1feded7a}{E\+S\+P8266\+\_\+\+Connection\+Mode}} (uint8\+\_\+t Mode)
+\item 
+bool \mbox{\hyperlink{_e_s_p8266_8c_a0ce4ebfba131948b88e825ef1261f2ff}{E\+S\+P8266\+\_\+\+Begin}} ()
+\item 
+bool \mbox{\hyperlink{_e_s_p8266_8c_a438cc2167e11f3cf7911e4effc14ab03}{E\+S\+P8266\+\_\+\+Close}} ()
+\item 
+bool \mbox{\hyperlink{_e_s_p8266_8c_a8966ec92a915f8a2444cab2accb880d5}{E\+S\+P8266\+\_\+\+W\+I\+F\+I\+Mode}} (uint8\+\_\+t \+\_\+mode)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_e_s_p8266_8c_a890452a7455a321fc0bf36ec113e030a}{E\+S\+P8266\+\_\+\+Join\+Access\+Point}} (char $\ast$\+\_\+\+S\+S\+ID, char $\ast$\+\_\+\+P\+A\+S\+S\+W\+O\+RD)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_e_s_p8266_8c_af186c5749e91496493fe9b5f5a2da05a}{E\+S\+P8266\+\_\+connected}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_e_s_p8266_8c_a12d647d4039db6d1147ae03e0fb4b1f7}{E\+S\+P8266\+\_\+\+Start}} (uint8\+\_\+t \+\_\+\+Connection\+Number, char $\ast$Domain, char $\ast$Port)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_e_s_p8266_8c_a0434874898a75fb5909f13c8e3017199}{E\+S\+P8266\+\_\+\+Send}} (char $\ast$Data)
+\item 
+int16\+\_\+t \mbox{\hyperlink{_e_s_p8266_8c_ab751b2cc586fb940ecea95e890aa2a5b}{E\+S\+P8266\+\_\+\+Data\+Available}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_e_s_p8266_8c_a9618a089d44249fc792a7e166429e9bb}{E\+S\+P8266\+\_\+\+Data\+Read}} ()
+\item 
+uint16\+\_\+t \mbox{\hyperlink{_e_s_p8266_8c_a889a79534730380a31b630d00ee359b8}{Read\+\_\+\+Data}} (char $\ast$\+\_\+buffer)
+\item 
+\mbox{\hyperlink{_e_s_p8266_8c_ae6e8a8009a9ae0c59f25a496d1cf5a84}{I\+SR}} (U\+S\+A\+R\+T1\+\_\+\+R\+X\+\_\+vect)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int8\+\_\+t \mbox{\hyperlink{_e_s_p8266_8c_a31161d41287288d93be3cc9774cb61f4}{Response\+\_\+\+Status}}
+\item 
+volatile int16\+\_\+t \mbox{\hyperlink{_e_s_p8266_8c_a451432a65fc68821360f4a2e33270663}{Counter}} = 0
+\item 
+volatile int16\+\_\+t \mbox{\hyperlink{_e_s_p8266_8c_abba05676a2e800293a098267434f7eae}{pointer}} = 0
+\item 
+uint32\+\_\+t \mbox{\hyperlink{_e_s_p8266_8c_aff25728c5a4e8cf018fc78e0bc4cde59}{Time\+Out}} = 0
+\item 
+char \mbox{\hyperlink{_e_s_p8266_8c_a0bc81b1cc08b1f6e54ae0c2e0aadc346}{R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+B\+U\+F\+F\+ER}} \mbox{[}\mbox{\hyperlink{_e_s_p8266_8h_a6e576a3c6530636d68b7a220480bcd32}{D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_e_s_p8266_8c_a633d810fa938833760458a364be50004}\label{_e_s_p8266_8c_a633d810fa938833760458a364be50004}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_ApplicationMode@{ESP8266\_ApplicationMode}}
+\index{ESP8266\_ApplicationMode@{ESP8266\_ApplicationMode}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_ApplicationMode()}{ESP8266\_ApplicationMode()}}
+{\footnotesize\ttfamily bool E\+S\+P8266\+\_\+\+Application\+Mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{Mode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 110 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a0ce4ebfba131948b88e825ef1261f2ff}\label{_e_s_p8266_8c_a0ce4ebfba131948b88e825ef1261f2ff}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_Begin@{ESP8266\_Begin}}
+\index{ESP8266\_Begin@{ESP8266\_Begin}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_Begin()}{ESP8266\_Begin()}}
+{\footnotesize\ttfamily bool E\+S\+P8266\+\_\+\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 128 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a233da09cb45069e46cecce2a4f3703d9}\label{_e_s_p8266_8c_a233da09cb45069e46cecce2a4f3703d9}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_Clear@{ESP8266\_Clear}}
+\index{ESP8266\_Clear@{ESP8266\_Clear}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_Clear()}{ESP8266\_Clear()}}
+{\footnotesize\ttfamily void E\+S\+P8266\+\_\+\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 60 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a438cc2167e11f3cf7911e4effc14ab03}\label{_e_s_p8266_8c_a438cc2167e11f3cf7911e4effc14ab03}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_Close@{ESP8266\_Close}}
+\index{ESP8266\_Close@{ESP8266\_Close}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_Close()}{ESP8266\_Close()}}
+{\footnotesize\ttfamily bool E\+S\+P8266\+\_\+\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 138 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_af186c5749e91496493fe9b5f5a2da05a}\label{_e_s_p8266_8c_af186c5749e91496493fe9b5f5a2da05a}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_connected@{ESP8266\_connected}}
+\index{ESP8266\_connected@{ESP8266\_connected}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_connected()}{ESP8266\_connected()}}
+{\footnotesize\ttfamily uint8\+\_\+t E\+S\+P8266\+\_\+connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 174 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_af7a85960a72f1a06d8d5d49d1feded7a}\label{_e_s_p8266_8c_af7a85960a72f1a06d8d5d49d1feded7a}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_ConnectionMode@{ESP8266\_ConnectionMode}}
+\index{ESP8266\_ConnectionMode@{ESP8266\_ConnectionMode}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_ConnectionMode()}{ESP8266\_ConnectionMode()}}
+{\footnotesize\ttfamily bool E\+S\+P8266\+\_\+\+Connection\+Mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{Mode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_ab751b2cc586fb940ecea95e890aa2a5b}\label{_e_s_p8266_8c_ab751b2cc586fb940ecea95e890aa2a5b}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_DataAvailable@{ESP8266\_DataAvailable}}
+\index{ESP8266\_DataAvailable@{ESP8266\_DataAvailable}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_DataAvailable()}{ESP8266\_DataAvailable()}}
+{\footnotesize\ttfamily int16\+\_\+t E\+S\+P8266\+\_\+\+Data\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 227 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a9618a089d44249fc792a7e166429e9bb}\label{_e_s_p8266_8c_a9618a089d44249fc792a7e166429e9bb}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_DataRead@{ESP8266\_DataRead}}
+\index{ESP8266\_DataRead@{ESP8266\_DataRead}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_DataRead()}{ESP8266\_DataRead()}}
+{\footnotesize\ttfamily uint8\+\_\+t E\+S\+P8266\+\_\+\+Data\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 232 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a890452a7455a321fc0bf36ec113e030a}\label{_e_s_p8266_8c_a890452a7455a321fc0bf36ec113e030a}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_JoinAccessPoint@{ESP8266\_JoinAccessPoint}}
+\index{ESP8266\_JoinAccessPoint@{ESP8266\_JoinAccessPoint}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_JoinAccessPoint()}{ESP8266\_JoinAccessPoint()}}
+{\footnotesize\ttfamily uint8\+\_\+t E\+S\+P8266\+\_\+\+Join\+Access\+Point (\begin{DoxyParamCaption}\item[{char $\ast$}]{\+\_\+\+S\+S\+ID,  }\item[{char $\ast$}]{\+\_\+\+P\+A\+S\+S\+W\+O\+RD }\end{DoxyParamCaption})}
+
+
+
+Definition at line 152 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a0434874898a75fb5909f13c8e3017199}\label{_e_s_p8266_8c_a0434874898a75fb5909f13c8e3017199}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_Send@{ESP8266\_Send}}
+\index{ESP8266\_Send@{ESP8266\_Send}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_Send()}{ESP8266\_Send()}}
+{\footnotesize\ttfamily uint8\+\_\+t E\+S\+P8266\+\_\+\+Send (\begin{DoxyParamCaption}\item[{char $\ast$}]{Data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 211 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a12d647d4039db6d1147ae03e0fb4b1f7}\label{_e_s_p8266_8c_a12d647d4039db6d1147ae03e0fb4b1f7}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_Start@{ESP8266\_Start}}
+\index{ESP8266\_Start@{ESP8266\_Start}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_Start()}{ESP8266\_Start()}}
+{\footnotesize\ttfamily uint8\+\_\+t E\+S\+P8266\+\_\+\+Start (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{\+\_\+\+Connection\+Number,  }\item[{char $\ast$}]{Domain,  }\item[{char $\ast$}]{Port }\end{DoxyParamCaption})}
+
+
+
+Definition at line 189 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a8966ec92a915f8a2444cab2accb880d5}\label{_e_s_p8266_8c_a8966ec92a915f8a2444cab2accb880d5}} 
+\index{ESP8266.c@{ESP8266.c}!ESP8266\_WIFIMode@{ESP8266\_WIFIMode}}
+\index{ESP8266\_WIFIMode@{ESP8266\_WIFIMode}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ESP8266\_WIFIMode()}{ESP8266\_WIFIMode()}}
+{\footnotesize\ttfamily bool E\+S\+P8266\+\_\+\+W\+I\+F\+I\+Mode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{\+\_\+mode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 143 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a59c664e4497c24d54a7c5442a0d3e42b}\label{_e_s_p8266_8c_a59c664e4497c24d54a7c5442a0d3e42b}} 
+\index{ESP8266.c@{ESP8266.c}!GetResponseBody@{GetResponseBody}}
+\index{GetResponseBody@{GetResponseBody}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{GetResponseBody()}{GetResponseBody()}}
+{\footnotesize\ttfamily void Get\+Response\+Body (\begin{DoxyParamCaption}\item[{char $\ast$}]{Response,  }\item[{uint16\+\_\+t}]{Response\+Length }\end{DoxyParamCaption})}
+
+
+
+Definition at line 75 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_ae6e8a8009a9ae0c59f25a496d1cf5a84}\label{_e_s_p8266_8c_ae6e8a8009a9ae0c59f25a496d1cf5a84}} 
+\index{ESP8266.c@{ESP8266.c}!ISR@{ISR}}
+\index{ISR@{ISR}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}}
+{\footnotesize\ttfamily I\+SR (\begin{DoxyParamCaption}\item[{U\+S\+A\+R\+T1\+\_\+\+R\+X\+\_\+vect}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 251 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a889a79534730380a31b630d00ee359b8}\label{_e_s_p8266_8c_a889a79534730380a31b630d00ee359b8}} 
+\index{ESP8266.c@{ESP8266.c}!Read\_Data@{Read\_Data}}
+\index{Read\_Data@{Read\_Data}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{Read\_Data()}{Read\_Data()}}
+{\footnotesize\ttfamily uint16\+\_\+t Read\+\_\+\+Data (\begin{DoxyParamCaption}\item[{char $\ast$}]{\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 242 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a2d6e85eb98d8670ad4031914786f2050}\label{_e_s_p8266_8c_a2d6e85eb98d8670ad4031914786f2050}} 
+\index{ESP8266.c@{ESP8266.c}!Read\_Response@{Read\_Response}}
+\index{Read\_Response@{Read\_Response}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{Read\_Response()}{Read\_Response()}}
+{\footnotesize\ttfamily void Read\+\_\+\+Response (\begin{DoxyParamCaption}\item[{char $\ast$}]{\+\_\+\+Expected\+\_\+\+Response }\end{DoxyParamCaption})}
+
+
+
+Definition at line 16 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a7ca8294d1bfa0705a0551f317b557665}\label{_e_s_p8266_8c_a7ca8294d1bfa0705a0551f317b557665}} 
+\index{ESP8266.c@{ESP8266.c}!SendATandExpectResponse@{SendATandExpectResponse}}
+\index{SendATandExpectResponse@{SendATandExpectResponse}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{SendATandExpectResponse()}{SendATandExpectResponse()}}
+{\footnotesize\ttfamily bool Send\+A\+Tand\+Expect\+Response (\begin{DoxyParamCaption}\item[{char $\ast$}]{A\+T\+Command,  }\item[{char $\ast$}]{Expected\+Response }\end{DoxyParamCaption})}
+
+
+
+Definition at line 102 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a4ad4af30f6c487654beb9cd173765479}\label{_e_s_p8266_8c_a4ad4af30f6c487654beb9cd173765479}} 
+\index{ESP8266.c@{ESP8266.c}!Start\_Read\_Response@{Start\_Read\_Response}}
+\index{Start\_Read\_Response@{Start\_Read\_Response}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{Start\_Read\_Response()}{Start\_Read\_Response()}}
+{\footnotesize\ttfamily void Start\+\_\+\+Read\+\_\+\+Response (\begin{DoxyParamCaption}\item[{char $\ast$}]{\+\_\+\+Expected\+Response }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a6fe24d03669f3faf3a6e1d6010d8e736}\label{_e_s_p8266_8c_a6fe24d03669f3faf3a6e1d6010d8e736}} 
+\index{ESP8266.c@{ESP8266.c}!WaitForExpectedResponse@{WaitForExpectedResponse}}
+\index{WaitForExpectedResponse@{WaitForExpectedResponse}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{WaitForExpectedResponse()}{WaitForExpectedResponse()}}
+{\footnotesize\ttfamily bool Wait\+For\+Expected\+Response (\begin{DoxyParamCaption}\item[{char $\ast$}]{Expected\+Response }\end{DoxyParamCaption})}
+
+
+
+Definition at line 94 of file E\+S\+P8266.\+c.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_e_s_p8266_8c_a451432a65fc68821360f4a2e33270663}\label{_e_s_p8266_8c_a451432a65fc68821360f4a2e33270663}} 
+\index{ESP8266.c@{ESP8266.c}!Counter@{Counter}}
+\index{Counter@{Counter}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{Counter}{Counter}}
+{\footnotesize\ttfamily volatile int16\+\_\+t Counter = 0}
+
+
+
+Definition at line 12 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_abba05676a2e800293a098267434f7eae}\label{_e_s_p8266_8c_abba05676a2e800293a098267434f7eae}} 
+\index{ESP8266.c@{ESP8266.c}!pointer@{pointer}}
+\index{pointer@{pointer}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily volatile int16\+\_\+t pointer = 0}
+
+
+
+Definition at line 12 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a0bc81b1cc08b1f6e54ae0c2e0aadc346}\label{_e_s_p8266_8c_a0bc81b1cc08b1f6e54ae0c2e0aadc346}} 
+\index{ESP8266.c@{ESP8266.c}!RESPONSE\_BUFFER@{RESPONSE\_BUFFER}}
+\index{RESPONSE\_BUFFER@{RESPONSE\_BUFFER}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{RESPONSE\_BUFFER}{RESPONSE\_BUFFER}}
+{\footnotesize\ttfamily char R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+B\+U\+F\+F\+ER\mbox{[}\mbox{\hyperlink{_e_s_p8266_8h_a6e576a3c6530636d68b7a220480bcd32}{D\+E\+F\+A\+U\+L\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Definition at line 14 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_a31161d41287288d93be3cc9774cb61f4}\label{_e_s_p8266_8c_a31161d41287288d93be3cc9774cb61f4}} 
+\index{ESP8266.c@{ESP8266.c}!Response\_Status@{Response\_Status}}
+\index{Response\_Status@{Response\_Status}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{Response\_Status}{Response\_Status}}
+{\footnotesize\ttfamily int8\+\_\+t Response\+\_\+\+Status}
+
+
+
+Definition at line 11 of file E\+S\+P8266.\+c.
+
+\mbox{\Hypertarget{_e_s_p8266_8c_aff25728c5a4e8cf018fc78e0bc4cde59}\label{_e_s_p8266_8c_aff25728c5a4e8cf018fc78e0bc4cde59}} 
+\index{ESP8266.c@{ESP8266.c}!TimeOut@{TimeOut}}
+\index{TimeOut@{TimeOut}!ESP8266.c@{ESP8266.c}}
+\doxysubsubsection{\texorpdfstring{TimeOut}{TimeOut}}
+{\footnotesize\ttfamily uint32\+\_\+t Time\+Out = 0}
+
+
+
+Definition at line 13 of file E\+S\+P8266.\+c.
+

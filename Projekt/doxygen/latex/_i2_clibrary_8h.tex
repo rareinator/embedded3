@@ -1,0 +1,33 @@
+\hypertarget{_i2_clibrary_8h}{}\doxysection{I2\+Clib/\+I2\+Clibrary.h File Reference}
+\label{_i2_clibrary_8h}\index{I2Clib/I2Clibrary.h@{I2Clib/I2Clibrary.h}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__pfleury__ic2master_gab5c0fbe837494c5f9130a5914854250d}{I2\+C\+\_\+\+R\+E\+AD}}~1
+\item 
+\#define \mbox{\hyperlink{group__pfleury__ic2master_ga9536bf85bced4f4e549a82fb18eb6140}{I2\+C\+\_\+\+W\+R\+I\+TE}}~0
+\item 
+\#define \mbox{\hyperlink{group__pfleury__ic2master_gad33503cf741851d1bca1d274e9001796}{i2c\+\_\+read}}(ack)~(ack) ? \mbox{\hyperlink{group__pfleury__ic2master_ga32ac22052d55f93375b024192217db21}{i2c\+\_\+read\+Ack}}() \+: \mbox{\hyperlink{group__pfleury__ic2master_gad89e839fc17b05fbb5dd79897c55234e}{i2c\+\_\+read\+Nak}}();
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__pfleury__ic2master_ga5730d9445429351b9f750084c5cb5aae}{i2c\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em initialize the I2C master interace. Need to be called only once \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__pfleury__ic2master_gad35d4e4f52ca74b503d5e5e1e0a3f5f3}{i2c\+\_\+stop}} (void)
+\begin{DoxyCompactList}\small\item\em Terminates the data transfer and releases the I2C bus. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__pfleury__ic2master_ga58dfadce0c2fee4bfac01df6cd2b4477}{i2c\+\_\+start}} (unsigned char addr)
+\begin{DoxyCompactList}\small\item\em Issues a start condition and sends address and transfer direction. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__pfleury__ic2master_ga93a9461da34295250ba935bbce9a980d}{i2c\+\_\+rep\+\_\+start}} (unsigned char addr)
+\begin{DoxyCompactList}\small\item\em Issues a repeated start condition and sends address and transfer direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__pfleury__ic2master_gaee3747a01738315cd5580588994b6c28}{i2c\+\_\+start\+\_\+wait}} (unsigned char addr)
+\begin{DoxyCompactList}\small\item\em Issues a start condition and sends address and transfer direction. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__pfleury__ic2master_gadd947aade44ed6b7f92265f9dec4a711}{i2c\+\_\+write}} (unsigned char data)
+\begin{DoxyCompactList}\small\item\em Send one byte to I2C device. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__pfleury__ic2master_ga32ac22052d55f93375b024192217db21}{i2c\+\_\+read\+Ack}} (void)
+\begin{DoxyCompactList}\small\item\em read one byte from the I2C device, request more data from device \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__pfleury__ic2master_gad89e839fc17b05fbb5dd79897c55234e}{i2c\+\_\+read\+Nak}} (void)
+\begin{DoxyCompactList}\small\item\em read one byte from the I2C device, read is followed by a stop condition \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__pfleury__ic2master_ga669c0357614a79b3b35ae815f6f50e82}{i2c\+\_\+read}} (unsigned char ack)
+\begin{DoxyCompactList}\small\item\em read one byte from the I2C device \end{DoxyCompactList}\end{DoxyCompactItemize}
