@@ -1,10 +1,3 @@
-/*
- * ESP8266.h
- *
- * Created: 11/3/2020 8:55:26 AM
- *  Author: rare
- */ 
-#define F_CPU 16000000UL
 #include <avr/io.h>					/* Include AVR std. library file */
 #include <util/delay.h>				/* Include Delay header file */
 #include <stdbool.h>				/* Include standard boolean library */
