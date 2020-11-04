@@ -1,5 +1,5 @@
-#ifndef INCFILE1_H_
-#define INCFILE1_H_
+#ifndef I2Clibrary_H_
+#define I2Clibrary_H_
 /************************************************************************* 
 * Title:    C include file for the I2C master interface 
 *           (i2cmaster.S or twimaster.c)
@@ -179,4 +179,4 @@ extern unsigned char i2c_read(unsigned char ack);
 
 
 
-#endif /* INCFILE1_H_ */
+#endif /* I2Clibrary_H_ */

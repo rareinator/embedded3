@@ -1,5 +1,6 @@
 #include <avr/io.h>
 #include <stdbool.h>
+#include "SPIlibrary.h"
 
 void SPI_Init(bool isMaster)
 {

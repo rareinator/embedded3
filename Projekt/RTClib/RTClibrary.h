@@ -1,13 +1,5 @@
-/*
- * IncFile1.h
- *
- * Created: 02/11/2020 11:13:27
- *  Author: Looren
- */ 
-
-
-#ifndef INCFILE1_H_
-#define INCFILE1_H_
+#ifndef RTCLIBRARY_H_
+#define RTCLIBRARY_H_
 
 typedef struct  {
 	uint8_t Year;
@@ -20,13 +12,11 @@ typedef struct  {
 } DateTime;
 
 // Slave address for i2c
-#define SLAVE_ADDRESS 0xD0
+#define SLAVE_ADDRESS 0xD0 // RTC DS3231 Slave address: Page 16 - Figure 3
 
-// RTC data registers
 #define SECONDS 0x00
 
 void DS3231_setDateTime(DateTime *time);
 void DS3231_getDateTime(DateTime *now);
 
-
-#endif /* INCFILE1_H_ */
+#endif /* RTCLIBRARY_H_ */
