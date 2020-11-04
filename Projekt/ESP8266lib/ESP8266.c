@@ -6,14 +6,14 @@
  */ 
 #define F_CPU 16000000UL
 
-#include <avr/io.h>					/* Include AVR std. library file */
-#include <util/delay.h>				/* Include Delay header file */
-#include <stdbool.h>				/* Include standard boolean library */
-#include <string.h>					/* Include string library */
-#include <stdio.h>					/* Include standard IO library */
-#include <stdlib.h>					/* Include standard library */
-#include <avr/interrupt.h>			/* Include avr interrupt header file */
-#include "USART/USART_RS232_H_file.h"		/* Include USART header file */
+#include <avr/io.h>					         /* Include AVR std. library file */
+#include <util/delay.h>				         /* Include Delay header file */
+#include <stdbool.h>				         /* Include standard boolean library */
+#include <string.h>				       	     /* Include string library */
+#include <stdio.h>					         /* Include standard IO library */
+#include <stdlib.h>					         /* Include standard library */
+#include <avr/interrupt.h>			         /* Include avr interrupt header file */
+#include "USART/USART_RS232_H_file.h"		 /* Include USART header file */
 #include "ESP8266.h"
 
 int8_t Response_Status;
@@ -55,6 +55,13 @@ void Read_Response(char* _Expected_Response)
 					{
 						TimeOut = 0;
 						Response_Status = ESP8266_RESPONSE_FINISHED;
+						// Should check if this is a IPD data transmission, sent from the external device to configure the device
+						if (RECEIVED_CRLF_BUF[0] == "I")
+						{
+							LED_TOOGLE;
+						}
+						
+						
 						return;
 					}
 				}
@@ -153,6 +160,24 @@ bool ESP8266_WIFIMode(uint8_t _mode)
 	char _atCommand[20];
 	memset(_atCommand, 0, 20);
 	sprintf(_atCommand, "AT+CWMODE=%d", _mode);
+	_atCommand[19] = 0;
+	return SendATandExpectResponse(_atCommand, "\r\nOK\r\n");
+}
+
+bool ESP8266_StartServer(uint8_t _port)
+{
+	char _atCommand[20];
+	memset(_atCommand, 0, 20);
+	sprintf(_atCommand, "AT+CIPSERVER=1,%d", _port);
+	_atCommand[19] = 0;
+	return SendATandExpectResponse(_atCommand, "\r\nOK\r\n");
+}
+
+bool ESP8266_StopServer()
+{
+	char _atCommand[20];
+	memset(_atCommand, 0, 20);
+	sprintf(_atCommand, "AT+CIPSERVER=0");
 	_atCommand[19] = 0;
 	return SendATandExpectResponse(_atCommand, "\r\nOK\r\n");
 }
