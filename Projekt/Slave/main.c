@@ -30,10 +30,19 @@ ISR(PCINT0_vect)
 	}	
 }
 
+void Slave_Init()
+{
+	PCICR |= (1<<PCIE0);					// Pin Change Interrupt Enable 0, Datasheet 17.2.4
+	PCMSK0 |= (1<<PCINT0);					// Pin Change Mask Register, Datasheet 17.2.8
+	
+	sei();
+}
+
 int main(void)
 {
 	DCMotor_init();
 	SPI_Init(false);
+	Slave_Init();
 	while (1)
 	{
 	}
