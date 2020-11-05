@@ -1,3 +1,27 @@
+// Connect to wifi
+AT+CWMODE=3 // softAP+station mode
+AT+CWJAP="MyFi","nicolai5"
+
+// Get IP
+AT+CIFSR
+
+
+
+// Send data
 AT+CIPSTART="TCP","api.thingspeak.com",80
 AT+CIPSEND=48
 GET /update?api_key=9XZN1CY19NFLB7RB&field1=32
+
+
+// Start Server
+AT+CWMODE=3 // softAP+station mode
+AT+CIPMUX=1 // Enable multiple connections page 53
+AT+CIPSERVER=1,80 //Start TCP server on port 80 page 54
+AT+CWSAP? // Lists SSID page 27 FaryLink_46D8FA
+AT+CIFSR // Lists IP look at CIFSR:APIP page page 52
+
+// PC command
+nc 192.168.4.1 80
+
+
+
