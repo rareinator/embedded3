@@ -11,6 +11,7 @@
 #define F_CPU 16000000UL
 #include <avr/interrupt.h>
 #include <stdio.h>
+#include <util/delay.h>
 #include "stdio_setup.h"
 
 uint8_t reg;
@@ -18,27 +19,38 @@ uint8_t val;
 
 ISR(PCINT0_vect)
 {
-	printf("Interrupt");
-	reg = SPI_Read();
-	val = SPI_Read();
-	if(reg == 0x00)
+	printf("Interrupt\n");
+	if (bit_is_clear(PINB, PB0))
 	{
-		printf("Start/Stop Reg");
-		if(val == 0x00)
+		printf("Bit is clear\n");
+		reg = SPI_Read();
+		val = SPI_Read();
+		if (reg == 0x00)
 		{
-			Stop_Fan();
+			printf("Start/Stop Reg\n");
+			if (val == 0x00)
+			{
+				Stop_Fan();
+			}
+			else if (val == 0x01)
+			{
+				printf("Start Fan\n");
+				Start_Fan();
+			}
 		}
-		else if(val == 0x01)
+		else if (reg == 0x01)
 		{
-			printf("Start Fan");
-			Start_Fan();
+			printf("Speed Set\n");
+			Set_Speed(val);
 		}
 	}
-	else if(reg == 0x01)
+	else if (bit_is_set(PINB, PB0))
 	{
-		printf("Speed Set");
-		Set_Speed(val);
+		printf("Bit is set\n");
 	}
+	
+	
+	
 }
 
 Slave_Init()
@@ -50,6 +62,7 @@ Slave_Init()
 
 int main(void)
 {
+	_delay_ms(3000);
 	Slave_Init();
 	DCMotor_init();
 	SPI_Init(false);
