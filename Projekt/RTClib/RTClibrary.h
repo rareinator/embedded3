@@ -9,9 +9,9 @@
  this library uses the I2CLib from peter fleury. So be sure,
  to have that included in the project you wish to use this library from.
 
-	Connect the RTC using given pins
+ Connect the RTC using given pins
 
-	// include picture here
+ ![Schematic](../../Datablade/Main schematic small.png)
 
  @author Morten Nissen, Nicolai De Jong Bjerg & Kevin Pike Darmer
  @copyright (C) 2020 Morten Nissen, Nicolai De Jung Berg & Kevin Pike Darmer, GNU General Public License Version 3
