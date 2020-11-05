@@ -1,9 +1,13 @@
+#define F_CPU 16000000UL
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/sfr_defs.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include "DHT11library.h"
+
+#define LED_TOOGLE PORTA ^= (1 <<PA1)  // TMP MNI define, to debug via led
+#define LED_ON PORTA |= (1 << PA1) // TMP MMNI define, to debug via led
 
 
 bool DHT11_Wait(int maxWaitTime, bool waitForHigh)
@@ -63,11 +67,13 @@ void DHT11_ReadRaw(DHT11 *result)
 	if (!DHT11_Wait(60, false)) // Wait for a max of 60 us
 	{
 		//Do timeout stuff
+		LED_ON;
 		printf("timeout 1");
 	}
 	
 	if (!DHT11_Wait(100, true)) // Wait for high pin
 	{
+		LED_ON;
 		//timeout
 		printf("timeout 2");
 	}
@@ -75,6 +81,7 @@ void DHT11_ReadRaw(DHT11 *result)
 	if (!DHT11_Wait(100, false)) // Wait for low pin
 	{
 		// timeout
+		LED_ON;
 		printf("timeout 3");
 	}
 	

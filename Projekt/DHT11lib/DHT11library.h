@@ -1,6 +1,8 @@
 #ifndef DHT11library_H_
 #define DHT11library_H_
 
+#define F_CPU 16000000UL
+
 #include <avr/io.h>
 
 typedef struct {

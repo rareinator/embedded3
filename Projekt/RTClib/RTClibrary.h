@@ -22,7 +22,7 @@
 
 #ifndef RTCLIBRARY_H_
 #define RTCLIBRARY_H_
-
+#define F_CPU 16000000UL
 
 /** 
  @brief Structure used to save and get datetime from the RTC device.

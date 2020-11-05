@@ -6,6 +6,7 @@
  * Created: 03-11-2020 08:59:36
  *  Author: Kevin Pike Darmer	
  */ 
+#define F_CPU 16000000UL
 
 #include <avr/io.h>
 #include <stdbool.h>

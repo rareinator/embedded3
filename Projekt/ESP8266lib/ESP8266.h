@@ -5,6 +5,7 @@
 #include <stdio.h>					/* Include standard IO library */
 #include <stdlib.h>					/* Include standard library */
 #include <avr/interrupt.h>
+#define F_CPU 16000000UL
 
 #ifndef ESP8266_H_
 #define ESP8266_H_
@@ -80,6 +81,7 @@ bool ESP8266_Close();
 bool ESP8266_WIFIMode(uint8_t _mode);
 bool ESP8266_StartServer(uint8_t _port);
 bool ESP8266_StopServer();
+bool ESP8266_ConnectToAP();
 uint8_t ESP8266_JoinAccessPoint(char* _SSID, char* _PASSWORD);
 uint8_t ESP8266_connected();
 uint8_t ESP8266_Start(uint8_t _ConnectionNumber, char* Domain, char* Port);

@@ -1,3 +1,4 @@
+#define F_CPU 16000000UL
 #include <avr/io.h>
 #include <ctype.h>
 #include "I2Clibrary.h"

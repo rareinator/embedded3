@@ -4,8 +4,6 @@
  * Created: 11/3/2020 8:54:52 AM
  * Author : rare
  */ 
-#define F_CPU 16000000UL
-
 #include <avr/io.h>					         /* Include AVR std. library file */
 #include <util/delay.h>				         /* Include Delay header file */
 #include <stdbool.h>				         /* Include standard boolean library */
@@ -15,6 +13,7 @@
 #include <avr/interrupt.h>			         /* Include avr interrupt header file */
 #include "USART/USART_RS232_H_file.h"		 /* Include USART header file */
 #include "ESP8266.h"
+#define F_CPU 16000000UL
 
 int8_t Response_Status;
 volatile int16_t Counter = 0, pointer = 0;
@@ -46,7 +45,7 @@ void Read_Response(char* _Expected_Response)
 			_delay_ms(1);
 			TimeCount++;
 			if (ResponseBufferLength==strlen(RESPONSE_BUFFER))
-			{	
+			{
 				for (uint16_t i=0;i<ResponseBufferLength;i++)
 				{
 					memmove(RECEIVED_CRLF_BUF, RECEIVED_CRLF_BUF + 1, EXPECTED_RESPONSE_LENGTH-1);
@@ -177,6 +176,16 @@ bool ESP8266_StopServer()
 	return SendATandExpectResponse(_atCommand, "\r\nOK\r\n");
 }
 
+bool ESP8266_ConnectToAP()
+{
+	uint8_t Connect_Status;
+	Connect_Status = ESP8266_connected();
+	if(Connect_Status == ESP8266_NOT_CONNECTED_TO_AP)
+	ESP8266_JoinAccessPoint(SSID, PASSWORD);
+	if(Connect_Status == ESP8266_TRANSMISSION_DISCONNECTED)
+	ESP8266_Start(0, DOMAIN, PORT);
+}
+
 uint8_t ESP8266_JoinAccessPoint(char* _SSID, char* _PASSWORD)
 {
 	char _atCommand[60];
@@ -280,13 +289,7 @@ ISR (USART1_RX_vect)
 {
 	uint8_t oldsrg = SREG;
 	cli();
-	RESPONSE_BUFFER[Counter] = UDR1;	
-	//LED_TOOGLE;
-	if (strcmp(RESPONSE_BUFFER[Counter], "I") == 0)
-	{
-		LED_ON;
-	}
-	
+	RESPONSE_BUFFER[Counter] = UDR1;
 	Counter++;
 	if(Counter == DEFAULT_BUFFER_SIZE){
 		Counter = 0; pointer = 0;
