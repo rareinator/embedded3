@@ -4,6 +4,7 @@
 #define BAUD 9600
 #define BAUD_TOL 2
 #define SS_ENABLE PORTB &= ~(1<<PB0)
+#define SS_DISABLE PORTB |= (1<<PB0)
 
 #include <stdbool.h>
 

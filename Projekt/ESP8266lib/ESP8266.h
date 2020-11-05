@@ -9,6 +9,8 @@
 #ifndef ESP8266_H_
 #define ESP8266_H_
 
+#define LED_TOOGLE PORTA ^= (1 <<PA1)  // TMP MNI define, to debug via led
+#define LED_ON PORTA |= (1 << PA1) // TMP MMNI define, to debug via led
 
 #define SREG    _SFR_IO8(0x3F)
 
@@ -27,10 +29,6 @@
 #define STATION							1
 #define ACCESSPOINT						2
 #define BOTH_STATION_AND_ACCESPOINT		3
-
-/* Select Demo */
-//#define RECEIVE_DEMO				/* Define RECEIVE demo */
-//#define SEND_DEMO					/* Define SEND demo */
 
 /* Define Required fields shown below */
 #define DOMAIN				"api.thingspeak.com"
@@ -80,6 +78,8 @@ bool ESP8266_ConnectionMode(uint8_t Mode);
 bool ESP8266_Begin();
 bool ESP8266_Close();
 bool ESP8266_WIFIMode(uint8_t _mode);
+bool ESP8266_StartServer(uint8_t _port);
+bool ESP8266_StopServer();
 uint8_t ESP8266_JoinAccessPoint(char* _SSID, char* _PASSWORD);
 uint8_t ESP8266_connected();
 uint8_t ESP8266_Start(uint8_t _ConnectionNumber, char* Domain, char* Port);
