@@ -1,0 +1,271 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266 Wi\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Fi module}{1}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}Module Index}{3}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Modules}{3}{section.2.1}% 
+\contentsline {chapter}{\numberline {3}Data Structure Index}{5}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Data Structures}{5}{section.3.1}% 
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}% 
+\contentsline {chapter}{\numberline {5}Module Documentation}{9}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}W\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}FI Library}{9}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{11}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Macro Definition Documentation}{11}{subsection.5.1.2}% 
+\contentsline {subsubsection}{\numberline {5.1.2.1}ACCESSPOINT}{11}{subsubsection.5.1.2.1}% 
+\contentsline {subsubsection}{\numberline {5.1.2.2}API\_WRITE\_KEY}{11}{subsubsection.5.1.2.2}% 
+\contentsline {subsubsection}{\numberline {5.1.2.3}BOTH\_STATION\_AND\_ACCESPOINT}{11}{subsubsection.5.1.2.3}% 
+\contentsline {subsubsection}{\numberline {5.1.2.4}CHANNEL\_ID}{12}{subsubsection.5.1.2.4}% 
+\contentsline {subsubsection}{\numberline {5.1.2.5}DEFAULT\_BUFFER\_SIZE}{12}{subsubsection.5.1.2.5}% 
+\contentsline {subsubsection}{\numberline {5.1.2.6}DEFAULT\_TIMEOUT}{12}{subsubsection.5.1.2.6}% 
+\contentsline {subsubsection}{\numberline {5.1.2.7}DOMAIN}{12}{subsubsection.5.1.2.7}% 
+\contentsline {subsubsection}{\numberline {5.1.2.8}ESP8266\_H\_}{12}{subsubsection.5.1.2.8}% 
+\contentsline {subsubsection}{\numberline {5.1.2.9}F\_CPU}{12}{subsubsection.5.1.2.9}% 
+\contentsline {subsubsection}{\numberline {5.1.2.10}MULTIPLE}{13}{subsubsection.5.1.2.10}% 
+\contentsline {subsubsection}{\numberline {5.1.2.11}NORMAL}{13}{subsubsection.5.1.2.11}% 
+\contentsline {subsubsection}{\numberline {5.1.2.12}PASSWORD}{13}{subsubsection.5.1.2.12}% 
+\contentsline {subsubsection}{\numberline {5.1.2.13}PORT}{13}{subsubsection.5.1.2.13}% 
+\contentsline {subsubsection}{\numberline {5.1.2.14}SINGLE}{13}{subsubsection.5.1.2.14}% 
+\contentsline {subsubsection}{\numberline {5.1.2.15}SREG}{13}{subsubsection.5.1.2.15}% 
+\contentsline {subsubsection}{\numberline {5.1.2.16}SSID}{14}{subsubsection.5.1.2.16}% 
+\contentsline {subsubsection}{\numberline {5.1.2.17}STATION}{14}{subsubsection.5.1.2.17}% 
+\contentsline {subsubsection}{\numberline {5.1.2.18}TRANSPERANT}{14}{subsubsection.5.1.2.18}% 
+\contentsline {subsection}{\numberline {5.1.3}Enumeration Type Documentation}{14}{subsection.5.1.3}% 
+\contentsline {subsubsection}{\numberline {5.1.3.1}ESP8266\_CONNECT\_STATUS}{14}{subsubsection.5.1.3.1}% 
+\contentsline {subsubsection}{\numberline {5.1.3.2}ESP8266\_JOINAP\_STATUS}{14}{subsubsection.5.1.3.2}% 
+\contentsline {subsubsection}{\numberline {5.1.3.3}ESP8266\_RESPONSE\_STATUS}{15}{subsubsection.5.1.3.3}% 
+\contentsline {subsection}{\numberline {5.1.4}Function Documentation}{15}{subsection.5.1.4}% 
+\contentsline {subsubsection}{\numberline {5.1.4.1}ESP8266\_ApplicationMode()}{15}{subsubsection.5.1.4.1}% 
+\contentsline {subsubsection}{\numberline {5.1.4.2}ESP8266\_Begin()}{16}{subsubsection.5.1.4.2}% 
+\contentsline {subsubsection}{\numberline {5.1.4.3}ESP8266\_Clear()}{16}{subsubsection.5.1.4.3}% 
+\contentsline {subsubsection}{\numberline {5.1.4.4}ESP8266\_Close()}{16}{subsubsection.5.1.4.4}% 
+\contentsline {subsubsection}{\numberline {5.1.4.5}ESP8266\_connected()}{16}{subsubsection.5.1.4.5}% 
+\contentsline {subsubsection}{\numberline {5.1.4.6}ESP8266\_ConnectionMode()}{16}{subsubsection.5.1.4.6}% 
+\contentsline {subsubsection}{\numberline {5.1.4.7}ESP8266\_DataAvailable()}{17}{subsubsection.5.1.4.7}% 
+\contentsline {subsubsection}{\numberline {5.1.4.8}ESP8266\_DataRead()}{17}{subsubsection.5.1.4.8}% 
+\contentsline {subsubsection}{\numberline {5.1.4.9}ESP8266\_JoinAccessPoint()}{17}{subsubsection.5.1.4.9}% 
+\contentsline {subsubsection}{\numberline {5.1.4.10}ESP8266\_Send()}{18}{subsubsection.5.1.4.10}% 
+\contentsline {subsubsection}{\numberline {5.1.4.11}ESP8266\_Start()}{18}{subsubsection.5.1.4.11}% 
+\contentsline {subsubsection}{\numberline {5.1.4.12}ESP8266\_StartServer()}{18}{subsubsection.5.1.4.12}% 
+\contentsline {subsubsection}{\numberline {5.1.4.13}ESP8266\_StopServer()}{19}{subsubsection.5.1.4.13}% 
+\contentsline {subsubsection}{\numberline {5.1.4.14}ESP8266\_WIFIMode()}{19}{subsubsection.5.1.4.14}% 
+\contentsline {subsubsection}{\numberline {5.1.4.15}GetResponseBody()}{20}{subsubsection.5.1.4.15}% 
+\contentsline {subsubsection}{\numberline {5.1.4.16}Read\_Data()}{20}{subsubsection.5.1.4.16}% 
+\contentsline {subsubsection}{\numberline {5.1.4.17}Read\_Response()}{20}{subsubsection.5.1.4.17}% 
+\contentsline {subsubsection}{\numberline {5.1.4.18}SendATandExpectResponse()}{20}{subsubsection.5.1.4.18}% 
+\contentsline {subsubsection}{\numberline {5.1.4.19}Start\_Read\_Response()}{21}{subsubsection.5.1.4.19}% 
+\contentsline {subsubsection}{\numberline {5.1.4.20}WaitForExpectedResponse()}{21}{subsubsection.5.1.4.20}% 
+\contentsline {section}{\numberline {5.2}I2C Master library}{22}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{22}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Macro Definition Documentation}{23}{subsection.5.2.2}% 
+\contentsline {subsubsection}{\numberline {5.2.2.1}I2C\_READ}{23}{subsubsection.5.2.2.1}% 
+\contentsline {subsubsection}{\numberline {5.2.2.2}i2c\_read}{23}{subsubsection.5.2.2.2}% 
+\contentsline {subsubsection}{\numberline {5.2.2.3}I2C\_WRITE}{24}{subsubsection.5.2.2.3}% 
+\contentsline {subsection}{\numberline {5.2.3}Function Documentation}{24}{subsection.5.2.3}% 
+\contentsline {subsubsection}{\numberline {5.2.3.1}i2c\_init()}{24}{subsubsection.5.2.3.1}% 
+\contentsline {subsubsection}{\numberline {5.2.3.2}i2c\_read()}{24}{subsubsection.5.2.3.2}% 
+\contentsline {subsubsection}{\numberline {5.2.3.3}i2c\_readAck()}{25}{subsubsection.5.2.3.3}% 
+\contentsline {subsubsection}{\numberline {5.2.3.4}i2c\_readNak()}{25}{subsubsection.5.2.3.4}% 
+\contentsline {subsubsection}{\numberline {5.2.3.5}i2c\_rep\_start()}{25}{subsubsection.5.2.3.5}% 
+\contentsline {subsubsection}{\numberline {5.2.3.6}i2c\_start()}{26}{subsubsection.5.2.3.6}% 
+\contentsline {subsubsection}{\numberline {5.2.3.7}i2c\_start\_wait()}{26}{subsubsection.5.2.3.7}% 
+\contentsline {subsubsection}{\numberline {5.2.3.8}i2c\_stop()}{26}{subsubsection.5.2.3.8}% 
+\contentsline {subsubsection}{\numberline {5.2.3.9}i2c\_write()}{27}{subsubsection.5.2.3.9}% 
+\contentsline {section}{\numberline {5.3}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}TC Library}{28}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{28}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Macro Definition Documentation}{29}{subsection.5.3.2}% 
+\contentsline {subsubsection}{\numberline {5.3.2.1}F\_CPU}{29}{subsubsection.5.3.2.1}% 
+\contentsline {subsubsection}{\numberline {5.3.2.2}SECONDS}{29}{subsubsection.5.3.2.2}% 
+\contentsline {subsubsection}{\numberline {5.3.2.3}SLAVE\_ADDRESS}{29}{subsubsection.5.3.2.3}% 
+\contentsline {subsection}{\numberline {5.3.3}Function Documentation}{29}{subsection.5.3.3}% 
+\contentsline {subsubsection}{\numberline {5.3.3.1}DS3231\_getDateTime()}{29}{subsubsection.5.3.3.1}% 
+\contentsline {subsubsection}{\numberline {5.3.3.2}DS3231\_setDateTime()}{30}{subsubsection.5.3.3.2}% 
+\contentsline {subsection}{\numberline {5.3.4}Variable Documentation}{30}{subsection.5.3.4}% 
+\contentsline {subsubsection}{\numberline {5.3.4.1}Date}{30}{subsubsection.5.3.4.1}% 
+\contentsline {subsubsection}{\numberline {5.3.4.2}Day}{30}{subsubsection.5.3.4.2}% 
+\contentsline {subsubsection}{\numberline {5.3.4.3}Hour}{30}{subsubsection.5.3.4.3}% 
+\contentsline {subsubsection}{\numberline {5.3.4.4}Minute}{31}{subsubsection.5.3.4.4}% 
+\contentsline {subsubsection}{\numberline {5.3.4.5}Month}{31}{subsubsection.5.3.4.5}% 
+\contentsline {subsubsection}{\numberline {5.3.4.6}Second}{31}{subsubsection.5.3.4.6}% 
+\contentsline {subsubsection}{\numberline {5.3.4.7}Year}{31}{subsubsection.5.3.4.7}% 
+\contentsline {chapter}{\numberline {6}Data Structure Documentation}{33}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Date\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Time Struct Reference}{33}{section.6.1}% 
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{33}{subsection.6.1.1}% 
+\contentsline {section}{\numberline {6.2}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T11 Struct Reference}{33}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{34}{subsection.6.2.1}% 
+\contentsline {subsection}{\numberline {6.2.2}Field Documentation}{34}{subsection.6.2.2}% 
+\contentsline {subsubsection}{\numberline {6.2.2.1}Humidity}{34}{subsubsection.6.2.2.1}% 
+\contentsline {subsubsection}{\numberline {6.2.2.2}Temperatur}{34}{subsubsection.6.2.2.2}% 
+\contentsline {chapter}{\numberline {7}File Documentation}{35}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Motor/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Library.c File Reference}{35}{section.7.1}% 
+\contentsline {subsection}{\numberline {7.1.1}Macro Definition Documentation}{35}{subsection.7.1.1}% 
+\contentsline {subsubsection}{\numberline {7.1.1.1}F\_CPU}{35}{subsubsection.7.1.1.1}% 
+\contentsline {subsection}{\numberline {7.1.2}Function Documentation}{35}{subsection.7.1.2}% 
+\contentsline {subsubsection}{\numberline {7.1.2.1}DCMotor\_init()}{36}{subsubsection.7.1.2.1}% 
+\contentsline {subsubsection}{\numberline {7.1.2.2}Start\_Fan()}{36}{subsubsection.7.1.2.2}% 
+\contentsline {subsubsection}{\numberline {7.1.2.3}Stop\_Fan()}{36}{subsubsection.7.1.2.3}% 
+\contentsline {section}{\numberline {7.2}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Motor/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Library.h File Reference}{36}{section.7.2}% 
+\contentsline {subsection}{\numberline {7.2.1}Macro Definition Documentation}{36}{subsection.7.2.1}% 
+\contentsline {subsubsection}{\numberline {7.2.1.1}Fan\_Start}{37}{subsubsection.7.2.1.1}% 
+\contentsline {subsubsection}{\numberline {7.2.1.2}Fan\_Stop}{37}{subsubsection.7.2.1.2}% 
+\contentsline {subsection}{\numberline {7.2.2}Function Documentation}{37}{subsection.7.2.2}% 
+\contentsline {subsubsection}{\numberline {7.2.2.1}DCMotor\_init()}{37}{subsubsection.7.2.2.1}% 
+\contentsline {subsubsection}{\numberline {7.2.2.2}Start\_Fan()}{37}{subsubsection.7.2.2.2}% 
+\contentsline {subsubsection}{\numberline {7.2.2.3}Stop\_Fan()}{37}{subsubsection.7.2.2.3}% 
+\contentsline {section}{\numberline {7.3}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clibrary.c File Reference}{37}{section.7.3}% 
+\contentsline {subsection}{\numberline {7.3.1}Macro Definition Documentation}{38}{subsection.7.3.1}% 
+\contentsline {subsubsection}{\numberline {7.3.1.1}F\_CPU}{38}{subsubsection.7.3.1.1}% 
+\contentsline {subsection}{\numberline {7.3.2}Function Documentation}{38}{subsection.7.3.2}% 
+\contentsline {subsubsection}{\numberline {7.3.2.1}DCMotor\_init()}{38}{subsubsection.7.3.2.1}% 
+\contentsline {subsubsection}{\numberline {7.3.2.2}Set\_Speed()}{38}{subsubsection.7.3.2.2}% 
+\contentsline {subsubsection}{\numberline {7.3.2.3}Start\_Fan()}{38}{subsubsection.7.3.2.3}% 
+\contentsline {subsubsection}{\numberline {7.3.2.4}Stop\_Fan()}{39}{subsubsection.7.3.2.4}% 
+\contentsline {section}{\numberline {7.4}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clibrary.h File Reference}{39}{section.7.4}% 
+\contentsline {subsection}{\numberline {7.4.1}Macro Definition Documentation}{39}{subsection.7.4.1}% 
+\contentsline {subsubsection}{\numberline {7.4.1.1}F\_CPU}{39}{subsubsection.7.4.1.1}% 
+\contentsline {subsubsection}{\numberline {7.4.1.2}Fan}{39}{subsubsection.7.4.1.2}% 
+\contentsline {subsubsection}{\numberline {7.4.1.3}Stop}{40}{subsubsection.7.4.1.3}% 
+\contentsline {subsection}{\numberline {7.4.2}Function Documentation}{40}{subsection.7.4.2}% 
+\contentsline {subsubsection}{\numberline {7.4.2.1}DCMotor\_init()}{40}{subsubsection.7.4.2.1}% 
+\contentsline {subsubsection}{\numberline {7.4.2.2}Set\_Speed()}{40}{subsubsection.7.4.2.2}% 
+\contentsline {subsubsection}{\numberline {7.4.2.3}Start\_Fan()}{40}{subsubsection.7.4.2.3}% 
+\contentsline {subsubsection}{\numberline {7.4.2.4}Stop\_Fan()}{40}{subsubsection.7.4.2.4}% 
+\contentsline {subsection}{\numberline {7.4.3}Variable Documentation}{40}{subsection.7.4.3}% 
+\contentsline {subsubsection}{\numberline {7.4.3.1}Speed}{41}{subsubsection.7.4.3.1}% 
+\contentsline {section}{\numberline {7.5}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T11lib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T11library.d File Reference}{41}{section.7.5}% 
+\contentsline {section}{\numberline {7.6}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T11lib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T11library.c File Reference}{41}{section.7.6}% 
+\contentsline {subsection}{\numberline {7.6.1}Macro Definition Documentation}{41}{subsection.7.6.1}% 
+\contentsline {subsubsection}{\numberline {7.6.1.1}F\_CPU}{41}{subsubsection.7.6.1.1}% 
+\contentsline {subsubsection}{\numberline {7.6.1.2}LED\_ON}{42}{subsubsection.7.6.1.2}% 
+\contentsline {subsubsection}{\numberline {7.6.1.3}LED\_TOOGLE}{42}{subsubsection.7.6.1.3}% 
+\contentsline {subsection}{\numberline {7.6.2}Function Documentation}{42}{subsection.7.6.2}% 
+\contentsline {subsubsection}{\numberline {7.6.2.1}DHT11\_init()}{42}{subsubsection.7.6.2.1}% 
+\contentsline {subsubsection}{\numberline {7.6.2.2}DHT11\_ReadRaw()}{42}{subsubsection.7.6.2.2}% 
+\contentsline {subsubsection}{\numberline {7.6.2.3}DHT11\_ReadTemp()}{42}{subsubsection.7.6.2.3}% 
+\contentsline {subsubsection}{\numberline {7.6.2.4}DHT11\_reset()}{42}{subsubsection.7.6.2.4}% 
+\contentsline {subsubsection}{\numberline {7.6.2.5}DHT11\_Wait()}{43}{subsubsection.7.6.2.5}% 
+\contentsline {section}{\numberline {7.7}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T11lib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T11library.h File Reference}{43}{section.7.7}% 
+\contentsline {subsection}{\numberline {7.7.1}Macro Definition Documentation}{43}{subsection.7.7.1}% 
+\contentsline {subsubsection}{\numberline {7.7.1.1}CLR\_BIT}{43}{subsubsection.7.7.1.1}% 
+\contentsline {subsubsection}{\numberline {7.7.1.2}DHT11\_BIT}{44}{subsubsection.7.7.1.2}% 
+\contentsline {subsubsection}{\numberline {7.7.1.3}DHT11\_DDR}{44}{subsubsection.7.7.1.3}% 
+\contentsline {subsubsection}{\numberline {7.7.1.4}DHT11\_PIN}{44}{subsubsection.7.7.1.4}% 
+\contentsline {subsubsection}{\numberline {7.7.1.5}DHT11\_PORT}{44}{subsubsection.7.7.1.5}% 
+\contentsline {subsubsection}{\numberline {7.7.1.6}F\_CPU}{44}{subsubsection.7.7.1.6}% 
+\contentsline {subsubsection}{\numberline {7.7.1.7}SET\_BIT}{44}{subsubsection.7.7.1.7}% 
+\contentsline {subsection}{\numberline {7.7.2}Function Documentation}{45}{subsection.7.7.2}% 
+\contentsline {subsubsection}{\numberline {7.7.2.1}DHT11\_init()}{45}{subsubsection.7.7.2.1}% 
+\contentsline {subsubsection}{\numberline {7.7.2.2}DHT11\_ReadHumid()}{45}{subsubsection.7.7.2.2}% 
+\contentsline {subsubsection}{\numberline {7.7.2.3}DHT11\_ReadRaw()}{45}{subsubsection.7.7.2.3}% 
+\contentsline {subsubsection}{\numberline {7.7.2.4}DHT11\_ReadTemp()}{45}{subsubsection.7.7.2.4}% 
+\contentsline {section}{\numberline {7.8}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266lib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266.d File Reference}{45}{section.7.8}% 
+\contentsline {section}{\numberline {7.9}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266lib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S232\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}file.d File Reference}{45}{section.7.9}% 
+\contentsline {section}{\numberline {7.10}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266lib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266.c File Reference}{45}{section.7.10}% 
+\contentsline {subsection}{\numberline {7.10.1}Macro Definition Documentation}{47}{subsection.7.10.1}% 
+\contentsline {subsubsection}{\numberline {7.10.1.1}F\_CPU}{47}{subsubsection.7.10.1.1}% 
+\contentsline {subsection}{\numberline {7.10.2}Function Documentation}{47}{subsection.7.10.2}% 
+\contentsline {subsubsection}{\numberline {7.10.2.1}ISR()}{47}{subsubsection.7.10.2.1}% 
+\contentsline {subsection}{\numberline {7.10.3}Variable Documentation}{47}{subsection.7.10.3}% 
+\contentsline {subsubsection}{\numberline {7.10.3.1}Counter}{47}{subsubsection.7.10.3.1}% 
+\contentsline {subsubsection}{\numberline {7.10.3.2}pointer}{47}{subsubsection.7.10.3.2}% 
+\contentsline {subsubsection}{\numberline {7.10.3.3}RESPONSE\_BUFFER}{48}{subsubsection.7.10.3.3}% 
+\contentsline {subsubsection}{\numberline {7.10.3.4}Response\_Status}{48}{subsubsection.7.10.3.4}% 
+\contentsline {subsubsection}{\numberline {7.10.3.5}TimeOut}{48}{subsubsection.7.10.3.5}% 
+\contentsline {section}{\numberline {7.11}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266lib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266.h File Reference}{48}{section.7.11}% 
+\contentsline {section}{\numberline {7.12}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266lib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266.md File Reference}{50}{section.7.12}% 
+\contentsline {section}{\numberline {7.13}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266lib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S232\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}file.c File Reference}{50}{section.7.13}% 
+\contentsline {subsection}{\numberline {7.13.1}Function Documentation}{50}{subsection.7.13.1}% 
+\contentsline {subsubsection}{\numberline {7.13.1.1}USART\_Init()}{50}{subsubsection.7.13.1.1}% 
+\contentsline {subsubsection}{\numberline {7.13.1.2}USART\_RxChar()}{50}{subsubsection.7.13.1.2}% 
+\contentsline {subsubsection}{\numberline {7.13.1.3}USART\_SendString()}{51}{subsubsection.7.13.1.3}% 
+\contentsline {subsubsection}{\numberline {7.13.1.4}USART\_TxChar()}{51}{subsubsection.7.13.1.4}% 
+\contentsline {section}{\numberline {7.14}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P8266lib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}U\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S232\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}file.h File Reference}{51}{section.7.14}% 
+\contentsline {subsection}{\numberline {7.14.1}Macro Definition Documentation}{51}{subsection.7.14.1}% 
+\contentsline {subsubsection}{\numberline {7.14.1.1}BAUD\_PRESCALE}{51}{subsubsection.7.14.1.1}% 
+\contentsline {subsubsection}{\numberline {7.14.1.2}DOUBLE\_SPEED\_MODE}{52}{subsubsection.7.14.1.2}% 
+\contentsline {subsubsection}{\numberline {7.14.1.3}F\_CPU}{52}{subsubsection.7.14.1.3}% 
+\contentsline {subsection}{\numberline {7.14.2}Function Documentation}{52}{subsection.7.14.2}% 
+\contentsline {subsubsection}{\numberline {7.14.2.1}USART\_Init()}{52}{subsubsection.7.14.2.1}% 
+\contentsline {subsubsection}{\numberline {7.14.2.2}USART\_RxChar()}{52}{subsubsection.7.14.2.2}% 
+\contentsline {subsubsection}{\numberline {7.14.2.3}USART\_SendString()}{52}{subsubsection.7.14.2.3}% 
+\contentsline {subsubsection}{\numberline {7.14.2.4}USART\_TxChar()}{53}{subsubsection.7.14.2.4}% 
+\contentsline {section}{\numberline {7.15}I2\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I2\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clibrary.d File Reference}{53}{section.7.15}% 
+\contentsline {section}{\numberline {7.16}I2\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I2\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clibrary.c File Reference}{53}{section.7.16}% 
+\contentsline {subsection}{\numberline {7.16.1}Macro Definition Documentation}{53}{subsection.7.16.1}% 
+\contentsline {subsubsection}{\numberline {7.16.1.1}F\_CPU}{54}{subsubsection.7.16.1.1}% 
+\contentsline {subsubsection}{\numberline {7.16.1.2}SCL\_CLOCK}{54}{subsubsection.7.16.1.2}% 
+\contentsline {section}{\numberline {7.17}I2\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I2\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clibrary.h File Reference}{54}{section.7.17}% 
+\contentsline {section}{\numberline {7.18}Master/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/main.d File Reference}{55}{section.7.18}% 
+\contentsline {section}{\numberline {7.19}Projekt/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/main.d File Reference}{55}{section.7.19}% 
+\contentsline {section}{\numberline {7.20}Master/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Setup/stdio\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}setup.d File Reference}{55}{section.7.20}% 
+\contentsline {section}{\numberline {7.21}Master/main.c File Reference}{55}{section.7.21}% 
+\contentsline {subsection}{\numberline {7.21.1}Macro Definition Documentation}{55}{subsection.7.21.1}% 
+\contentsline {subsubsection}{\numberline {7.21.1.1}F\_CPU}{55}{subsubsection.7.21.1.1}% 
+\contentsline {subsubsection}{\numberline {7.21.1.2}MAX\_TEMP}{55}{subsubsection.7.21.1.2}% 
+\contentsline {subsection}{\numberline {7.21.2}Function Documentation}{56}{subsection.7.21.2}% 
+\contentsline {subsubsection}{\numberline {7.21.2.1}main()}{56}{subsubsection.7.21.2.1}% 
+\contentsline {section}{\numberline {7.22}Slave/main.c File Reference}{56}{section.7.22}% 
+\contentsline {subsection}{\numberline {7.22.1}Macro Definition Documentation}{56}{subsection.7.22.1}% 
+\contentsline {subsubsection}{\numberline {7.22.1.1}F\_CPU}{56}{subsubsection.7.22.1.1}% 
+\contentsline {subsection}{\numberline {7.22.2}Function Documentation}{57}{subsection.7.22.2}% 
+\contentsline {subsubsection}{\numberline {7.22.2.1}ISR()}{57}{subsubsection.7.22.2.1}% 
+\contentsline {subsubsection}{\numberline {7.22.2.2}main()}{57}{subsubsection.7.22.2.2}% 
+\contentsline {subsubsection}{\numberline {7.22.2.3}Slave\_Init()}{57}{subsubsection.7.22.2.3}% 
+\contentsline {subsection}{\numberline {7.22.3}Variable Documentation}{57}{subsection.7.22.3}% 
+\contentsline {subsubsection}{\numberline {7.22.3.1}reg}{57}{subsubsection.7.22.3.1}% 
+\contentsline {subsubsection}{\numberline {7.22.3.2}val}{57}{subsubsection.7.22.3.2}% 
+\contentsline {section}{\numberline {7.23}Master/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Setup/stdio\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}setup.c File Reference}{58}{section.7.23}% 
+\contentsline {subsection}{\numberline {7.23.1}Macro Definition Documentation}{58}{subsection.7.23.1}% 
+\contentsline {subsubsection}{\numberline {7.23.1.1}BAUD}{58}{subsubsection.7.23.1.1}% 
+\contentsline {subsubsection}{\numberline {7.23.1.2}BAUD\_TOL}{58}{subsubsection.7.23.1.2}% 
+\contentsline {subsubsection}{\numberline {7.23.1.3}F\_CPU}{58}{subsubsection.7.23.1.3}% 
+\contentsline {subsection}{\numberline {7.23.2}Function Documentation}{59}{subsection.7.23.2}% 
+\contentsline {subsubsection}{\numberline {7.23.2.1}UartGetchar()}{59}{subsubsection.7.23.2.1}% 
+\contentsline {subsubsection}{\numberline {7.23.2.2}UartInit()}{59}{subsubsection.7.23.2.2}% 
+\contentsline {subsubsection}{\numberline {7.23.2.3}UartPutchar()}{59}{subsubsection.7.23.2.3}% 
+\contentsline {subsection}{\numberline {7.23.3}Variable Documentation}{59}{subsection.7.23.3}% 
+\contentsline {subsubsection}{\numberline {7.23.3.1}the\_stdio}{59}{subsubsection.7.23.3.1}% 
+\contentsline {section}{\numberline {7.24}Slave/stdio\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}setup.c File Reference}{59}{section.7.24}% 
+\contentsline {subsection}{\numberline {7.24.1}Macro Definition Documentation}{60}{subsection.7.24.1}% 
+\contentsline {subsubsection}{\numberline {7.24.1.1}BAUD}{60}{subsubsection.7.24.1.1}% 
+\contentsline {subsubsection}{\numberline {7.24.1.2}BAUD\_TOL}{60}{subsubsection.7.24.1.2}% 
+\contentsline {subsection}{\numberline {7.24.2}Function Documentation}{60}{subsection.7.24.2}% 
+\contentsline {subsubsection}{\numberline {7.24.2.1}UartGetchar()}{60}{subsubsection.7.24.2.1}% 
+\contentsline {subsubsection}{\numberline {7.24.2.2}UartInit()}{61}{subsubsection.7.24.2.2}% 
+\contentsline {subsubsection}{\numberline {7.24.2.3}UartPutchar()}{61}{subsubsection.7.24.2.3}% 
+\contentsline {subsection}{\numberline {7.24.3}Variable Documentation}{61}{subsection.7.24.3}% 
+\contentsline {subsubsection}{\numberline {7.24.3.1}the\_stdio}{61}{subsubsection.7.24.3.1}% 
+\contentsline {section}{\numberline {7.25}Master/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Setup/stdio\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}setup.h File Reference}{61}{section.7.25}% 
+\contentsline {subsection}{\numberline {7.25.1}Function Documentation}{61}{subsection.7.25.1}% 
+\contentsline {subsubsection}{\numberline {7.25.1.1}UartInit()}{61}{subsubsection.7.25.1.1}% 
+\contentsline {section}{\numberline {7.26}Slave/stdio\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}setup.h File Reference}{62}{section.7.26}% 
+\contentsline {subsection}{\numberline {7.26.1}Function Documentation}{62}{subsection.7.26.1}% 
+\contentsline {subsubsection}{\numberline {7.26.1.1}UartInit()}{62}{subsubsection.7.26.1.1}% 
+\contentsline {section}{\numberline {7.27}Projekt/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T11/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T11.d File Reference}{62}{section.7.27}% 
+\contentsline {section}{\numberline {7.28}Projekt/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/i2c/twimaster.d File Reference}{62}{section.7.28}% 
+\contentsline {section}{\numberline {7.29}Projekt/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}C/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}TC.d File Reference}{62}{section.7.29}% 
+\contentsline {section}{\numberline {7.30}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clibrary.d File Reference}{62}{section.7.30}% 
+\contentsline {section}{\numberline {7.31}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clibrary.c File Reference}{62}{section.7.31}% 
+\contentsline {subsection}{\numberline {7.31.1}Macro Definition Documentation}{63}{subsection.7.31.1}% 
+\contentsline {subsubsection}{\numberline {7.31.1.1}F\_CPU}{63}{subsubsection.7.31.1.1}% 
+\contentsline {section}{\numberline {7.32}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Clibrary.h File Reference}{63}{section.7.32}% 
+\contentsline {section}{\numberline {7.33}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ilib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Debug/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ilibrary.d File Reference}{63}{section.7.33}% 
+\contentsline {section}{\numberline {7.34}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ilib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ilibrary.c File Reference}{63}{section.7.34}% 
+\contentsline {subsection}{\numberline {7.34.1}Macro Definition Documentation}{64}{subsection.7.34.1}% 
+\contentsline {subsubsection}{\numberline {7.34.1.1}F\_CPU}{64}{subsubsection.7.34.1.1}% 
+\contentsline {subsection}{\numberline {7.34.2}Function Documentation}{64}{subsection.7.34.2}% 
+\contentsline {subsubsection}{\numberline {7.34.2.1}SPI\_Init()}{64}{subsubsection.7.34.2.1}% 
+\contentsline {subsubsection}{\numberline {7.34.2.2}SPI\_Read()}{64}{subsubsection.7.34.2.2}% 
+\contentsline {subsubsection}{\numberline {7.34.2.3}SPI\_Write()}{65}{subsubsection.7.34.2.3}% 
+\contentsline {subsubsection}{\numberline {7.34.2.4}SPI\_WriteData()}{65}{subsubsection.7.34.2.4}% 
+\contentsline {section}{\numberline {7.35}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ilib/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ilibrary.h File Reference}{65}{section.7.35}% 
+\contentsline {subsection}{\numberline {7.35.1}Macro Definition Documentation}{65}{subsection.7.35.1}% 
+\contentsline {subsubsection}{\numberline {7.35.1.1}BAUD}{65}{subsubsection.7.35.1.1}% 
+\contentsline {subsubsection}{\numberline {7.35.1.2}BAUD\_TOL}{66}{subsubsection.7.35.1.2}% 
+\contentsline {subsubsection}{\numberline {7.35.1.3}F\_CPU}{66}{subsubsection.7.35.1.3}% 
+\contentsline {subsubsection}{\numberline {7.35.1.4}SS\_DISABLE}{66}{subsubsection.7.35.1.4}% 
+\contentsline {subsubsection}{\numberline {7.35.1.5}SS\_ENABLE}{66}{subsubsection.7.35.1.5}% 
+\contentsline {subsection}{\numberline {7.35.2}Function Documentation}{66}{subsection.7.35.2}% 
+\contentsline {subsubsection}{\numberline {7.35.2.1}SPI\_Init()}{66}{subsubsection.7.35.2.1}% 
+\contentsline {subsubsection}{\numberline {7.35.2.2}SPI\_Read()}{66}{subsubsection.7.35.2.2}% 
+\contentsline {subsubsection}{\numberline {7.35.2.3}SPI\_Write()}{67}{subsubsection.7.35.2.3}% 
+\contentsline {subsubsection}{\numberline {7.35.2.4}SPI\_WriteData()}{67}{subsubsection.7.35.2.4}% 
+\contentsline {chapter}{Index}{69}{section*.70}% 

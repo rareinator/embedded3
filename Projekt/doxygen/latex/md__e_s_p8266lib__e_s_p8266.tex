@@ -1,0 +1,65 @@
+\doxysection*{Thingspeak example}
+
+Here is an example of the AT commands that we send to the module. More documentation can be found in the datasheet \href{../ESP8266__AT Instruction Set_v1.3.pdf}{\texttt{ E\+S\+P8266\+\_\+\+AT Instruction set V1.\+3}}
+
+\doxysubsection*{Connect to wifi}
+
+A\+T+\+C\+W\+M\+O\+DE=3 // soft\+A\+P+station mode A\+T+\+C\+W\+J\+AP=\char`\"{}\+My\+Fi\char`\"{},\char`\"{}nicolai5\char`\"{}
+
+\doxysubsection*{Send data}
+
+A\+T+\+C\+I\+P\+S\+T\+A\+RT=\char`\"{}\+T\+C\+P\char`\"{},\char`\"{}api.\+thingspeak.\+com\char`\"{},80 A\+T+\+C\+I\+P\+S\+E\+ND=48 G\+ET /update?api\+\_\+key=9X\+Z\+N1\+C\+Y19\+N\+F\+L\+B7\+RB\&field1=32
+
+\doxysubsection*{Start Server}
+
+A\+T+\+C\+W\+M\+O\+DE=3 // soft\+A\+P+station mode A\+T+\+C\+I\+P\+M\+UX=1 // Enable multiple connections page 53 A\+T+\+C\+I\+P\+S\+E\+R\+V\+ER=1,80 //\+Start T\+CP server on port 80 page 54 A\+T+\+C\+W\+S\+AP? // Lists S\+S\+ID page 27 Fary\+Link\+\_\+46\+D8\+FA A\+T+\+C\+I\+F\+SR // Lists IP look at C\+I\+F\+SR\+:A\+P\+IP page page 52
+
+\doxysection*{Sending data to the device}
+
+To send commands to the wifi module, you start with sending 1 byte specifying the register address you want to communicate with.
+
+After that you send the data bytes that are defined by the register, this is being terminated by sending 0x\+FF. Which then ends the transmission.
+
+example
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{15}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Address  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 0  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 1  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 2  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 3  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 4  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 5  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 6  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 7  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 8  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 9  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 10  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 11  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 12  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Terminator   }\\\cline{1-15}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Address  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 0  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 1  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 2  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 3  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 4  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 5  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 6  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 7  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 8  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 9  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 10  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 11  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ data byte 12  }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Terminator   }\\\cline{1-15}
+\endhead
+0x00  &M  &y  &F  &i  &,  &n  &i  &c  &o  &l  &a  &i  &5  &0x\+FF   \\\cline{1-15}
+\end{longtabu}
+
+
+\doxysubsection*{W\+I\+FI connection (S\+S\+ID, password)}
+
+
+\begin{DoxyItemize}
+\item address\+: 0x00 First you send the S\+S\+ID follow by a comma 0x2C and then followed by the password, until termination byte 0x\+FF
+\end{DoxyItemize}
+
+\doxysubsection*{Clock set}
+
+
+\begin{DoxyItemize}
+\item address\+: 0x01 This only has 7 bytes you can send, in this order hour, minute, second, day, date, month, year, followed by the termination byte 0x\+FF so a total of 9 bytes including the address and termination byte
+\end{DoxyItemize}
+
+\doxysubsection*{Temperature limit}
+
+
+\begin{DoxyItemize}
+\item address\+: 0x02 This only has 1 byte of data you can send, which is the temperature threshold, before it turns the fan on. So 3 bytes in total should be send including the address and termination byte
+\end{DoxyItemize}
+
+\doxysubsection*{Fan strength}
+
+
+\begin{DoxyItemize}
+\item address\+: 0x03 This only has 1 byte of data you can send, which is the duty cycle that the fan runs on. So 3 bytes in total should be send including the address and termination byte 
+\end{DoxyItemize}

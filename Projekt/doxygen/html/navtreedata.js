@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Smart home", "index.html", [
-    [ "MNI TCP protocol", "md__e_s_p8266lib__protocol.html", null ],
+    [ "ESP8266 WiFi module", "md__e_s_p8266lib__e_s_p8266.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
