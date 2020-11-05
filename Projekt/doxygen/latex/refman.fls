@@ -248,6 +248,9 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ts1phv.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ts1phv.fd
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/helvetic/phvr8c.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/helvetic/phvb8tn.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/helvetic/phvb8rn.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/helvetic/phvb8tn.vf
@@ -258,9 +261,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ts1phv.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ts1phv.fd
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/helvetic/phvr8c.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/helvetic/phvr8c.vf
 INPUT /Users/rare/Documents/Development/Embedded/embedded3/Projekt/doxygen/latex/modules.tex
 INPUT /Users/rare/Documents/Development/Embedded/embedded3/Projekt/doxygen/latex/modules.tex

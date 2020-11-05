@@ -268,4 +268,4 @@
 \contentsline {subsubsection}{\numberline {7.35.2.2}SPI\_Read()}{66}{subsubsection.7.35.2.2}% 
 \contentsline {subsubsection}{\numberline {7.35.2.3}SPI\_Write()}{67}{subsubsection.7.35.2.3}% 
 \contentsline {subsubsection}{\numberline {7.35.2.4}SPI\_WriteData()}{67}{subsubsection.7.35.2.4}% 
-\contentsline {chapter}{Index}{69}{section*.70}% 
+\contentsline {chapter}{Index}{69}{section*.71}% 

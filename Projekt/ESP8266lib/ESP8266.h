@@ -5,15 +5,10 @@
   
 	@brief ESP8266 WIFI library
 	
-	Connect the ESP8266 device using the following schematic and pins.
-
 	The library can be used to both, connect to a wifi network, and then open TCP connections,
 	and send data and receive data.
 
 	You can also use it to start your own access point and receive data, acting as a TCP server.
-
-	![Schematic](../../Datablade/Main schematic small.png)
-	![Pins](../../Datablade/ESPPins.png)
 
 	@author Morten Nissen, Nicolai De Jong Bjerg & Kevin Pike Darmer
 	@copyright (C) 2020 Morten Nissen, Nicolai De Jung Berg & Kevin Pike Darmer, GNU General Public License Version 3

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.10)  5 NOV 2020 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.10)  5 NOV 2020 19:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -898,179 +898,173 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 3.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 5.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 5.
+(Font)              scaled to size 10.79993pt on input line 7.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 11.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 11.
 
-Underfull \hbox (badness 862) in paragraph at lines 11--12
-\T1/phv/m/n/10 A[]T+[]C[]I[]P[]S[]T[]A[]RT="[]T[]C[]P","api.[]thingspeak.[]com",80 A[]T+[]C[]I[]P[]S[]E[]ND=48 G[]ET /update?api[]_[]key=9X[]Z[]N1[]C[]Y19[]N[]F[]L[]B7[]
- []
-
-
-Overfull \hbox (6.08861pt too wide) in paragraph at lines 36--36
+Overfull \hbox (6.08861pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 dress| 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (6.08861pt too wide) in paragraph at lines 36--36
+Overfull \hbox (6.08861pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 dress| 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (0.58075pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.58075pt too wide) in paragraph at lines 54--54
  \T1/phv/b/n/10 data 
  []
 
 
-Overfull \hbox (1.58875pt too wide) in paragraph at lines 36--36
+Overfull \hbox (1.58875pt too wide) in paragraph at lines 54--54
 []\T1/phv/m/n/10 0x00| 
  []
 
 
-Overfull \hbox (0.56244pt too wide) in paragraph at lines 36--36
+Overfull \hbox (0.56244pt too wide) in paragraph at lines 54--54
 []\T1/phv/m/n/10 0x[]
  []
 
 [1
 
-]
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 43.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ts1phv.fd
-File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
-)
-LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 43.
-) [2]
+]) [2]
 Chapter 2.
 (/Users/rare/Documents/Development/Embedded/embedded3/Projekt/doxygen/latex/modules.tex) [3
 
@@ -1417,21 +1411,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 237.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 237.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 237.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: E1C77EA6EF86714BF0DC4F6F726D73B7;53953.
+(rerunfilecheck)             Checksum: 742DCBD7EBB92400582047E0C0F28400;53953.
  ) 
 Here is how much of TeX's memory you used:
- 17695 strings out of 492616
- 282142 string characters out of 6129481
+ 17696 strings out of 492616
+ 282153 string characters out of 6129481
  453759 words of memory out of 5000000
  20583 multiletter control sequences out of 15000+600000
  62859 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,16n,92p,2758b,629s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on /Users/rare/Documents/Development/Embedded/embedded3/Projekt/doxygen/latex/refman.pdf (83 pages, 292545 bytes).
+Output written on /Users/rare/Documents/Development/Embedded/embedded3/Projekt/doxygen/latex/refman.pdf (83 pages, 292471 bytes).
 PDF statistics:
- 3081 PDF objects out of 3580 (max. 8388607)
- 2949 compressed objects within 30 object streams
- 662 named destinations out of 1000 (max. 500000)
+ 3082 PDF objects out of 3580 (max. 8388607)
+ 2950 compressed objects within 30 object streams
+ 663 named destinations out of 1000 (max. 500000)
  2161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
