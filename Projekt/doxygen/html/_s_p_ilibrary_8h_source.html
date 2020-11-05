@@ -90,25 +90,29 @@ $(document).ready(function(){initNavTree('_s_p_ilibrary_8h_source.html',''); ini
 <a href="_s_p_ilibrary_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SPILIBRARY_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SPILIBRARY_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="_s_p_ilibrary_8h.html#a62634036639f88eece6fbf226b45f84b">    4</a></span>&#160;<span class="preprocessor">#define BAUD 9600</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_s_p_ilibrary_8h.html#addaa61b72aca51ed4835978d500f8755">    5</a></span>&#160;<span class="preprocessor">#define BAUD_TOL 2</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_s_p_ilibrary_8h.html#af35497e37f6cf97e8e91d09cdecfa249">    6</a></span>&#160;<span class="preprocessor">#define SS_ENABLE PORTB &amp;= ~(1&lt;&lt;PB0)</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="_s_p_ilibrary_8h.html#a43bafb28b29491ec7f871319b5a3b2f8">    4</a></span>&#160;<span class="preprocessor">#define F_CPU 16000000UL</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_s_p_ilibrary_8h.html#a62634036639f88eece6fbf226b45f84b">    5</a></span>&#160;<span class="preprocessor">#define BAUD 9600</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_s_p_ilibrary_8h.html#addaa61b72aca51ed4835978d500f8755">    6</a></span>&#160;<span class="preprocessor">#define BAUD_TOL 2</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="_s_p_ilibrary_8h.html#af35497e37f6cf97e8e91d09cdecfa249">    7</a></span>&#160;<span class="preprocessor">#define SS_ENABLE PORTB &amp;= ~(1&lt;&lt;PB0)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_s_p_ilibrary_8h.html#ac515f2efc91c54803f65de08d14d4566">    8</a></span>&#160;<span class="preprocessor">#define SS_DISABLE PORTB |= (1&lt;&lt;PB0)</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_p_ilibrary_8h.html#a808bd8417de730cd0a7e20b3e6da2b2a">SPI_Init</a>(<span class="keywordtype">bool</span> isMaster);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">char</span> <a class="code" href="_s_p_ilibrary_8h.html#a10fd2a5a94f5b640cd1f2e9f2c4d3fd5">SPI_Read</a>();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_p_ilibrary_8h.html#aa8a89a6c813cd3cbb4b0ed587fbeaa74">SPI_Write</a>(<span class="keywordtype">char</span> data);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SPILIBRARY_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_p_ilibrary_8h.html#a808bd8417de730cd0a7e20b3e6da2b2a">SPI_Init</a>(<span class="keywordtype">bool</span> isMaster);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">char</span> <a class="code" href="_s_p_ilibrary_8h.html#a10fd2a5a94f5b640cd1f2e9f2c4d3fd5">SPI_Read</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_p_ilibrary_8h.html#aa8a89a6c813cd3cbb4b0ed587fbeaa74">SPI_Write</a>(<span class="keywordtype">char</span> data);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_s_p_ilibrary_8h.html#a36fe8137dbdb422e3ee4bbff3282c2fc">SPI_WriteData</a>(<span class="keywordtype">char</span> address, <span class="keywordtype">char</span> data);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* SPILIBRARY_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="a_s_p_ilibrary_8h_html_a808bd8417de730cd0a7e20b3e6da2b2a"><div class="ttname"><a href="_s_p_ilibrary_8h.html#a808bd8417de730cd0a7e20b3e6da2b2a">SPI_Init</a></div><div class="ttdeci">void SPI_Init(bool isMaster)</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ilibrary_8c_source.html#l00005">SPIlibrary.c:5</a></div></div>
-<div class="ttc" id="a_s_p_ilibrary_8h_html_a10fd2a5a94f5b640cd1f2e9f2c4d3fd5"><div class="ttname"><a href="_s_p_ilibrary_8h.html#a10fd2a5a94f5b640cd1f2e9f2c4d3fd5">SPI_Read</a></div><div class="ttdeci">char SPI_Read()</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ilibrary_8c_source.html#l00031">SPIlibrary.c:31</a></div></div>
-<div class="ttc" id="a_s_p_ilibrary_8h_html_aa8a89a6c813cd3cbb4b0ed587fbeaa74"><div class="ttname"><a href="_s_p_ilibrary_8h.html#aa8a89a6c813cd3cbb4b0ed587fbeaa74">SPI_Write</a></div><div class="ttdeci">void SPI_Write(char data)</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ilibrary_8c_source.html#l00038">SPIlibrary.c:38</a></div></div>
+<div class="ttc" id="a_s_p_ilibrary_8h_html_a36fe8137dbdb422e3ee4bbff3282c2fc"><div class="ttname"><a href="_s_p_ilibrary_8h.html#a36fe8137dbdb422e3ee4bbff3282c2fc">SPI_WriteData</a></div><div class="ttdeci">void SPI_WriteData(char address, char data)</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ilibrary_8c_source.html#l00046">SPIlibrary.c:46</a></div></div>
+<div class="ttc" id="a_s_p_ilibrary_8h_html_a808bd8417de730cd0a7e20b3e6da2b2a"><div class="ttname"><a href="_s_p_ilibrary_8h.html#a808bd8417de730cd0a7e20b3e6da2b2a">SPI_Init</a></div><div class="ttdeci">void SPI_Init(bool isMaster)</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ilibrary_8c_source.html#l00007">SPIlibrary.c:7</a></div></div>
+<div class="ttc" id="a_s_p_ilibrary_8h_html_a10fd2a5a94f5b640cd1f2e9f2c4d3fd5"><div class="ttname"><a href="_s_p_ilibrary_8h.html#a10fd2a5a94f5b640cd1f2e9f2c4d3fd5">SPI_Read</a></div><div class="ttdeci">char SPI_Read()</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ilibrary_8c_source.html#l00033">SPIlibrary.c:33</a></div></div>
+<div class="ttc" id="a_s_p_ilibrary_8h_html_aa8a89a6c813cd3cbb4b0ed587fbeaa74"><div class="ttname"><a href="_s_p_ilibrary_8h.html#aa8a89a6c813cd3cbb4b0ed587fbeaa74">SPI_Write</a></div><div class="ttdeci">void SPI_Write(char data)</div><div class="ttdef"><b>Definition:</b> <a href="_s_p_ilibrary_8c_source.html#l00040">SPIlibrary.c:40</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

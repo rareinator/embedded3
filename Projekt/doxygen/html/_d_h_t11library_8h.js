@@ -6,6 +6,7 @@ var _d_h_t11library_8h =
     [ "DHT11_DDR", "_d_h_t11library_8h.html#afd0ac1a6f5d9147866e999f5f0a9ea58", null ],
     [ "DHT11_PIN", "_d_h_t11library_8h.html#a79111e78831efb8ac76fa8123357475e", null ],
     [ "DHT11_PORT", "_d_h_t11library_8h.html#aebeb55e992ef02dd2d39a225e276585e", null ],
+    [ "F_CPU", "_d_h_t11library_8h.html#a43bafb28b29491ec7f871319b5a3b2f8", null ],
     [ "SET_BIT", "_d_h_t11library_8h.html#a218c3d81b5854edcc3ea7f671884f52d", null ],
     [ "DHT11_init", "_d_h_t11library_8h.html#aa0ec0acc9e27ec8e40883694557bfa8e", null ],
     [ "DHT11_ReadHumid", "_d_h_t11library_8h.html#aa917fc5d7a718971c0401ddaced03a52", null ],

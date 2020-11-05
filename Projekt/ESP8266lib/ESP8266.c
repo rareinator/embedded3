@@ -163,8 +163,6 @@ bool ESP8266_StartServer(uint8_t _port)
 	sprintf(_atCommand, "AT+CIPSERVER=1,%d", _port);
 	_atCommand[19] = 0;
 	return SendATandExpectResponse(_atCommand, "\r\nOK\r\n");
-	
-	
 }
 
 bool ESP8266_StopServer()
@@ -174,16 +172,6 @@ bool ESP8266_StopServer()
 	sprintf(_atCommand, "AT+CIPSERVER=0");
 	_atCommand[19] = 0;
 	return SendATandExpectResponse(_atCommand, "\r\nOK\r\n");
-}
-
-bool ESP8266_ConnectToAP()
-{
-	uint8_t Connect_Status;
-	Connect_Status = ESP8266_connected();
-	if(Connect_Status == ESP8266_NOT_CONNECTED_TO_AP)
-	ESP8266_JoinAccessPoint(SSID, PASSWORD);
-	if(Connect_Status == ESP8266_TRANSMISSION_DISCONNECTED)
-	ESP8266_Start(0, DOMAIN, PORT);
 }
 
 uint8_t ESP8266_JoinAccessPoint(char* _SSID, char* _PASSWORD)

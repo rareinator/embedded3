@@ -96,12 +96,16 @@ $(document).ready(function(){initNavTree('_s_p_ilibrary_8h.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_p_ilibrary_8h.html#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a>&#160;&#160;&#160;16000000UL</td></tr>
+<tr class="separator:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62634036639f88eece6fbf226b45f84b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_p_ilibrary_8h.html#a62634036639f88eece6fbf226b45f84b">BAUD</a>&#160;&#160;&#160;9600</td></tr>
 <tr class="separator:a62634036639f88eece6fbf226b45f84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addaa61b72aca51ed4835978d500f8755"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_p_ilibrary_8h.html#addaa61b72aca51ed4835978d500f8755">BAUD_TOL</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:addaa61b72aca51ed4835978d500f8755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af35497e37f6cf97e8e91d09cdecfa249"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_p_ilibrary_8h.html#af35497e37f6cf97e8e91d09cdecfa249">SS_ENABLE</a>&#160;&#160;&#160;PORTB &amp;= ~(1&lt;&lt;PB0)</td></tr>
 <tr class="separator:af35497e37f6cf97e8e91d09cdecfa249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac515f2efc91c54803f65de08d14d4566"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_p_ilibrary_8h.html#ac515f2efc91c54803f65de08d14d4566">SS_DISABLE</a>&#160;&#160;&#160;PORTB |= (1&lt;&lt;PB0)</td></tr>
+<tr class="separator:ac515f2efc91c54803f65de08d14d4566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -111,6 +115,8 @@ Functions</h2></td></tr>
 <tr class="separator:a10fd2a5a94f5b640cd1f2e9f2c4d3fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a89a6c813cd3cbb4b0ed587fbeaa74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_p_ilibrary_8h.html#aa8a89a6c813cd3cbb4b0ed587fbeaa74">SPI_Write</a> (char data)</td></tr>
 <tr class="separator:aa8a89a6c813cd3cbb4b0ed587fbeaa74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36fe8137dbdb422e3ee4bbff3282c2fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_s_p_ilibrary_8h.html#a36fe8137dbdb422e3ee4bbff3282c2fc">SPI_WriteData</a> (char address, char data)</td></tr>
+<tr class="separator:a36fe8137dbdb422e3ee4bbff3282c2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a62634036639f88eece6fbf226b45f84b"></a>
@@ -125,7 +131,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8h_source.html#l00004">4</a> of file <a class="el" href="_s_p_ilibrary_8h_source.html">SPIlibrary.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8h_source.html#l00005">5</a> of file <a class="el" href="_s_p_ilibrary_8h_source.html">SPIlibrary.h</a>.</p>
 
 </div>
 </div>
@@ -141,7 +147,39 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8h_source.html#l00005">5</a> of file <a class="el" href="_s_p_ilibrary_8h_source.html">SPIlibrary.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8h_source.html#l00006">6</a> of file <a class="el" href="_s_p_ilibrary_8h_source.html">SPIlibrary.h</a>.</p>
+
+</div>
+</div>
+<a id="a43bafb28b29491ec7f871319b5a3b2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43bafb28b29491ec7f871319b5a3b2f8">&#9670;&nbsp;</a></span>F_CPU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F_CPU&#160;&#160;&#160;16000000UL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8h_source.html#l00004">4</a> of file <a class="el" href="_s_p_ilibrary_8h_source.html">SPIlibrary.h</a>.</p>
+
+</div>
+</div>
+<a id="ac515f2efc91c54803f65de08d14d4566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac515f2efc91c54803f65de08d14d4566">&#9670;&nbsp;</a></span>SS_DISABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SS_DISABLE&#160;&#160;&#160;PORTB |= (1&lt;&lt;PB0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8h_source.html#l00008">8</a> of file <a class="el" href="_s_p_ilibrary_8h_source.html">SPIlibrary.h</a>.</p>
 
 </div>
 </div>
@@ -157,7 +195,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8h_source.html#l00006">6</a> of file <a class="el" href="_s_p_ilibrary_8h_source.html">SPIlibrary.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8h_source.html#l00007">7</a> of file <a class="el" href="_s_p_ilibrary_8h_source.html">SPIlibrary.h</a>.</p>
 
 </div>
 </div>
@@ -178,7 +216,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8c_source.html#l00005">5</a> of file <a class="el" href="_s_p_ilibrary_8c_source.html">SPIlibrary.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8c_source.html#l00007">7</a> of file <a class="el" href="_s_p_ilibrary_8c_source.html">SPIlibrary.c</a>.</p>
 
 </div>
 </div>
@@ -197,7 +235,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8c_source.html#l00031">31</a> of file <a class="el" href="_s_p_ilibrary_8c_source.html">SPIlibrary.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8c_source.html#l00033">33</a> of file <a class="el" href="_s_p_ilibrary_8c_source.html">SPIlibrary.c</a>.</p>
 
 </div>
 </div>
@@ -217,7 +255,37 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8c_source.html#l00038">38</a> of file <a class="el" href="_s_p_ilibrary_8c_source.html">SPIlibrary.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8c_source.html#l00040">40</a> of file <a class="el" href="_s_p_ilibrary_8c_source.html">SPIlibrary.c</a>.</p>
+
+</div>
+</div>
+<a id="a36fe8137dbdb422e3ee4bbff3282c2fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36fe8137dbdb422e3ee4bbff3282c2fc">&#9670;&nbsp;</a></span>SPI_WriteData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SPI_WriteData </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_s_p_ilibrary_8c_source.html#l00046">46</a> of file <a class="el" href="_s_p_ilibrary_8c_source.html">SPIlibrary.c</a>.</p>
 
 </div>
 </div>

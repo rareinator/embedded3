@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('_d_h_t11library_8c.html',''); initResi
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">DHT11library.c File Reference</div>  </div>
@@ -98,6 +99,15 @@ $(document).ready(function(){initNavTree('_d_h_t11library_8c.html',''); initResi
 </div>
 <p><a href="_d_h_t11library_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11library_8c.html#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a>&#160;&#160;&#160;16000000UL</td></tr>
+<tr class="separator:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba1b6107475fbf449bddfde5c1c276d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11library_8c.html#abba1b6107475fbf449bddfde5c1c276d">LED_TOOGLE</a>&#160;&#160;&#160;PORTA ^= (1 &lt;&lt;PA1)</td></tr>
+<tr class="separator:abba1b6107475fbf449bddfde5c1c276d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e697ac60e05813d45ea2c9c9e79c25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11library_8c.html#af2e697ac60e05813d45ea2c9c9e79c25">LED_ON</a>&#160;&#160;&#160;PORTA |= (1 &lt;&lt; PA1)</td></tr>
+<tr class="separator:af2e697ac60e05813d45ea2c9c9e79c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:af4fa0154410fe127e4a25295f4ab5b51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11library_8c.html#af4fa0154410fe127e4a25295f4ab5b51">DHT11_Wait</a> (int maxWaitTime, bool waitForHigh)</td></tr>
@@ -111,6 +121,55 @@ Functions</h2></td></tr>
 <tr class="memitem:a5286883d8805be1c2e13be310a9faf80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11library_8c.html#a5286883d8805be1c2e13be310a9faf80">DHT11_ReadRaw</a> (<a class="el" href="struct_d_h_t11.html">DHT11</a> *result)</td></tr>
 <tr class="separator:a5286883d8805be1c2e13be310a9faf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a43bafb28b29491ec7f871319b5a3b2f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43bafb28b29491ec7f871319b5a3b2f8">&#9670;&nbsp;</a></span>F_CPU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define F_CPU&#160;&#160;&#160;16000000UL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00001">1</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
+
+</div>
+</div>
+<a id="af2e697ac60e05813d45ea2c9c9e79c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e697ac60e05813d45ea2c9c9e79c25">&#9670;&nbsp;</a></span>LED_ON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_ON&#160;&#160;&#160;PORTA |= (1 &lt;&lt; PA1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00010">10</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
+
+</div>
+</div>
+<a id="abba1b6107475fbf449bddfde5c1c276d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abba1b6107475fbf449bddfde5c1c276d">&#9670;&nbsp;</a></span>LED_TOOGLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_TOOGLE&#160;&#160;&#160;PORTA ^= (1 &lt;&lt;PA1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00009">9</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aa0ec0acc9e27ec8e40883694557bfa8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa0ec0acc9e27ec8e40883694557bfa8e">&#9670;&nbsp;</a></span>DHT11_init()</h2>
@@ -127,7 +186,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00037">37</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00041">41</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
 
 </div>
 </div>
@@ -147,7 +206,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00055">55</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00059">59</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
 
 </div>
 </div>
@@ -166,7 +225,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00048">48</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00052">52</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
 
 </div>
 </div>
@@ -185,7 +244,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00043">43</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00047">47</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
 
 </div>
 </div>
@@ -215,7 +274,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00009">9</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_d_h_t11library_8c_source.html#l00013">13</a> of file <a class="el" href="_d_h_t11library_8c_source.html">DHT11library.c</a>.</p>
 
 </div>
 </div>

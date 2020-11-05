@@ -1,0 +1,97 @@
+\hypertarget{_slave_2main_8c}{}\doxysection{Slave/main.c File Reference}
+\label{_slave_2main_8c}\index{Slave/main.c@{Slave/main.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}D\+Clibrary.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+P\+Ilibrary.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_slave_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+C\+PU}}~16000000\+UL
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_slave_2main_8c_aa64c6dce15e9de9105b4ae9533c9a267}{I\+SR}} (P\+C\+I\+N\+T0\+\_\+vect)
+\item 
+void \mbox{\hyperlink{_slave_2main_8c_a041e5394e4f5c9d75c7a699b6b2f0190}{Slave\+\_\+\+Init}} ()
+\item 
+int \mbox{\hyperlink{_slave_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_slave_2main_8c_a9428adc9af4653a2050e2536b55dec8d}{reg}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_slave_2main_8c_ae1f13e96d928504e11ec4da744f67f9b}{val}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_slave_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_slave_2main_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{main.c@{main.c}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+C\+PU~16000000\+UL}
+
+
+
+Definition at line 1 of file main.\+c.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_slave_2main_8c_aa64c6dce15e9de9105b4ae9533c9a267}\label{_slave_2main_8c_aa64c6dce15e9de9105b4ae9533c9a267}} 
+\index{main.c@{main.c}!ISR@{ISR}}
+\index{ISR@{ISR}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{ISR()}{ISR()}}
+{\footnotesize\ttfamily I\+SR (\begin{DoxyParamCaption}\item[{P\+C\+I\+N\+T0\+\_\+vect}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file main.\+c.
+
+\mbox{\Hypertarget{_slave_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}\label{_slave_2main_8c_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 45 of file main.\+c.
+
+\mbox{\Hypertarget{_slave_2main_8c_a041e5394e4f5c9d75c7a699b6b2f0190}\label{_slave_2main_8c_a041e5394e4f5c9d75c7a699b6b2f0190}} 
+\index{main.c@{main.c}!Slave\_Init@{Slave\_Init}}
+\index{Slave\_Init@{Slave\_Init}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Slave\_Init()}{Slave\_Init()}}
+{\footnotesize\ttfamily void Slave\+\_\+\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file main.\+c.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_slave_2main_8c_a9428adc9af4653a2050e2536b55dec8d}\label{_slave_2main_8c_a9428adc9af4653a2050e2536b55dec8d}} 
+\index{main.c@{main.c}!reg@{reg}}
+\index{reg@{reg}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{reg}{reg}}
+{\footnotesize\ttfamily uint8\+\_\+t reg}
+
+
+
+Definition at line 9 of file main.\+c.
+
+\mbox{\Hypertarget{_slave_2main_8c_ae1f13e96d928504e11ec4da744f67f9b}\label{_slave_2main_8c_ae1f13e96d928504e11ec4da744f67f9b}} 
+\index{main.c@{main.c}!val@{val}}
+\index{val@{val}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{val}{val}}
+{\footnotesize\ttfamily uint8\+\_\+t val}
+
+
+
+Definition at line 10 of file main.\+c.
+

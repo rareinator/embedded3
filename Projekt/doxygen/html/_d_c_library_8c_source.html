@@ -94,12 +94,12 @@ $(document).ready(function(){initNavTree('_d_c_library_8c_source.html',''); init
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Created: 03-11-2020 08:59:25</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *  Author: Kevin Pike Darmer</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;DClibrary.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_clibrary_8h.html">DClibrary.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="_d_c_library_8c.html#a43bafb28b29491ec7f871319b5a3b2f8">   10</a></span>&#160;<span class="preprocessor">#define F_CPU 16000000UL</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_d_c_library_8h.html#a47d839f72570f3d4e880a1d1edaf3d08">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_d_c_library_8c.html#a47d839f72570f3d4e880a1d1edaf3d08">DCMotor_init</a>(){</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_d_clibrary_8h.html#a47d839f72570f3d4e880a1d1edaf3d08">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_d_c_library_8c.html#a47d839f72570f3d4e880a1d1edaf3d08">DCMotor_init</a>(){</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// Compare Output Mode: Fast PWM Mode: Clear OC0A on Compare Match, set OC0A at BOTTOM, non-inverting mode (Table 16-3)</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    TCCR0A |= (1&lt;&lt;COM0A1);                  <span class="comment">// datasheet 16.9.1</span></div>
@@ -114,15 +114,16 @@ $(document).ready(function(){initNavTree('_d_c_library_8c_source.html',''); init
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    DDRB |= (1&lt;&lt;PB7);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_d_c_library_8h.html#ab9204d8faddd43c594edcfc8e71b854b">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_d_c_library_8c.html#ab9204d8faddd43c594edcfc8e71b854b">Start_Fan</a>(){</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_d_clibrary_8h.html#ab9204d8faddd43c594edcfc8e71b854b">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_d_c_library_8c.html#ab9204d8faddd43c594edcfc8e71b854b">Start_Fan</a>(){</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="_d_c_library_8h.html#a730d81a1c7a4eb315ea72495c6e33c45">Fan_Start</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_d_c_library_8h.html#a7f6871573507da0584e83fc59fed7099">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_d_c_library_8c.html#a7f6871573507da0584e83fc59fed7099">Stop_Fan</a>(){</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_d_clibrary_8h.html#a7f6871573507da0584e83fc59fed7099">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_d_c_library_8c.html#a7f6871573507da0584e83fc59fed7099">Stop_Fan</a>(){</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="_d_c_library_8h.html#a486452f60aa0050932b50fa079155d8c">Fan_Stop</a></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="a_d_clibrary_8h_html"><div class="ttname"><a href="_d_clibrary_8h.html">DClibrary.h</a></div></div>
 <div class="ttc" id="a_d_c_library_8c_html_a7f6871573507da0584e83fc59fed7099"><div class="ttname"><a href="_d_c_library_8c.html#a7f6871573507da0584e83fc59fed7099">Stop_Fan</a></div><div class="ttdeci">void Stop_Fan()</div><div class="ttdef"><b>Definition:</b> <a href="_d_c_library_8c_source.html#l00032">DCLibrary.c:32</a></div></div>
 <div class="ttc" id="a_d_c_library_8c_html_ab9204d8faddd43c594edcfc8e71b854b"><div class="ttname"><a href="_d_c_library_8c.html#ab9204d8faddd43c594edcfc8e71b854b">Start_Fan</a></div><div class="ttdeci">void Start_Fan()</div><div class="ttdef"><b>Definition:</b> <a href="_d_c_library_8c_source.html#l00028">DCLibrary.c:28</a></div></div>
 <div class="ttc" id="a_d_c_library_8h_html_a730d81a1c7a4eb315ea72495c6e33c45"><div class="ttname"><a href="_d_c_library_8h.html#a730d81a1c7a4eb315ea72495c6e33c45">Fan_Start</a></div><div class="ttdeci">#define Fan_Start</div><div class="ttdef"><b>Definition:</b> <a href="_d_c_library_8h_source.html#l00014">DCLibrary.h:14</a></div></div>

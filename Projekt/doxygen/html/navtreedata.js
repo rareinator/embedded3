@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "Smart home", "index.html", [
+    [ "MNI TCP protocol", "md__e_s_p8266lib__protocol.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -37,7 +38,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
@@ -51,7 +52,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_d_c_library_8c.html",
-"files.html"
+"group___e_s_p8266.html#ga59c664e4497c24d54a7c5442a0d3e42b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

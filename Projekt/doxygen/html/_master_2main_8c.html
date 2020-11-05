@@ -91,8 +91,11 @@ $(document).ready(function(){initNavTree('_master_2main_8c.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;avr/io.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;util/delay.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_d_h_t11library_8h_source.html">DHT11library.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_e_s_p8266_8h_source.html">ESP8266.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_s_p_ilibrary_8h_source.html">SPIlibrary.h</a>&quot;</code><br />
 </div>
 <p><a href="_master_2main_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -100,6 +103,8 @@ $(document).ready(function(){initNavTree('_master_2main_8c.html',''); initResiza
 Macros</h2></td></tr>
 <tr class="memitem:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_master_2main_8c.html#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a>&#160;&#160;&#160;16000000UL</td></tr>
 <tr class="separator:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8ea54a2630aaf2ae3f2bd5fa886959"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_master_2main_8c.html#aed8ea54a2630aaf2ae3f2bd5fa886959">MAX_TEMP</a>&#160;&#160;&#160;25</td></tr>
+<tr class="separator:aed8ea54a2630aaf2ae3f2bd5fa886959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -123,6 +128,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aed8ea54a2630aaf2ae3f2bd5fa886959"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed8ea54a2630aaf2ae3f2bd5fa886959">&#9670;&nbsp;</a></span>MAX_TEMP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_TEMP&#160;&#160;&#160;25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_master_2main_8c_source.html#l00010">10</a> of file <a class="el" href="_master_2main_8c_source.html">main.c</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a840291bc02cba5474a4cb46a9b9566fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&nbsp;</a></span>main()</h2>
@@ -140,7 +161,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_master_2main_8c_source.html#l00008">8</a> of file <a class="el" href="_master_2main_8c_source.html">main.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_master_2main_8c_source.html#l00013">13</a> of file <a class="el" href="_master_2main_8c_source.html">main.c</a>.</p>
 
 </div>
 </div>
