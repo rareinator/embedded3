@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "Smart home", "index.html", [
+    [ "DHT11 module", "md__d_h_t11lib__d_h_t11.html", null ],
     [ "ESP8266 WiFi module", "md__e_s_p8266lib__e_s_p8266.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
@@ -52,7 +53,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_d_c_library_8c.html",
-"group___e_s_p8266.html#ga59c664e4497c24d54a7c5442a0d3e42b"
+"group___e_s_p8266.html#ga2d6e85eb98d8670ad4031914786f2050"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

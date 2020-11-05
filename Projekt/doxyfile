@@ -1283,7 +1283,8 @@ HTML_EXTRA_FILES       = Datablade/Atmel-2549-8-bit-AVR-Microcontroller-ATmega64
                          Datablade/ESPPins.jpg \
                          "Datablade/Main schematic small.png" \
                          "Datablade/Main schematic.png" \
-                         Datablade/MEGApinout.jpg
+                         Datablade/MEGApinout.jpg \
+                         Datablade/DHT11Session.png
 
 # The HTML_COLORSTYLE_HUE tag controls the color of the HTML output. Doxygen
 # will adjust the colors in the style sheet and background images according to

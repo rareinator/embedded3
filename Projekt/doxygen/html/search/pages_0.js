@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['esp8266_20wifi_20module_316',['ESP8266 WiFi module',['../md__e_s_p8266lib__e_s_p8266.html',1,'']]]
+  ['dht11_20module_315',['DHT11 module',['../md__d_h_t11lib__d_h_t11.html',1,'']]]
 ];

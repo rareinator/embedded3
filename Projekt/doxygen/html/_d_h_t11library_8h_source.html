@@ -87,48 +87,52 @@ $(document).ready(function(){initNavTree('_d_h_t11library_8h_source.html',''); i
 <div class="title">DHT11library.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_d_h_t11library_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DHT11library_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DHT11library_H_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="_d_h_t11library_8h.html#a43bafb28b29491ec7f871319b5a3b2f8">    4</a></span>&#160;<span class="preprocessor">#define F_CPU 16000000UL</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;avr/io.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="struct_d_h_t11.html">    8</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="struct_d_h_t11.html#a21d06d2e10c616fff7920576542998ec">    9</a></span>&#160;    uint8_t <a class="code" href="struct_d_h_t11.html#a21d06d2e10c616fff7920576542998ec">Temperatur</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_d_h_t11.html#aa89905b62886f8dd96cee63c1b5e8ea2">   10</a></span>&#160;    uint8_t <a class="code" href="struct_d_h_t11.html#aa89905b62886f8dd96cee63c1b5e8ea2">Humidity</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}<a class="code" href="struct_d_h_t11.html">DHT11</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_d_h_t11library_8h.html#a218c3d81b5854edcc3ea7f671884f52d">   13</a></span>&#160;<span class="preprocessor">#define SET_BIT(port, bit) ((port) |= (1&lt;&lt;bit))</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_d_h_t11library_8h.html#a735f5cbe1cab7d9d4bf6fb3b99d6401a">   14</a></span>&#160;<span class="preprocessor">#define CLR_BIT(port, bit) ((port) &amp;= ~((1&lt;&lt;bit)))</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_d_h_t11library_8h.html#afd0ac1a6f5d9147866e999f5f0a9ea58">   16</a></span>&#160;<span class="preprocessor">#define DHT11_DDR DDRA</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_d_h_t11library_8h.html#aebeb55e992ef02dd2d39a225e276585e">   17</a></span>&#160;<span class="preprocessor">#define DHT11_PORT PORTA</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="_d_h_t11library_8h.html#a79111e78831efb8ac76fa8123357475e">   18</a></span>&#160;<span class="preprocessor">#define DHT11_PIN PINA</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_d_h_t11library_8h.html#aeafc3b2cc281877ddfe016b31691aaae">   19</a></span>&#160;<span class="preprocessor">#define DHT11_BIT PA0</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_d_h_t11library_8h.html#aa0ec0acc9e27ec8e40883694557bfa8e">DHT11_init</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_d_h_t11library_8h.html#a5286883d8805be1c2e13be310a9faf80">DHT11_ReadRaw</a>(<a class="code" href="struct_d_h_t11.html">DHT11</a> *result);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;uint8_t <a class="code" href="_d_h_t11library_8h.html#a0f376250c831e4e4513dc23643f38b2b">DHT11_ReadTemp</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_d_h_t11library_8h.html#aa917fc5d7a718971c0401ddaced03a52">   24</a></span>&#160;uint8_t <a class="code" href="_d_h_t11library_8h.html#aa917fc5d7a718971c0401ddaced03a52">DHT11_ReadHumid</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DHT11library_H_ */</span><span class="preprocessor"></span></div>
+<a href="_d_h_t11library_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef DHT11library_H_</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define DHT11library_H_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="group___d_h_t11.html#ga43bafb28b29491ec7f871319b5a3b2f8">   20</a></span>&#160;<span class="preprocessor">#define F_CPU 16000000UL</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;avr/io.h&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_d_h_t11.html">   27</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="group___d_h_t11.html#ga21d06d2e10c616fff7920576542998ec">   28</a></span>&#160;    uint8_t <a class="code" href="group___d_h_t11.html#ga21d06d2e10c616fff7920576542998ec">Temperatur</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="group___d_h_t11.html#gaa89905b62886f8dd96cee63c1b5e8ea2">   29</a></span>&#160;    uint8_t <a class="code" href="group___d_h_t11.html#gaa89905b62886f8dd96cee63c1b5e8ea2">Humidity</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}<a class="code" href="struct_d_h_t11.html">DHT11</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group___d_h_t11.html#ga218c3d81b5854edcc3ea7f671884f52d">   32</a></span>&#160;<span class="preprocessor">#define SET_BIT(port, bit) ((port) |= (1&lt;&lt;bit))</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___d_h_t11.html#ga735f5cbe1cab7d9d4bf6fb3b99d6401a">   33</a></span>&#160;<span class="preprocessor">#define CLR_BIT(port, bit) ((port) &amp;= ~((1&lt;&lt;bit)))</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___d_h_t11.html#gafd0ac1a6f5d9147866e999f5f0a9ea58">   35</a></span>&#160;<span class="preprocessor">#define DHT11_DDR DDRA</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___d_h_t11.html#gaebeb55e992ef02dd2d39a225e276585e">   36</a></span>&#160;<span class="preprocessor">#define DHT11_PORT PORTA</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group___d_h_t11.html#ga79111e78831efb8ac76fa8123357475e">   37</a></span>&#160;<span class="preprocessor">#define DHT11_PIN PINA</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___d_h_t11.html#gaeafc3b2cc281877ddfe016b31691aaae">   38</a></span>&#160;<span class="preprocessor">#define DHT11_BIT PA0</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___d_h_t11.html#gaa0ec0acc9e27ec8e40883694557bfa8e">DHT11_init</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___d_h_t11.html#ga5286883d8805be1c2e13be310a9faf80">DHT11_ReadRaw</a>(<a class="code" href="struct_d_h_t11.html">DHT11</a> *result);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;uint8_t <a class="code" href="group___d_h_t11.html#ga0f376250c831e4e4513dc23643f38b2b">DHT11_ReadTemp</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="group___d_h_t11.html#gaa917fc5d7a718971c0401ddaced03a52">   67</a></span>&#160;uint8_t <a class="code" href="group___d_h_t11.html#gaa917fc5d7a718971c0401ddaced03a52">DHT11_ReadHumid</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DHT11library_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="a_d_h_t11library_8h_html_a5286883d8805be1c2e13be310a9faf80"><div class="ttname"><a href="_d_h_t11library_8h.html#a5286883d8805be1c2e13be310a9faf80">DHT11_ReadRaw</a></div><div class="ttdeci">void DHT11_ReadRaw(DHT11 *result)</div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8c_source.html#l00059">DHT11library.c:59</a></div></div>
-<div class="ttc" id="a_d_h_t11library_8h_html_aa0ec0acc9e27ec8e40883694557bfa8e"><div class="ttname"><a href="_d_h_t11library_8h.html#aa0ec0acc9e27ec8e40883694557bfa8e">DHT11_init</a></div><div class="ttdeci">void DHT11_init()</div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8c_source.html#l00041">DHT11library.c:41</a></div></div>
-<div class="ttc" id="astruct_d_h_t11_html_a21d06d2e10c616fff7920576542998ec"><div class="ttname"><a href="struct_d_h_t11.html#a21d06d2e10c616fff7920576542998ec">DHT11::Temperatur</a></div><div class="ttdeci">uint8_t Temperatur</div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8h_source.html#l00009">DHT11library.h:9</a></div></div>
-<div class="ttc" id="a_d_h_t11library_8h_html_aa917fc5d7a718971c0401ddaced03a52"><div class="ttname"><a href="_d_h_t11library_8h.html#aa917fc5d7a718971c0401ddaced03a52">DHT11_ReadHumid</a></div><div class="ttdeci">uint8_t DHT11_ReadHumid()</div></div>
-<div class="ttc" id="a_d_h_t11library_8h_html_a0f376250c831e4e4513dc23643f38b2b"><div class="ttname"><a href="_d_h_t11library_8h.html#a0f376250c831e4e4513dc23643f38b2b">DHT11_ReadTemp</a></div><div class="ttdeci">uint8_t DHT11_ReadTemp()</div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8c_source.html#l00052">DHT11library.c:52</a></div></div>
-<div class="ttc" id="astruct_d_h_t11_html_aa89905b62886f8dd96cee63c1b5e8ea2"><div class="ttname"><a href="struct_d_h_t11.html#aa89905b62886f8dd96cee63c1b5e8ea2">DHT11::Humidity</a></div><div class="ttdeci">uint8_t Humidity</div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8h_source.html#l00010">DHT11library.h:10</a></div></div>
-<div class="ttc" id="astruct_d_h_t11_html"><div class="ttname"><a href="struct_d_h_t11.html">DHT11</a></div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8h_source.html#l00008">DHT11library.h:8</a></div></div>
+<div class="ttc" id="agroup___d_h_t11_html_gaa0ec0acc9e27ec8e40883694557bfa8e"><div class="ttname"><a href="group___d_h_t11.html#gaa0ec0acc9e27ec8e40883694557bfa8e">DHT11_init</a></div><div class="ttdeci">void DHT11_init()</div><div class="ttdoc">DHT11_init is the function that should be called once in the beginning of the program....</div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8c_source.html#l00041">DHT11library.c:41</a></div></div>
+<div class="ttc" id="agroup___d_h_t11_html_ga5286883d8805be1c2e13be310a9faf80"><div class="ttname"><a href="group___d_h_t11.html#ga5286883d8805be1c2e13be310a9faf80">DHT11_ReadRaw</a></div><div class="ttdeci">void DHT11_ReadRaw(DHT11 *result)</div><div class="ttdoc">DHT11_ReadRaw is the function that reads the data from the DHT11.</div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8c_source.html#l00059">DHT11library.c:59</a></div></div>
+<div class="ttc" id="agroup___d_h_t11_html_ga0f376250c831e4e4513dc23643f38b2b"><div class="ttname"><a href="group___d_h_t11.html#ga0f376250c831e4e4513dc23643f38b2b">DHT11_ReadTemp</a></div><div class="ttdeci">uint8_t DHT11_ReadTemp()</div><div class="ttdoc">DHT11_ReadTemp only reads the temperature, it does this by calling the ReadRaw and then returning the...</div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8c_source.html#l00052">DHT11library.c:52</a></div></div>
+<div class="ttc" id="agroup___d_h_t11_html_ga21d06d2e10c616fff7920576542998ec"><div class="ttname"><a href="group___d_h_t11.html#ga21d06d2e10c616fff7920576542998ec">DHT11::Temperatur</a></div><div class="ttdeci">uint8_t Temperatur</div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8h_source.html#l00028">DHT11library.h:28</a></div></div>
+<div class="ttc" id="agroup___d_h_t11_html_gaa917fc5d7a718971c0401ddaced03a52"><div class="ttname"><a href="group___d_h_t11.html#gaa917fc5d7a718971c0401ddaced03a52">DHT11_ReadHumid</a></div><div class="ttdeci">uint8_t DHT11_ReadHumid()</div><div class="ttdoc">DHT11_ReadHumid only reads the humidity, it does this by calling the ReadRaw and then returning the h...</div></div>
+<div class="ttc" id="agroup___d_h_t11_html_gaa89905b62886f8dd96cee63c1b5e8ea2"><div class="ttname"><a href="group___d_h_t11.html#gaa89905b62886f8dd96cee63c1b5e8ea2">DHT11::Humidity</a></div><div class="ttdeci">uint8_t Humidity</div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8h_source.html#l00029">DHT11library.h:29</a></div></div>
+<div class="ttc" id="astruct_d_h_t11_html"><div class="ttname"><a href="struct_d_h_t11.html">DHT11</a></div><div class="ttdoc">DHT11 is the struct that contains both the temperature and humidity.</div><div class="ttdef"><b>Definition:</b> <a href="_d_h_t11library_8h_source.html#l00027">DHT11library.h:27</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_29633c785badfc2cc02af0abe8581f21.html">DHT11lib</a></li><li class="navelem"><a class="el" href="_d_h_t11library_8h.html">DHT11library.h</a></li>
-    <li class="footer">Generated on Thu Nov 5 2020 19:18:19 for Smart home by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Thu Nov 5 2020 22:00:39 for Smart home by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>
