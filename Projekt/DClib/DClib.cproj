@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
-    <ProjectGuid>{5ed3fdb7-25c1-4f2e-8f4e-1a3f354ffe98}</ProjectGuid>
+    <ProjectGuid>{31b9c041-bec4-4912-9718-ac9185d7497e}</ProjectGuid>
     <avrdevice>ATmega2560</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>StaticLibrary</OutputType>
@@ -14,9 +14,9 @@
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
     <AvrGccProjectExtensions>
     </AvrGccProjectExtensions>
-    <AssemblyName>SPIlib</AssemblyName>
-    <Name>SPIlib</Name>
-    <RootNamespace>SPIlib</RootNamespace>
+    <AssemblyName>DClib</AssemblyName>
+    <Name>DClib</Name>
+    <RootNamespace>DClib</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -31,14 +31,14 @@
     <eraseonlaunchrule>0</eraseonlaunchrule>
     <EraseKey />
     <AsfFrameworkConfig>
-      <framework-data>
+      <framework-data xmlns="">
   <options />
   <configurations />
   <files />
   <documentation help="" />
   <offline-documentation help="" />
   <dependencies>
-    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.34.1" />
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.40.0" />
   </dependencies>
 </framework-data>
     </AsfFrameworkConfig>
@@ -124,10 +124,10 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="SPIlibrary.c">
+    <Compile Include="DClibrary.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="SPIlibrary.h">
+    <Compile Include="DClibrary.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
