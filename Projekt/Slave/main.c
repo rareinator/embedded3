@@ -20,28 +20,29 @@ ISR(PCINT0_vect)
 {
 	printf("Interrupt");
 	reg = SPI_Read();
-	/*
-	reg = SPI_Read();
 	val = SPI_Read();
-	if(reg == 0x00){
-		switch (val){
-			case 0X00:
+	if(reg == 0x00)
+	{
+		printf("Start/Stop Reg");
+		if(val == 0x00)
+		{
 			Stop_Fan();
-			break;
-			
-			case 0X01:
-			Start_Fan();
-			break;
 		}
-		Start_Fan();
+		else if(val == 0x01)
+		{
+			printf("Start Fan");
+			Start_Fan();
+		}
 	}
-	else if(reg == 0x01){
+	else if(reg == 0x01)
+	{
+		printf("Speed Set");
 		Set_Speed(val);
 	}
-	*/
 }
 
-Slave_Init(){
+Slave_Init()
+{
 	PCICR |= (1<<PCIE0);	// Pin Change Interrupt Enable 0, Datasheet 17.2.4
 	PCMSK0 |= (1<<PCINT0);	// Pin Change Mask Register 0, Datasheet 17.2.8
 	sei();
@@ -52,15 +53,9 @@ int main(void)
 	Slave_Init();
 	DCMotor_init();
 	SPI_Init(false);
-	Set_Speed(0xFF);
 	UartInit();
 	while (1)
 	{
-		if (reg == 0x01)
-		{
-			Start_Fan();
-		}
-		
 	}
 }
 
