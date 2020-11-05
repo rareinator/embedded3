@@ -11,6 +11,7 @@
 #define F_CPU 16000000UL
 #include <avr/interrupt.h>
 #include <stdio.h>
+#include "stdio_setup.h"
 
 uint8_t reg;
 uint8_t val;
@@ -52,6 +53,7 @@ int main(void)
 	DCMotor_init();
 	SPI_Init(false);
 	Set_Speed(0xFF);
+	UartInit();
 	while (1)
 	{
 		if (reg == 0x01)
