@@ -10,12 +10,14 @@
 #include "SPIlibrary.h"
 #define F_CPU 16000000UL
 #include <avr/interrupt.h>
+#include <stdio.h>
 
 uint8_t reg;
 uint8_t val;
 
 ISR(PCINT0_vect)
 {
+	printf("Interrupt");
 	reg = SPI_Read();
 	/*
 	reg = SPI_Read();
@@ -40,7 +42,7 @@ ISR(PCINT0_vect)
 
 Slave_Init(){
 	PCICR |= (1<<PCIE0);	// Pin Change Interrupt Enable 0, Datasheet 17.2.4
-	PCMSK0 |= (1<<PCINT2);	// Pin Change Mask Register 0, Datasheet 17.2.8
+	PCMSK0 |= (1<<PCINT0);	// Pin Change Mask Register 0, Datasheet 17.2.8
 	sei();
 }
 
