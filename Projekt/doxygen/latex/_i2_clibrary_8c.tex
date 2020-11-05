@@ -1,0 +1,54 @@
+\hypertarget{_i2_clibrary_8c}{}\doxysection{I2\+Clib/\+I2\+Clibrary.c File Reference}
+\label{_i2_clibrary_8c}\index{I2Clib/I2Clibrary.c@{I2Clib/I2Clibrary.c}}
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+{\ttfamily \#include $<$compat/twi.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}I2\+Clibrary.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_i2_clibrary_8c_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+C\+PU}}~4000000\+UL
+\item 
+\#define \mbox{\hyperlink{_i2_clibrary_8c_a17ae80300a19853baae9dc086d18bb38}{S\+C\+L\+\_\+\+C\+L\+O\+CK}}~100000L
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__pfleury__ic2master_ga5730d9445429351b9f750084c5cb5aae}{i2c\+\_\+init}} (void)
+\begin{DoxyCompactList}\small\item\em initialize the I2C master interace. Need to be called only once \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__pfleury__ic2master_ga58dfadce0c2fee4bfac01df6cd2b4477}{i2c\+\_\+start}} (unsigned char address)
+\begin{DoxyCompactList}\small\item\em Issues a start condition and sends address and transfer direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__pfleury__ic2master_gaee3747a01738315cd5580588994b6c28}{i2c\+\_\+start\+\_\+wait}} (unsigned char address)
+\begin{DoxyCompactList}\small\item\em Issues a start condition and sends address and transfer direction. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__pfleury__ic2master_ga93a9461da34295250ba935bbce9a980d}{i2c\+\_\+rep\+\_\+start}} (unsigned char address)
+\begin{DoxyCompactList}\small\item\em Issues a repeated start condition and sends address and transfer direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__pfleury__ic2master_gad35d4e4f52ca74b503d5e5e1e0a3f5f3}{i2c\+\_\+stop}} (void)
+\begin{DoxyCompactList}\small\item\em Terminates the data transfer and releases the I2C bus. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__pfleury__ic2master_gadd947aade44ed6b7f92265f9dec4a711}{i2c\+\_\+write}} (unsigned char data)
+\begin{DoxyCompactList}\small\item\em Send one byte to I2C device. \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__pfleury__ic2master_ga32ac22052d55f93375b024192217db21}{i2c\+\_\+read\+Ack}} (void)
+\begin{DoxyCompactList}\small\item\em read one byte from the I2C device, request more data from device \end{DoxyCompactList}\item 
+unsigned char \mbox{\hyperlink{group__pfleury__ic2master_gad89e839fc17b05fbb5dd79897c55234e}{i2c\+\_\+read\+Nak}} (void)
+\begin{DoxyCompactList}\small\item\em read one byte from the I2C device, read is followed by a stop condition \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_i2_clibrary_8c_a43bafb28b29491ec7f871319b5a3b2f8}\label{_i2_clibrary_8c_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{I2Clibrary.c@{I2Clibrary.c}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!I2Clibrary.c@{I2Clibrary.c}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+C\+PU~4000000\+UL}
+
+
+
+Definition at line 17 of file I2\+Clibrary.\+c.
+
+\mbox{\Hypertarget{_i2_clibrary_8c_a17ae80300a19853baae9dc086d18bb38}\label{_i2_clibrary_8c_a17ae80300a19853baae9dc086d18bb38}} 
+\index{I2Clibrary.c@{I2Clibrary.c}!SCL\_CLOCK@{SCL\_CLOCK}}
+\index{SCL\_CLOCK@{SCL\_CLOCK}!I2Clibrary.c@{I2Clibrary.c}}
+\doxysubsubsection{\texorpdfstring{SCL\_CLOCK}{SCL\_CLOCK}}
+{\footnotesize\ttfamily \#define S\+C\+L\+\_\+\+C\+L\+O\+CK~100000L}
+
+
+
+Definition at line 21 of file I2\+Clibrary.\+c.
+

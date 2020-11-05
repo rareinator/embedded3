@@ -1,0 +1,74 @@
+\hypertarget{_d_h_t11library_8c}{}\doxysection{D\+H\+T11lib/\+D\+H\+T11library.c File Reference}
+\label{_d_h_t11library_8c}\index{DHT11lib/DHT11library.c@{DHT11lib/DHT11library.c}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+{\ttfamily \#include $<$util/delay.\+h$>$}\newline
+{\ttfamily \#include $<$avr/sfr\+\_\+defs.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}D\+H\+T11library.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_d_h_t11library_8c_af4fa0154410fe127e4a25295f4ab5b51}{D\+H\+T11\+\_\+\+Wait}} (int max\+Wait\+Time, bool wait\+For\+High)
+\item 
+void \mbox{\hyperlink{_d_h_t11library_8c_aa0ec0acc9e27ec8e40883694557bfa8e}{D\+H\+T11\+\_\+init}} ()
+\item 
+void \mbox{\hyperlink{_d_h_t11library_8c_aafcaa89bfa26a21fab54449f2f7dfa39}{D\+H\+T11\+\_\+reset}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_d_h_t11library_8c_a0f376250c831e4e4513dc23643f38b2b}{D\+H\+T11\+\_\+\+Read\+Temp}} ()
+\item 
+void \mbox{\hyperlink{_d_h_t11library_8c_a5286883d8805be1c2e13be310a9faf80}{D\+H\+T11\+\_\+\+Read\+Raw}} (\mbox{\hyperlink{struct_d_h_t11}{D\+H\+T11}} $\ast$result)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_d_h_t11library_8c_aa0ec0acc9e27ec8e40883694557bfa8e}\label{_d_h_t11library_8c_aa0ec0acc9e27ec8e40883694557bfa8e}} 
+\index{DHT11library.c@{DHT11library.c}!DHT11\_init@{DHT11\_init}}
+\index{DHT11\_init@{DHT11\_init}!DHT11library.c@{DHT11library.c}}
+\doxysubsubsection{\texorpdfstring{DHT11\_init()}{DHT11\_init()}}
+{\footnotesize\ttfamily void D\+H\+T11\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file D\+H\+T11library.\+c.
+
+\mbox{\Hypertarget{_d_h_t11library_8c_a5286883d8805be1c2e13be310a9faf80}\label{_d_h_t11library_8c_a5286883d8805be1c2e13be310a9faf80}} 
+\index{DHT11library.c@{DHT11library.c}!DHT11\_ReadRaw@{DHT11\_ReadRaw}}
+\index{DHT11\_ReadRaw@{DHT11\_ReadRaw}!DHT11library.c@{DHT11library.c}}
+\doxysubsubsection{\texorpdfstring{DHT11\_ReadRaw()}{DHT11\_ReadRaw()}}
+{\footnotesize\ttfamily void D\+H\+T11\+\_\+\+Read\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_h_t11}{D\+H\+T11}} $\ast$}]{result }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file D\+H\+T11library.\+c.
+
+\mbox{\Hypertarget{_d_h_t11library_8c_a0f376250c831e4e4513dc23643f38b2b}\label{_d_h_t11library_8c_a0f376250c831e4e4513dc23643f38b2b}} 
+\index{DHT11library.c@{DHT11library.c}!DHT11\_ReadTemp@{DHT11\_ReadTemp}}
+\index{DHT11\_ReadTemp@{DHT11\_ReadTemp}!DHT11library.c@{DHT11library.c}}
+\doxysubsubsection{\texorpdfstring{DHT11\_ReadTemp()}{DHT11\_ReadTemp()}}
+{\footnotesize\ttfamily uint8\+\_\+t D\+H\+T11\+\_\+\+Read\+Temp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file D\+H\+T11library.\+c.
+
+\mbox{\Hypertarget{_d_h_t11library_8c_aafcaa89bfa26a21fab54449f2f7dfa39}\label{_d_h_t11library_8c_aafcaa89bfa26a21fab54449f2f7dfa39}} 
+\index{DHT11library.c@{DHT11library.c}!DHT11\_reset@{DHT11\_reset}}
+\index{DHT11\_reset@{DHT11\_reset}!DHT11library.c@{DHT11library.c}}
+\doxysubsubsection{\texorpdfstring{DHT11\_reset()}{DHT11\_reset()}}
+{\footnotesize\ttfamily void D\+H\+T11\+\_\+reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 43 of file D\+H\+T11library.\+c.
+
+\mbox{\Hypertarget{_d_h_t11library_8c_af4fa0154410fe127e4a25295f4ab5b51}\label{_d_h_t11library_8c_af4fa0154410fe127e4a25295f4ab5b51}} 
+\index{DHT11library.c@{DHT11library.c}!DHT11\_Wait@{DHT11\_Wait}}
+\index{DHT11\_Wait@{DHT11\_Wait}!DHT11library.c@{DHT11library.c}}
+\doxysubsubsection{\texorpdfstring{DHT11\_Wait()}{DHT11\_Wait()}}
+{\footnotesize\ttfamily bool D\+H\+T11\+\_\+\+Wait (\begin{DoxyParamCaption}\item[{int}]{max\+Wait\+Time,  }\item[{bool}]{wait\+For\+High }\end{DoxyParamCaption})}
+
+
+
+Definition at line 9 of file D\+H\+T11library.\+c.
+

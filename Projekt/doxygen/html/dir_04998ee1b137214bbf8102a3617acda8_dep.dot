@@ -1,0 +1,12 @@
+digraph "ESP8266lib" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_04998ee1b137214bbf8102a3617acda8 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_04998ee1b137214bbf8102a3617acda8.html"];
+    dir_04998ee1b137214bbf8102a3617acda8 [shape=plaintext label="ESP8266lib"];
+    dir_ccce57203a3012832c56ece38f5832a7 [shape=box label="Debug" color="red" fillcolor="white" style="filled" URL="dir_ccce57203a3012832c56ece38f5832a7.html"];
+    dir_31f33d1767ef7b8d12b10a1b2566b785 [shape=box label="USART" color="black" fillcolor="white" style="filled" URL="dir_31f33d1767ef7b8d12b10a1b2566b785.html"];
+  }
+  dir_04998ee1b137214bbf8102a3617acda8->dir_31f33d1767ef7b8d12b10a1b2566b785 [headlabel="1", labeldistance=1.5 headhref="dir_000003_000006.html"];
+}

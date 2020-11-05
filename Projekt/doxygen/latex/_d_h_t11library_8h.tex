@@ -1,0 +1,136 @@
+\hypertarget{_d_h_t11library_8h}{}\doxysection{D\+H\+T11lib/\+D\+H\+T11library.h File Reference}
+\label{_d_h_t11library_8h}\index{DHT11lib/DHT11library.h@{DHT11lib/DHT11library.h}}
+{\ttfamily \#include $<$avr/io.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_d_h_t11}{D\+H\+T11}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_h_t11library_8h_a218c3d81b5854edcc3ea7f671884f52d}{S\+E\+T\+\_\+\+B\+IT}}(port,  bit)~((port) $\vert$= (1$<$$<$bit))
+\item 
+\#define \mbox{\hyperlink{_d_h_t11library_8h_a735f5cbe1cab7d9d4bf6fb3b99d6401a}{C\+L\+R\+\_\+\+B\+IT}}(port,  bit)~((port) \&= $\sim$((1$<$$<$bit)))
+\item 
+\#define \mbox{\hyperlink{_d_h_t11library_8h_afd0ac1a6f5d9147866e999f5f0a9ea58}{D\+H\+T11\+\_\+\+D\+DR}}~D\+D\+RA
+\item 
+\#define \mbox{\hyperlink{_d_h_t11library_8h_aebeb55e992ef02dd2d39a225e276585e}{D\+H\+T11\+\_\+\+P\+O\+RT}}~P\+O\+R\+TA
+\item 
+\#define \mbox{\hyperlink{_d_h_t11library_8h_a79111e78831efb8ac76fa8123357475e}{D\+H\+T11\+\_\+\+P\+IN}}~P\+I\+NA
+\item 
+\#define \mbox{\hyperlink{_d_h_t11library_8h_aeafc3b2cc281877ddfe016b31691aaae}{D\+H\+T11\+\_\+\+B\+IT}}~P\+A0
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_d_h_t11library_8h_aa0ec0acc9e27ec8e40883694557bfa8e}{D\+H\+T11\+\_\+init}} ()
+\item 
+void \mbox{\hyperlink{_d_h_t11library_8h_a5286883d8805be1c2e13be310a9faf80}{D\+H\+T11\+\_\+\+Read\+Raw}} (\mbox{\hyperlink{struct_d_h_t11}{D\+H\+T11}} $\ast$result)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_d_h_t11library_8h_a0f376250c831e4e4513dc23643f38b2b}{D\+H\+T11\+\_\+\+Read\+Temp}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{_d_h_t11library_8h_aa917fc5d7a718971c0401ddaced03a52}{D\+H\+T11\+\_\+\+Read\+Humid}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_d_h_t11library_8h_a735f5cbe1cab7d9d4bf6fb3b99d6401a}\label{_d_h_t11library_8h_a735f5cbe1cab7d9d4bf6fb3b99d6401a}} 
+\index{DHT11library.h@{DHT11library.h}!CLR\_BIT@{CLR\_BIT}}
+\index{CLR\_BIT@{CLR\_BIT}!DHT11library.h@{DHT11library.h}}
+\doxysubsubsection{\texorpdfstring{CLR\_BIT}{CLR\_BIT}}
+{\footnotesize\ttfamily \#define C\+L\+R\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{port,  }\item[{}]{bit }\end{DoxyParamCaption})~((port) \&= $\sim$((1$<$$<$bit)))}
+
+
+
+Definition at line 12 of file D\+H\+T11library.\+h.
+
+\mbox{\Hypertarget{_d_h_t11library_8h_aeafc3b2cc281877ddfe016b31691aaae}\label{_d_h_t11library_8h_aeafc3b2cc281877ddfe016b31691aaae}} 
+\index{DHT11library.h@{DHT11library.h}!DHT11\_BIT@{DHT11\_BIT}}
+\index{DHT11\_BIT@{DHT11\_BIT}!DHT11library.h@{DHT11library.h}}
+\doxysubsubsection{\texorpdfstring{DHT11\_BIT}{DHT11\_BIT}}
+{\footnotesize\ttfamily \#define D\+H\+T11\+\_\+\+B\+IT~P\+A0}
+
+
+
+Definition at line 17 of file D\+H\+T11library.\+h.
+
+\mbox{\Hypertarget{_d_h_t11library_8h_afd0ac1a6f5d9147866e999f5f0a9ea58}\label{_d_h_t11library_8h_afd0ac1a6f5d9147866e999f5f0a9ea58}} 
+\index{DHT11library.h@{DHT11library.h}!DHT11\_DDR@{DHT11\_DDR}}
+\index{DHT11\_DDR@{DHT11\_DDR}!DHT11library.h@{DHT11library.h}}
+\doxysubsubsection{\texorpdfstring{DHT11\_DDR}{DHT11\_DDR}}
+{\footnotesize\ttfamily \#define D\+H\+T11\+\_\+\+D\+DR~D\+D\+RA}
+
+
+
+Definition at line 14 of file D\+H\+T11library.\+h.
+
+\mbox{\Hypertarget{_d_h_t11library_8h_a79111e78831efb8ac76fa8123357475e}\label{_d_h_t11library_8h_a79111e78831efb8ac76fa8123357475e}} 
+\index{DHT11library.h@{DHT11library.h}!DHT11\_PIN@{DHT11\_PIN}}
+\index{DHT11\_PIN@{DHT11\_PIN}!DHT11library.h@{DHT11library.h}}
+\doxysubsubsection{\texorpdfstring{DHT11\_PIN}{DHT11\_PIN}}
+{\footnotesize\ttfamily \#define D\+H\+T11\+\_\+\+P\+IN~P\+I\+NA}
+
+
+
+Definition at line 16 of file D\+H\+T11library.\+h.
+
+\mbox{\Hypertarget{_d_h_t11library_8h_aebeb55e992ef02dd2d39a225e276585e}\label{_d_h_t11library_8h_aebeb55e992ef02dd2d39a225e276585e}} 
+\index{DHT11library.h@{DHT11library.h}!DHT11\_PORT@{DHT11\_PORT}}
+\index{DHT11\_PORT@{DHT11\_PORT}!DHT11library.h@{DHT11library.h}}
+\doxysubsubsection{\texorpdfstring{DHT11\_PORT}{DHT11\_PORT}}
+{\footnotesize\ttfamily \#define D\+H\+T11\+\_\+\+P\+O\+RT~P\+O\+R\+TA}
+
+
+
+Definition at line 15 of file D\+H\+T11library.\+h.
+
+\mbox{\Hypertarget{_d_h_t11library_8h_a218c3d81b5854edcc3ea7f671884f52d}\label{_d_h_t11library_8h_a218c3d81b5854edcc3ea7f671884f52d}} 
+\index{DHT11library.h@{DHT11library.h}!SET\_BIT@{SET\_BIT}}
+\index{SET\_BIT@{SET\_BIT}!DHT11library.h@{DHT11library.h}}
+\doxysubsubsection{\texorpdfstring{SET\_BIT}{SET\_BIT}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{port,  }\item[{}]{bit }\end{DoxyParamCaption})~((port) $\vert$= (1$<$$<$bit))}
+
+
+
+Definition at line 11 of file D\+H\+T11library.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_d_h_t11library_8h_aa0ec0acc9e27ec8e40883694557bfa8e}\label{_d_h_t11library_8h_aa0ec0acc9e27ec8e40883694557bfa8e}} 
+\index{DHT11library.h@{DHT11library.h}!DHT11\_init@{DHT11\_init}}
+\index{DHT11\_init@{DHT11\_init}!DHT11library.h@{DHT11library.h}}
+\doxysubsubsection{\texorpdfstring{DHT11\_init()}{DHT11\_init()}}
+{\footnotesize\ttfamily void D\+H\+T11\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file D\+H\+T11library.\+c.
+
+\mbox{\Hypertarget{_d_h_t11library_8h_aa917fc5d7a718971c0401ddaced03a52}\label{_d_h_t11library_8h_aa917fc5d7a718971c0401ddaced03a52}} 
+\index{DHT11library.h@{DHT11library.h}!DHT11\_ReadHumid@{DHT11\_ReadHumid}}
+\index{DHT11\_ReadHumid@{DHT11\_ReadHumid}!DHT11library.h@{DHT11library.h}}
+\doxysubsubsection{\texorpdfstring{DHT11\_ReadHumid()}{DHT11\_ReadHumid()}}
+{\footnotesize\ttfamily uint8\+\_\+t D\+H\+T11\+\_\+\+Read\+Humid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_h_t11library_8h_a5286883d8805be1c2e13be310a9faf80}\label{_d_h_t11library_8h_a5286883d8805be1c2e13be310a9faf80}} 
+\index{DHT11library.h@{DHT11library.h}!DHT11\_ReadRaw@{DHT11\_ReadRaw}}
+\index{DHT11\_ReadRaw@{DHT11\_ReadRaw}!DHT11library.h@{DHT11library.h}}
+\doxysubsubsection{\texorpdfstring{DHT11\_ReadRaw()}{DHT11\_ReadRaw()}}
+{\footnotesize\ttfamily void D\+H\+T11\+\_\+\+Read\+Raw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_d_h_t11}{D\+H\+T11}} $\ast$}]{result }\end{DoxyParamCaption})}
+
+
+
+Definition at line 55 of file D\+H\+T11library.\+c.
+
+\mbox{\Hypertarget{_d_h_t11library_8h_a0f376250c831e4e4513dc23643f38b2b}\label{_d_h_t11library_8h_a0f376250c831e4e4513dc23643f38b2b}} 
+\index{DHT11library.h@{DHT11library.h}!DHT11\_ReadTemp@{DHT11\_ReadTemp}}
+\index{DHT11\_ReadTemp@{DHT11\_ReadTemp}!DHT11library.h@{DHT11library.h}}
+\doxysubsubsection{\texorpdfstring{DHT11\_ReadTemp()}{DHT11\_ReadTemp()}}
+{\footnotesize\ttfamily uint8\+\_\+t D\+H\+T11\+\_\+\+Read\+Temp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 48 of file D\+H\+T11library.\+c.
+
