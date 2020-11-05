@@ -17,9 +17,10 @@
 uint8_t reg;
 uint8_t val;
 
-ISR(PCINT0_vect)
+ISR(SPI_STC_vect)
 {
 	printf("Interrupt\n");
+	/*
 	if (bit_is_clear(PINB, PB0))
 	{
 		printf("Bit is clear\n");
@@ -47,23 +48,16 @@ ISR(PCINT0_vect)
 	else if (bit_is_set(PINB, PB0))
 	{
 		printf("Bit is set\n");
-	}
+	}*/
 	
 	
 	
 }
 
-Slave_Init()
-{
-	PCICR |= (1<<PCIE0);	// Pin Change Interrupt Enable 0, Datasheet 17.2.4
-	PCMSK0 |= (1<<PCINT0);	// Pin Change Mask Register 0, Datasheet 17.2.8
-	sei();
-}
 
 int main(void)
 {
 	_delay_ms(3000);
-	Slave_Init();
 	DCMotor_init();
 	SPI_Init(false);
 	UartInit();

@@ -22,7 +22,7 @@ void SPI_Init(bool isMaster)
 		
 		DDRB |= (1<<PB3);			/* Make MISO pin as output pin */
 		
-		SPCR = (1<<SPE);
+		SPCR = (1<<SPE) | (1<<SPIE);
 	}
 		
 	
