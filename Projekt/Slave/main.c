@@ -11,25 +11,25 @@ uint8_t val;
 
 ISR(PCINT0_vect)
 {
-	printf("Interrupt /n");
+	printf("Interrupt\n");
 	reg = SPI_Read();
 	val = SPI_Read();
 	if (reg == 0x00)
 	{
 		if (val == 0x00)
 		{
-			printf("Fan Stopped/n");
+			printf("Fan Stopped\n");
 			Stop_Fan();
 		}
 		else if (val == 0x01)
 		{
-			printf("Fan Started/n");
+			printf("Fan Started\n");
 			Start_Fan();
 		}
 	}
 	else if (reg == 0x01)
 	{
-		printf("Speed Set/n");
+		printf("Speed Set\n");
 		Set_Speed(val);
 	}	
 }
