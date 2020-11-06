@@ -1,3 +1,21 @@
+/**
+@defgroup Main Master main file
+@code #include "DHT11library.h" @endcode
+@code #include "ESP8266.h" @endcode
+@code #include "SPIlibrary.h" @endcode
+ 
+  @brief RTC Library
+
+  Below is flowchart overview of our project solution:
+
+  ![FlowChart](../../Datablade/MainFlowChart.jpg)
+  
+  
+@author Morten Nissen, Nicolai De Jong Bjerg & Kevin Pike Darmer
+@copyright (C) 2020 Morten Nissen, Nicolai De Jung Berg & Kevin Pike Darmer, GNU General Public License Version 3
+
+*/
+
 #define F_CPU 16000000UL
 #include <avr/io.h>
 #include <stdbool.h>
@@ -37,14 +55,12 @@ int main(void)
 
 	SPI_WriteData(1,255); // Set fan speed
 	_delay_ms(500);
-	LED_ON;
 	while(1)
 	{
 		
 		DHT11_ReadRaw(&tempAndHumid); // Read temperature
-		if (Sample > MAX_TEMP)
+		if (tempAndHumid.Temperatur > MAX_TEMP)
 		{
-			LED_ON;
 			SPI_WriteData(0,1); // Turn on fan
 		} else {
 			SPI_WriteData(0,0); // Turn off fan
@@ -59,7 +75,7 @@ int main(void)
 		ESP8266_Start(0, DOMAIN, PORT);
 		
 		memset(_buffer, 0, 150);
-		sprintf(_buffer, "GET /update?api_key=%s&field1=%d", API_WRITE_KEY, Sample);
+		sprintf(_buffer, "GET /update?api_key=%s&field1=%d&field2=%d", API_WRITE_KEY, tempAndHumid.Temperatur, tempAndHumid.Humidity);
 		ESP8266_Send(_buffer);
 		_delay_ms(15000);
 		Sample++;		

@@ -22,3 +22,6 @@
 #User Specific Files
 *.atsuo
 Projekt/debug.log
+
+#Documentation
+doxygen/

@@ -1,7 +1,8 @@
 /**
  @file
  @defgroup RTClib RTC Library
- @code #include <RTClibrary.h> @endcode
+ @code #include "RTClibrary.h" @endcode
+ @code #include "I2Clibrary.h" @endcode
   
  @brief RTC Library
 
