@@ -1,4 +1,6 @@
-# embedded3
+# Embedded 3 smarthome projekt
+[Documentation](http://m9ssen.me.resources.s3-website.eu-central-1.amazonaws.com/documentation/avr/smarthome/html/index.html)
+
 Project Intelligent House
 
 * Temperature & Humidity sensor SKAL bruges
