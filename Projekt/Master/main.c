@@ -1,3 +1,21 @@
+/**
+@defgroup Main Master main file
+@code #include "DHT11library.h" @endcode
+@code #include "ESP8266.h" @endcode
+@code #include "SPIlibrary.h" @endcode
+ 
+  @brief RTC Library
+
+  Below is flowchart overview of our project solution:
+
+  ![FlowChart](../../Datablade/MainFlowChart.jpg)
+  
+  
+@author Morten Nissen, Nicolai De Jong Bjerg & Kevin Pike Darmer
+@copyright (C) 2020 Morten Nissen, Nicolai De Jung Berg & Kevin Pike Darmer, GNU General Public License Version 3
+
+*/
+
 #define F_CPU 16000000UL
 #include <avr/io.h>
 #include <stdbool.h>
